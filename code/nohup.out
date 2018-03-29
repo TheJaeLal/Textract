@@ -1,0 +1,541 @@
+2018-03-17 07:59:19.446863: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-17 07:59:19.553627: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-17 07:59:19.554021: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-17 07:59:19.554044: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 07:32:36.243 NotebookApp] [nb_conda_kernels] enabled, 20 kernels found
+[I 07:32:36.251 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 07:32:37.492 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 07:32:37.533 NotebookApp] JupyterLab alpha preview extension loaded from /home/ubuntu/anaconda3/lib/python3.6/site-packages/jupyterlab
+JupyterLab v0.27.0
+Known labextensions:
+[I 07:32:37.535 NotebookApp] Running the core application with no additional extensions or settings
+[I 07:32:37.543 NotebookApp] [nb_conda] enabled
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/__init__.py:962: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #2
+  (fname, cnt))
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/__init__.py:962: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #3
+  (fname, cnt))
+[I 07:32:38.406 NotebookApp] sparkmagic extension enabled!
+[I 07:32:38.411 NotebookApp] Serving notebooks from local directory: /home/ubuntu/HCR/code
+[I 07:32:38.411 NotebookApp] 0 active kernels
+[I 07:32:38.411 NotebookApp] The Jupyter Notebook is running at:
+[I 07:32:38.411 NotebookApp] http://[all ip addresses on your system]:8888/?token=51f0981630a8b70e2d2875b5aee577022ff81ad55875e111
+[I 07:32:38.411 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 07:32:38.412 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=51f0981630a8b70e2d2875b5aee577022ff81ad55875e111
+[I 07:33:47.183 NotebookApp] 302 GET /?token=51f0981630a8b70e2d2875b5aee577022ff81ad55875e111 (14.142.143.98) 0.65ms
+[I 07:34:19.810 NotebookApp] Kernel started: c7420d34-0bcb-4546-bf4e-0c712904c213
+[W 07:34:30.421 NotebookApp] Timeout waiting for kernel_info reply from c7420d34-0bcb-4546-bf4e-0c712904c213
+[I 07:34:42.376 NotebookApp] Starting buffering for c7420d34-0bcb-4546-bf4e-0c712904c213:2b7e39161f314d02a1da1b4b19929bcd
+[I 07:34:47.100 NotebookApp] Kernel restarted: c7420d34-0bcb-4546-bf4e-0c712904c213
+[I 07:34:47.103 NotebookApp] Adapting to protocol v5.1 for kernel c7420d34-0bcb-4546-bf4e-0c712904c213
+[I 07:34:48.278 NotebookApp] Restoring connection for c7420d34-0bcb-4546-bf4e-0c712904c213:2b7e39161f314d02a1da1b4b19929bcd
+[I 07:34:48.278 NotebookApp] Replaying 15 buffered messages
+[I 07:36:19.832 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+2018-03-20 07:36:27.010267: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 07:36:29.577711: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 07:36:29.578137: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 07:36:29.578169: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 07:36:47.905 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 07:38:19.750 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 07:41:04.867 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[W 07:47:18.280 NotebookApp] WebSocket ping timeout after 119718 ms.
+[I 07:47:23.281 NotebookApp] Starting buffering for c7420d34-0bcb-4546-bf4e-0c712904c213:2b7e39161f314d02a1da1b4b19929bcd
+[I 07:58:03.975 NotebookApp] Restoring connection for c7420d34-0bcb-4546-bf4e-0c712904c213:2b7e39161f314d02a1da1b4b19929bcd
+[W 08:39:33.977 NotebookApp] WebSocket ping timeout after 119694 ms.
+[I 08:39:38.980 NotebookApp] Starting buffering for c7420d34-0bcb-4546-bf4e-0c712904c213:2b7e39161f314d02a1da1b4b19929bcd
+[I 08:58:43.060 NotebookApp] Restoring connection for c7420d34-0bcb-4546-bf4e-0c712904c213:2b7e39161f314d02a1da1b4b19929bcd
+[I 09:11:09.636 NotebookApp] 302 GET / (106.184.3.122) 0.55ms
+[I 09:23:07.343 NotebookApp] Starting buffering for c7420d34-0bcb-4546-bf4e-0c712904c213:2b7e39161f314d02a1da1b4b19929bcd
+[I 12:32:00.380 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:32:00.815 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:32:05.692 NotebookApp] Kernel restarted: c7420d34-0bcb-4546-bf4e-0c712904c213
+[I 12:32:05.697 NotebookApp] Starting buffering for c7420d34-0bcb-4546-bf4e-0c712904c213:99dc1e5f9781471b8c5079cba8844fa8
+[I 12:32:06.837 NotebookApp] Restoring connection for c7420d34-0bcb-4546-bf4e-0c712904c213:99dc1e5f9781471b8c5079cba8844fa8
+[I 12:32:06.837 NotebookApp] Replaying 3 buffered messages
+2018-03-20 12:32:12.663763: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 12:32:12.800559: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 12:32:12.800975: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 12:32:12.800998: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 12:33:41.065 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:47:51.125 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:47:54.052 NotebookApp] Starting buffering for c7420d34-0bcb-4546-bf4e-0c712904c213:99dc1e5f9781471b8c5079cba8844fa8
+[I 12:47:54.872 NotebookApp] Kernel restarted: c7420d34-0bcb-4546-bf4e-0c712904c213
+[I 12:47:56.231 NotebookApp] Restoring connection for c7420d34-0bcb-4546-bf4e-0c712904c213:99dc1e5f9781471b8c5079cba8844fa8
+[I 12:47:56.231 NotebookApp] Replaying 6 buffered messages
+2018-03-20 12:48:02.408307: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 12:48:02.548645: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 12:48:02.549067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 12:48:02.549091: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 12:49:29.610 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:49:30.038 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:49:30.849 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:49:54.812 NotebookApp] Kernel started: 63ac76a5-09ba-411d-9979-6b9e26bbbf20
+[I 12:49:55.356 NotebookApp] Adapting to protocol v5.1 for kernel 63ac76a5-09ba-411d-9979-6b9e26bbbf20
+[I 12:49:57.676 NotebookApp] Kernel started: f100abcd-10ea-4fa2-ba62-eb4d759f785f
+[I 12:49:58.400 NotebookApp] Adapting to protocol v5.1 for kernel f100abcd-10ea-4fa2-ba62-eb4d759f785f
+[I 12:51:52.411 NotebookApp] Saving file at /CNN_RNN_CTC_Model_HCR_Pretrained.ipynb
+[I 12:51:58.409 NotebookApp] Saving file at /CNN_RNN_CTC_Model_HCR_Pretrained.ipynb
+[I 12:52:13.985 NotebookApp] Saving file at /CNN_RNN_CTC_Model_HCR_Pretrained.ipynb
+[I 12:52:15.417 NotebookApp] Saving file at /CNN_RNN_CTC_Model_HCR_Pretrained.ipynb
+[I 12:53:51.030 NotebookApp] Saving file at /CNN_RNN_CTC_Model_HCR_Pretrained.ipynb
+[I 12:53:51.507 NotebookApp] Saving file at /CNN_RNN_CTC_Model_HCR_Pretrained.ipynb
+[I 12:58:14.718 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:58:15.466 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:58:15.536 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:58:51.458 NotebookApp] Saving file at /Test_HCR_CNN_LSTM_Model.ipynb
+[I 12:58:51.873 NotebookApp] Copying Test_HCR_CNN_LSTM_Model.ipynb to 
+[I 12:58:55.171 NotebookApp] Kernel started: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 12:58:55.914 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 12:59:01.719 NotebookApp] Starting buffering for f100abcd-10ea-4fa2-ba62-eb4d759f785f:8e43b1ee7dfb442681532681956d2031
+[I 12:59:02.648 NotebookApp] Starting buffering for 63ac76a5-09ba-411d-9979-6b9e26bbbf20:b51729cc872b40208a594f624694a373
+[I 12:59:08.070 NotebookApp] Kernel shutdown: f100abcd-10ea-4fa2-ba62-eb4d759f785f
+[I 12:59:08.273 NotebookApp] Kernel shutdown: 63ac76a5-09ba-411d-9979-6b9e26bbbf20
+[I 12:59:11.934 NotebookApp] Kernel shutdown: c7420d34-0bcb-4546-bf4e-0c712904c213
+[I 13:00:56.017 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:01:21.819 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:03:02.157 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:03:02.468 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:03:03.632 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:03:03.632 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:03:03.633 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:03:10.845857: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:03:10.970968: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:03:10.971386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:03:10.971410: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:04:56.436 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:04:58.885 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:04:59.707 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:05:01.095 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:05:01.096 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:05:01.096 NotebookApp] Replaying 6 buffered messages
+2018-03-20 13:05:07.275229: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:05:07.398778: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:05:07.399207: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:05:07.399232: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:06:55.852 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:07:48.986 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:07:48.992 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:07:50.373 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:07:50.374 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:07:50.374 NotebookApp] Replaying 2 buffered messages
+2018-03-20 13:07:56.481371: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:07:56.604766: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:07:56.605184: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:07:56.605208: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:08:55.970 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:09:18.902 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:09:27.336 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:09:28.249 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:09:29.502 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:09:29.503 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:09:29.503 NotebookApp] Replaying 6 buffered messages
+2018-03-20 13:09:35.748843: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:09:35.875382: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:09:35.875802: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:09:35.875826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:10:32.922 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:10:33.744 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:10:34.954 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:10:34.955 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:10:34.955 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:10:41.413922: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:10:41.531287: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:10:41.531703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:10:41.531728: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:10:56.105 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:11:47.678 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:11:50.263 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:11:51.072 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:11:52.265 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:11:52.266 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:11:52.266 NotebookApp] Replaying 6 buffered messages
+2018-03-20 13:11:58.538287: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:11:58.664001: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:11:58.664419: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:11:58.664444: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:12:27.013 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:12:30.392 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:12:31.237 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:12:32.412 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:12:32.412 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:12:32.413 NotebookApp] Replaying 6 buffered messages
+2018-03-20 13:12:38.269888: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:12:38.388538: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:12:38.388959: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:12:38.388992: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:12:56.882 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:13:05.304 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:13:06.124 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:13:08.795 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:13:08.795 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:13:08.796 NotebookApp] Replaying 6 buffered messages
+[I 13:13:14.820 NotebookApp] Kernel interrupted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:13:23.771 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:13:27.337 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:13:27.855 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:13:28.954 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:13:28.955 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:13:28.955 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:13:36.143300: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:13:36.268127: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:13:36.268551: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:13:36.268576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:13:58.254 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:13:59.173 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:14:00.436 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:14:00.436 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:14:00.436 NotebookApp] Replaying 6 buffered messages
+2018-03-20 13:14:06.587303: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:14:06.704393: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:14:06.704809: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:14:06.704833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:14:56.854 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:15:25.232 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:15:31.590 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:15:36.124 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:15:36.129 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:15:37.633 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:15:37.634 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:15:37.634 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:15:44.524462: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:15:44.649616: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:15:44.650033: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:15:44.650058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:15:57.127 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:16:00.223 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:16:01.030 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:16:02.201 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:16:02.201 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:16:02.201 NotebookApp] Replaying 6 buffered messages
+2018-03-20 13:16:07.961973: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:16:08.079274: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:16:08.079691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:16:08.079715: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:16:55.879 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:17:18.568 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:17:26.954 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:17:26.959 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:17:28.039 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:17:28.040 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+2018-03-20 13:17:34.108736: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:17:34.233335: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:17:34.233749: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:17:34.233781: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:18:12.131 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:18:19.113 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:18:22.699 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:18:23.508 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:18:24.560 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:18:24.561 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:18:24.561 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:18:30.526644: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:18:30.644342: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:18:30.644761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:18:30.644785: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:18:55.625 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:18:56.574 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:18:59.982 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:19:00.513 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:19:01.688 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:19:01.689 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:19:01.689 NotebookApp] Replaying 6 buffered messages
+2018-03-20 13:19:07.462479: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:19:07.587245: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:19:07.587660: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:19:07.587684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:19:23.510 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:19:26.784 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:19:27.295 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:19:28.404 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:19:28.405 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:19:28.405 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:19:34.396717: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:19:34.515362: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:19:34.515778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:19:34.515802: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:19:47.007 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:19:50.736 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:19:50.741 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:19:51.851 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:19:51.851 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+2018-03-20 13:19:57.941847: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:19:58.066712: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:19:58.067129: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:19:58.067153: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:20:11.691 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:20:14.918 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:20:15.438 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:20:17.003 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:20:17.003 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:20:17.004 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:20:23.052487: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:20:23.171165: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:20:23.171583: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:20:23.171607: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:20:56.835 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:21:37.434 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:21:38.991 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:21:38.997 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:21:40.390 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:21:40.391 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:21:40.391 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:21:47.098948: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:21:47.224127: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:21:47.224540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:21:47.224563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:22:42.011 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:22:42.347 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:22:45.309 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:22:46.119 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:22:47.335 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:22:47.336 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:22:47.336 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:22:54.493705: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:22:54.611324: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:22:54.611745: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:22:54.611769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:22:55.483 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:24:27.877 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:24:32.390 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:24:32.396 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:24:33.604 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:24:33.605 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:24:33.605 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:24:39.344311: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:24:39.468525: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:24:39.468941: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:24:39.468965: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:24:59.833 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:27:32.586 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 13:27:36.280 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:27:37.091 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:27:38.180 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:27:38.181 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:27:38.181 NotebookApp] Replaying 3 buffered messages
+2018-03-20 13:27:46.169162: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 13:27:46.294488: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 13:27:46.294904: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 13:27:46.294928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 13:28:57.983 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[W 13:40:08.183 NotebookApp] WebSocket ping timeout after 119733 ms.
+[I 13:40:13.184 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 13:54:50.761 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 13:54:50.762 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:14:07.279 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:14:10.253 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:14:10.963 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:14:12.092 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:14:12.093 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:14:12.093 NotebookApp] Replaying 3 buffered messages
+2018-03-20 14:14:22.372324: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 14:14:22.496402: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 14:14:22.496818: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 14:14:22.496843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 14:14:56.139 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:17:57.989 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:18:01.633 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:18:01.638 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:18:02.755 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:18:02.755 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+2018-03-20 14:18:08.694446: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 14:18:08.818636: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 14:18:08.819051: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 14:18:08.819075: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 14:18:30.457 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:18:30.463 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:18:31.578 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:18:31.579 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:18:31.579 NotebookApp] Replaying 3 buffered messages
+2018-03-20 14:18:37.462845: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 14:18:37.580221: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 14:18:37.580639: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 14:18:37.580664: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 14:18:59.505 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:19:01.931 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:19:05.769 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:19:06.588 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:19:08.164 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:19:08.165 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:19:08.165 NotebookApp] Replaying 5 buffered messages
+2018-03-20 14:19:13.894479: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 14:19:14.012574: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 14:19:14.012996: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 14:19:14.013021: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 14:19:34.359 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:21:10.830 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:21:11.641 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:21:12.701 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:21:12.702 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:21:12.702 NotebookApp] Replaying 3 buffered messages
+2018-03-20 14:21:18.685438: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 14:21:18.809060: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 14:21:18.809477: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 14:21:18.809500: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 14:22:55.984 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:23:09.384 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:23:12.989 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:23:13.800 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:23:14.856 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:23:14.857 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:23:14.857 NotebookApp] Replaying 6 buffered messages
+2018-03-20 14:23:20.548902: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 14:23:20.670653: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 14:23:20.671068: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 14:23:20.671092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 14:24:56.583 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:26:01.874 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:26:02.117 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:26:04.927 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:26:05.751 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:26:06.847 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:26:06.848 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:26:06.848 NotebookApp] Replaying 3 buffered messages
+2018-03-20 14:26:12.827359: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 14:26:12.951139: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 14:26:12.951556: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 14:26:12.951590: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 14:26:47.276 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:26:50.827 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:26:50.832 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:26:51.885 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:26:51.886 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:26:55.491 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+2018-03-20 14:26:57.918933: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 14:26:58.041617: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 14:26:58.042033: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 14:26:58.042057: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 14:27:34.973 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:27:35.302 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:27:38.897 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:27:39.705 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:27:40.774 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:27:40.774 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:27:40.774 NotebookApp] Replaying 6 buffered messages
+2018-03-20 14:27:46.575264: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 14:27:46.700208: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 14:27:46.700631: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 14:27:46.700656: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 14:28:23.260 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[I 14:28:26.417 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:28:27.249 NotebookApp] Kernel restarted: 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:28:28.416 NotebookApp] Adapting to protocol v5.1 for kernel 0b44f3fc-79a4-4775-acc7-2a75abe38f42
+[I 14:28:28.416 NotebookApp] Restoring connection for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[I 14:28:28.417 NotebookApp] Replaying 6 buffered messages
+2018-03-20 14:28:34.280911: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 14:28:34.404802: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-03-20 14:28:34.405219: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:00:1e.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-03-20 14:28:34.405243: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+[I 14:28:55.769 NotebookApp] Saving file at /Best_LER_Test_HCR_CNN_LSTM_Model.ipynb
+[W 14:34:58.418 NotebookApp] WebSocket ping timeout after 119664 ms.
+[I 14:35:03.419 NotebookApp] Starting buffering for 0b44f3fc-79a4-4775-acc7-2a75abe38f42:c5e579ea294a4e3aacc0ae264bc62d63
+[C 14:40:26.037 NotebookApp] received signal 15, stopping
+[I 14:40:26.038 NotebookApp] Shutting down 1 kernel
+[I 14:40:26.239 NotebookApp] Kernel shutdown: 0b44f3fc-79a4-4775-acc7-2a75abe38f42

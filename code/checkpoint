@@ -1,0 +1,2 @@
+model_checkpoint_path: "Word_RNN.ckpt"
+all_model_checkpoint_paths: "Word_RNN.ckpt"
