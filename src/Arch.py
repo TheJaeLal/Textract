@@ -1,3 +1,16 @@
+from config import vocab_size
+
+
+#Cuz the file is inside 'code' directory
+mount_point = "../"
+
+with shelve.open(mount_point+'IAM_Data') as shelf:
+    vocabulary = shelf['chars']
+    # list_of_images = shelf['list_of_images']
+    # image_labels = shelf['image_labels']
+    
+vocab_size = len(vocabulary)
+
 #Format: 'conv':[filter_size,strides,num_filters], 'pool':[strides]
 
 #Model Params
