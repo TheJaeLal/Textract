@@ -1,20 +1,19 @@
 from load import loadData
 import shelve
-#import cv2
-#import joblib
+import cv2
+import joblib
 
-images = '../HCR_Stuff/Lines/'
+images = '../HCR_Stuff/Padded_Lines/'
 xml = '../HCR_Stuff/XML_Data/'
 shelve_loc = './'
 
 data = loadData()
 
-dict_data,thresh_dict,train_chars,valid_chars,test_chars,zombie_chars,train_data,valid_data,test_data,zombie_imgs = data.load(images,xml)
+dict_data,chars,images,arrays = data.load(images,xml)
 
-# for el in pluses:
-# 	print(el)
-	
-# #print(list_data)
+train_chars,valid_chars,test_chars,zombie_chars = chars
+train_data,valid_data,test_data,zombie_imgs = images 
+train_array,valid_array,test_array,zombie_array = arrays
 
 # #to_remove = ["Words/r06/r06-022/r06-022-03-05.png","Words/a01/a01-117/a01-117-05-02.png","Words/r02/r02-060/r02-060-08-05.png"]
 
@@ -30,7 +29,7 @@ dict_data,thresh_dict,train_chars,valid_chars,test_chars,zombie_chars,train_data
 
 # print(len(list_data))
 
-# #image_arrays = { image_path : cv2.imread(pad_prefix+image_path,cv2.IMREAD_GRAYSCALE) for image_path in list_data }
+# image_arrays = { image_path : cv2.imread(pad_prefix+image_path,cv2.IMREAD_GRAYSCALE) for image_path in list_data }
 
 
 with shelve.open(shelve_loc+'IAM_Data','c',writeback=True) as shelf:
@@ -40,13 +39,8 @@ with shelve.open(shelve_loc+'IAM_Data','c',writeback=True) as shelf:
 	shelf['valid_data'] = valid_data
 	shelf['test_data'] = test_data
 	shelf['zombie_data'] = zombie_imgs
-	shelf['image_thresholds'] = thresh_dict
 
-# #print("Done saving Image_labels,chars and list_of_images")
-
-# #joblib.dump(image_arrays,"shelved_data/image_arrays",compress=True)
-
-# #print(image_arrays)
-
-# #print(list_data)
-# # print(thresh_dict)
+joblib.dump(train_array,"data/Arrays/train",compress=True)
+joblib.dump(valid_array,"data/Arrays/valid",compress=True)
+joblib.dump(test_array,"data/Arrays/test",compress=True)
+joblib.dump(zombie_array,"data/Arrays/zombie",compress=True)
