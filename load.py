@@ -9,6 +9,15 @@ import matplotlib.pyplot as plt
 The class is used to load data
 '''
 
+def save_img(img,path):
+
+    img_dir = os.path.dirname(path)
+    if not os.path.exists(img_dir):
+        os.makedirs(img_dir)
+    print('new_path = {}\n'.format(path))
+    plt.imsave(path,img,cmap='gray',format='png')
+
+
 class loadData:
     def __init__(self):
         pass
@@ -39,13 +48,13 @@ class loadData:
         list_xml= os.listdir(file_xml_location)
         list_dir = os.listdir(file_location)
         
-        train_array = {}; valid_array = {}; test_array = {}; zombie_array = {}
+        # train_array = {}; valid_array = {}; test_array = {}; zombie_array = {}
         train_data=[]; test_data=[]; valid_data=[]; zombie_imgs = []
         train_text=""; valid_text=""; test_text=""; zombie_text=""
-        train_prefix = 'data/Images/train/'
-        valid_prefix = 'data/Images/valid/'
-        test_prefix = 'data/Images/test/'
-        zombie_prefix = 'data/Images/zombie/'
+        train_prefix = 'data/train/'
+        valid_prefix = 'data/valid/'
+        test_prefix = 'data/test/'
+        zombie_prefix = 'data/zombie/'
 
         dict_data = {};
         
@@ -68,65 +77,47 @@ class loadData:
                     else:
                         img_file = list_sub_dir[j] + '-'+'0'+str(count)+'.png'
                     
-                    img_path = file_location_subdir + "/" + list_sub_dir[j] + "/" + img_file
+                    #Input Path
+                    img_path = os.path.join(file_location,list_dir[i],list_sub_dir[j],img_file)
                     
+                    #Save Path
+                    new_path = os.path.join(list_dir[i],list_sub_dir[j],img_file)
+
                     #Read the image
                     img = imread(img_path,as_grey=True)
-                    # img = cv2.imread(img_path,cv2.IMREAD_GRAYSCALE)
-                    
+
                     #Binarize the image with provided threshold
                     img = ((img > int(thresh_line)).astype(np.uint8))*255
 
                     #Store the corresponding labels in a dictionary
                     dict_data[img_file] = line_data
 
-                    #print(img_file)
-
+                    #Ignore the .png or .jpg extension..
                     if img_file[:-4] in train_imgs:
-                        train_data.append(img_file)
-                        train_array[img_file] = img
+                        new_path = os.path.join(train_prefix,new_path)
+                        train_data.append(new_path)
                         train_text += line_data
-                        plt.imsave(train_prefix+img_file,img,cmap='gray',format='jpg')
-                        # cv2.imwrite(train_prefix+img_file,img)
-
+                        # train_array[img_file] = img
 
                     elif img_file[:-4] in valid_imgs:
-                        valid_data.append(img_file)
-                        valid_array[img_file] = img
+                        new_path = os.path.join(valid_prefix,new_path)
+                        valid_data.append(new_path)
+                        # valid_array[img_file] = img
                         valid_text += line_data
-                        plt.imsave(valid_prefix+img_file,img,cmap='gray',format='jpg')
-                        # cv2.imwrite(valid_prefix+img_file,img)
                     
                     elif img_file[:-4] in test_imgs:
-                        test_data.append(img_file)
-                        test_array[img_file] = img
+                        new_path = os.path.join(test_prefix,new_path)
+                        test_data.append(new_path)
+                        # test_array[img_file] = img
                         test_text += line_data
-                        plt.imsave(test_prefix+img_file,img,cmap='gray',format='jpg')
-                        # cv2.imwrite(test_prefix+img_file,img)
 
                     else :
-                        zombie_imgs.append(img_file)
-                        zombie_array[img_file] = img
+                        new_path = os.path.join(zombie_prefix,new_path)
+                        zombie_imgs.append(new_path)
+                        # zombie_array[img_file] = img
                         zombie_text += line_data
-                        plt.imsave(zombie_prefix+img_file,img,cmap='gray',format='jpg')
-                        # cv2.imwrite(zombie_prefix+img_file,img)
 
-               #      #Special char flag if special char in line_data 
-               #      special_char = False
-                    
-               #  #    for char in to_remove:
-               #  #        if char in line_data:
-               #  #            special_char = True
-
-               #      if not special_char:
-               #          total_text += line_data
-               #          # list_data.append(img_path)
-
-               # #         for char in to_increase:
-               # #             if char in line_data:
-               # #                 for _ in range(10):
-               #          # list_data.append(img_path)
-               #          # total_text += line_data
+                    save_img(img,new_path)
 
                     count = count + 1
                     
@@ -137,8 +128,7 @@ class loadData:
              
         chars = [train_chars,valid_chars,test_chars,zombie_chars]
         images = [train_data,valid_data,test_data,zombie_imgs]
-        arrays = [train_array,valid_array,test_array,zombie_array]
-        return dict_data,chars,images,arrays
+        return dict_data,chars,images
 
 
     

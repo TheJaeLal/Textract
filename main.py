@@ -8,11 +8,10 @@ shelve_loc = './'
 
 data = loadData()
 
-dict_data,chars,images,arrays = data.load(images,xml)
+dict_data,chars,images = data.load(images,xml)
 
 train_chars,valid_chars,test_chars,zombie_chars = chars
 train_data,valid_data,test_data,zombie_imgs = images 
-train_array,valid_array,test_array,zombie_array = arrays
 
 # #to_remove = ["Words/r06/r06-022/r06-022-03-05.png","Words/a01/a01-117/a01-117-05-02.png","Words/r02/r02-060/r02-060-08-05.png"]
 
