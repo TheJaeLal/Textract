@@ -1,6 +1,5 @@
 from load import loadData
 import shelve
-import cv2
 import joblib
 
 images = '../HCR_Stuff/Padded_Lines/'
