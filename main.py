@@ -37,8 +37,3 @@ with shelve.open(shelve_loc+'IAM_Data','c',writeback=True) as shelf:
 	shelf['valid_data'] = valid_data
 	shelf['test_data'] = test_data
 	shelf['zombie_data'] = zombie_imgs
-
-joblib.dump(train_array,"data/Arrays/train",compress=True)
-joblib.dump(valid_array,"data/Arrays/valid",compress=True)
-joblib.dump(test_array,"data/Arrays/test",compress=True)
-joblib.dump(zombie_array,"data/Arrays/zombie",compress=True)
