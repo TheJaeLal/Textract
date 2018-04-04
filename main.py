@@ -32,7 +32,7 @@ train_data,valid_data,test_data,zombie_imgs = images
 
 with shelve.open(shelve_loc+'IAM_Data','c',writeback=True) as shelf:
 	shelf['image_labels'] = dict_data
-	shelf['chars'] = len(train_chars)
+	shelf['chars'] = train_chars
 	shelf['train_data'] = train_data
 	shelf['valid_data'] = valid_data
 	shelf['test_data'] = test_data

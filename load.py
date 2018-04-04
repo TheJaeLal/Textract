@@ -10,13 +10,12 @@ The class is used to load data
 '''
 
 def save_img(img,path):
-
-    img_dir = os.path.dirname(path)
-    if not os.path.exists(img_dir):
-        os.makedirs(img_dir)
-    print('new_path = {}\n'.format(path))
-    plt.imsave(path,img,cmap='gray',format='png')
-
+    #img_dir = os.path.dirname(path)
+    #if not os.path.exists(img_dir):
+    #    os.makedirs(img_dir)
+    #print('new_path = {}\n'.format(path))
+    #plt.imsave(path,img,cmap='gray',format='png')
+    pass
 
 class loadData:
     def __init__(self):

@@ -1,3 +1,6 @@
+import tensorflow as tf
+from math import ceil
+
 def fc(x,w,b,activation=None,dropout=1.0):
     
     out = tf.matmul(x,w) + b
@@ -100,20 +103,34 @@ def init_weights(CNN,FC):
         ch_out = CNN[i]['conv'][2]
         
         wconv_shapes.append([filter_size,filter_size,ch_in,ch_out])
+    
+    #All right here...
+    #print('wconv_shapes') 
+    #print(wconv_shapes)
         
     #Setup Fully connected weight shapes..
     for i in range(1,len(FC)):
-        wfc_shapes.append([fc_units[i-1],fc_units[i]])
-        bfc_shapes.append([fc_units[i]])
-
-    #Create Weights and Biases
-    for i in range(len(wconv)):
-        wconv[i] = tf.Variable(conv_initializer(wconv_shape[i]))
-        bconv[i] = tf.Variable(tf.zeros(bconv_shape)) 
-   
-    for i in range(len(wfc)):
-        wfc[i] = tf.Variable(fc_initializer(wfc_shape[i]))
-        bfc[i] = tf.Variable(tf.zeros(bfc_shape[i]))
-
-    return wconv,bconv,wfc,bfc
+        wfc_shapes.append([ FC[i-1]['units'], FC[i]['units'] ])
+        bfc_shapes.append([ FC[i]['units'] ])
     
+    #All right here...    
+    #print('Fully connected shapes')
+    #print(wfc_shapes)
+    #print(bfc_shapes)
+    
+    #Create Weights and Biases
+    for i in range(len(CNN)):
+        wconv.append(tf.Variable(conv_initializer(wconv_shapes[i])))
+        bconv.append(tf.Variable(tf.zeros(bconv_shape))) 
+
+    #All right here..
+    #print(wconv)
+    #print(bconv)
+    #print(len(wfc_shapes))
+    #print(len(bfc_shapes))
+    
+    for i in range(len(FC)-1):
+        wfc.append(tf.Variable(fc_initializer(wfc_shapes[i])))
+        bfc.append(tf.Variable(tf.zeros(bfc_shapes[i])))
+        
+    return wconv,bconv,wfc,bfc

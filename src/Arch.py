@@ -17,7 +17,7 @@ BRNN = {
 }
 
 FC = [
-        {'units':2*BRNN['hidden_units'],'activate':None},
-        {'units':2*vocab_size,'activate':None},
-        {'units':vocab_size,'activate':None},
+        {'units':2*BRNN['hidden_units']},
+        {'units':2*vocab_size},
+        {'units':vocab_size},
 ]
