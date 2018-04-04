@@ -10,12 +10,12 @@ The class is used to load data
 '''
 
 def save_img(img,path):
-    #img_dir = os.path.dirname(path)
-    #if not os.path.exists(img_dir):
-    #    os.makedirs(img_dir)
-    #print('new_path = {}\n'.format(path))
-    #plt.imsave(path,img,cmap='gray',format='png')
-    pass
+    img_dir = os.path.dirname(path)
+    if not os.path.exists(img_dir):
+       os.makedirs(img_dir)
+    print('new_path = {}\n'.format(path))
+    plt.imsave(path,img,cmap='gray',format='png')
+    return
 
 class loadData:
     def __init__(self):
@@ -47,7 +47,7 @@ class loadData:
         list_xml= os.listdir(file_xml_location)
         list_dir = os.listdir(file_location)
         
-        # train_array = {}; valid_array = {}; test_array = {}; zombie_array = {}
+        train_array = []; valid_array = []; test_array = []; zombie_array = []
         train_data=[]; test_data=[]; valid_data=[]; zombie_imgs = []
         train_text=""; valid_text=""; test_text=""; zombie_text=""
         train_prefix = 'data/train/'
@@ -80,7 +80,8 @@ class loadData:
                     img_path = os.path.join(file_location,list_dir[i],list_sub_dir[j],img_file)
                     
                     #Save Path
-                    new_path = os.path.join(list_dir[i],list_sub_dir[j],img_file)
+                    # new_path = os.path.join(list_dir[i],list_sub_dir[j],img_file)
+                    new_path = img_file
 
                     #Read the image
                     img = imread(img_path,as_grey=True)
@@ -95,24 +96,28 @@ class loadData:
                     if img_file[:-4] in train_imgs:
                         new_path = os.path.join(train_prefix,new_path)
                         train_data.append(new_path)
+                        train_array.append(img)
                         train_text += line_data
                         # train_array[img_file] = img
 
                     elif img_file[:-4] in valid_imgs:
                         new_path = os.path.join(valid_prefix,new_path)
                         valid_data.append(new_path)
+                        valid_array.append(img)
                         # valid_array[img_file] = img
                         valid_text += line_data
                     
                     elif img_file[:-4] in test_imgs:
                         new_path = os.path.join(test_prefix,new_path)
                         test_data.append(new_path)
+                        test_array.append(img)
                         # test_array[img_file] = img
                         test_text += line_data
 
                     else :
                         new_path = os.path.join(zombie_prefix,new_path)
                         zombie_imgs.append(new_path)
+                        zombie_array.append(img)
                         # zombie_array[img_file] = img
                         zombie_text += line_data
 
@@ -124,10 +129,16 @@ class loadData:
         valid_chars = set(valid_text)
         test_chars = set(test_text)
         zombie_chars = set(zombie_text)
-             
+        
+        train_array = np.stack(train_array,axis=0)
+        valid_array = np.stack(valid_array,axis=0)
+        test_array = np.stack(test_array,axis=0)
+        zombie_array = np.stack(zombie_array,axis=0)
+
+        arrays = [train_array,valid_array,test_array,zombie_array]
         chars = [train_chars,valid_chars,test_chars,zombie_chars]
         images = [train_data,valid_data,test_data,zombie_imgs]
-        return dict_data,chars,images
+        return dict_data,chars,images,arrays
 
 
     
@@ -185,5 +196,5 @@ class loadData:
                     count = count + 1
        
         # chars = set(total_text)      
-        chars =  Counter(total_text)     
+        chars =  Counter(total_text)
         return dict_data,thresh_dict,chars,list_data

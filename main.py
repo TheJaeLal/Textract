@@ -8,10 +8,17 @@ shelve_loc = './'
 
 data = loadData()
 
-dict_data,chars,images = data.load(images,xml)
+dict_data,chars,images,arrays = data.load(images,xml)
 
+train_arrays,valid_arrays,test_arrays,zombie_arrays = arrays
 train_chars,valid_chars,test_chars,zombie_chars = chars
 train_data,valid_data,test_data,zombie_imgs = images 
+
+
+joblib.dump('train_arrays',train_arrays,compress=True)
+joblib.dump('valid_arrays',valid_arrays,compress=True)
+joblib.dump('test_arrays',test_arrays,compress=True)
+joblib.dump('zombie_arrays',zombie_arrays,compress=True)
 
 # #to_remove = ["Words/r06/r06-022/r06-022-03-05.png","Words/a01/a01-117/a01-117-05-02.png","Words/r02/r02-060/r02-060-08-05.png"]
 
