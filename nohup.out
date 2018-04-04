@@ -211,3 +211,132 @@ Known labextensions:
 [I 08:13:10.782 NotebookApp] Saving file at /src/model.ipynb
 [I 08:13:11.389 NotebookApp] Saving file at /src/model.ipynb
 [I 08:13:11.756 NotebookApp] Saving file at /src/model.ipynb
+[I 08:20:39.155 NotebookApp] Uploading file to /src/model.py
+[I 08:20:45.238 NotebookApp] Kernel shutdown: e1dce94d-81da-48c3-b733-5e21ed36ffba
+[I 08:21:53.236 NotebookApp] Saving file at /src/model.py
+[I 08:21:58.745 NotebookApp] Saving file at /src/model.py
+[I 08:22:19.188 NotebookApp] Creating new file in /src
+[I 08:22:29.762 NotebookApp] Saving file at /src/train.py
+[I 08:22:30.010 NotebookApp] Saving file at /src/train.py
+[I 08:22:35.082 NotebookApp] Saving file at /src/train.py
+[I 08:22:35.291 NotebookApp] Saving file at /src/train.py
+[I 08:22:39.696 NotebookApp] Saving file at /src/train.py
+[I 08:22:42.881 NotebookApp] Saving file at /src/train.py
+[I 08:22:43.208 NotebookApp] Saving file at /src/train.py
+[I 08:22:50.490 NotebookApp] Saving file at /src/train.py
+[I 08:22:50.791 NotebookApp] Saving file at /src/train.py
+[I 08:22:53.847 NotebookApp] Kernel started: 27f7e3a0-3c40-4078-a908-cfdff60903d3
+[I 08:22:55.051 NotebookApp] Adapting to protocol v5.1 for kernel 27f7e3a0-3c40-4078-a908-cfdff60903d3
+[I 08:23:19.990 NotebookApp] Uploading file to /src/Augment.py
+[I 08:23:45.968 NotebookApp] Saving file at /src/Augment.py
+[I 08:23:46.778 NotebookApp] Saving file at /src/Augment.py
+[I 08:23:57.441 NotebookApp] Saving file at /src/Augment.py
+[I 08:23:57.848 NotebookApp] Saving file at /src/Augment.py
+[I 08:23:58.129 NotebookApp] Saving file at /src/Augment.py
+[I 08:24:01.952 NotebookApp] Saving file at /src/Augment.py
+[I 08:24:02.447 NotebookApp] Saving file at /src/Augment.py
+[I 08:24:02.743 NotebookApp] Saving file at /src/Augment.py
+[I 08:24:26.511 NotebookApp] Saving file at /src/Augment.py
+[I 08:24:26.855 NotebookApp] Saving file at /src/Augment.py
+[I 08:24:31.514 NotebookApp] Saving file at /src/Augment.py
+[I 08:24:31.974 NotebookApp] Saving file at /src/Augment.py
+[I 08:24:32.295 NotebookApp] Saving file at /src/Augment.py
+[I 08:24:53.434 NotebookApp] Saving file at /src/train.py
+[I 08:25:10.137 NotebookApp] Saving file at /src/train.py
+[I 08:25:29.291 NotebookApp] Kernel shutdown: 27f7e3a0-3c40-4078-a908-cfdff60903d3
+[I 08:25:33.874 NotebookApp] Creating new notebook in /src
+[I 08:25:34.338 NotebookApp] Kernel started: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 08:25:35.565 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 08:26:55.976 NotebookApp] Saving file at /src/train.ipynb
+[I 08:27:08.961 NotebookApp] Saving file at /src/train.ipynb
+[I 08:27:34.345 NotebookApp] Saving file at /src/train.ipynb
+[I 08:27:45.715 NotebookApp] Saving file at /src/train.ipynb
+[I 08:27:46.041 NotebookApp] Saving file at /src/train.ipynb
+[I 08:27:53.220 NotebookApp] Saving file at /src/train.ipynb
+[I 08:28:38.483 NotebookApp] Saving file at /src/train.ipynb
+[I 08:28:38.913 NotebookApp] Saving file at /src/train.ipynb
+[I 08:28:39.257 NotebookApp] Saving file at /src/train.ipynb
+[I 08:31:24.808 NotebookApp] Saving file at /src/train.ipynb
+[I 08:31:25.273 NotebookApp] Saving file at /src/train.ipynb
+[I 08:31:26.105 NotebookApp] Saving file at /src/train.ipynb
+[I 08:31:26.414 NotebookApp] Saving file at /src/train.ipynb
+[I 08:31:28.720 NotebookApp] Saving file at /src/train.ipynb
+[I 08:31:39.396 NotebookApp] Saving file at /src/train.ipynb
+[I 08:31:39.790 NotebookApp] Saving file at /src/train.ipynb
+[I 08:32:05.125 NotebookApp] Saving file at /src/train.ipynb
+[I 08:32:14.887 NotebookApp] Saving file at /src/train.ipynb
+[I 08:32:15.381 NotebookApp] Saving file at /src/train.ipynb
+[I 08:32:16.222 NotebookApp] Saving file at /src/train.ipynb
+[I 08:32:16.794 NotebookApp] Saving file at /src/train.ipynb
+[I 08:33:34.343 NotebookApp] Saving file at /src/train.ipynb
+[I 08:34:57.046 NotebookApp] Saving file at /src/train.ipynb
+[I 08:34:57.389 NotebookApp] Saving file at /src/train.ipynb
+[I 08:35:48.680 NotebookApp] Saving file at /src/Augment.py
+[I 08:35:49.119 NotebookApp] Saving file at /src/Augment.py
+[I 08:35:49.430 NotebookApp] Saving file at /src/Augment.py
+[I 08:37:54.743 NotebookApp] Kernel restarted: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 08:37:56.027 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 08:39:08.183 NotebookApp] Kernel interrupted: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 08:39:15.186 NotebookApp] Saving file at /src/train.ipynb
+[I 08:39:15.698 NotebookApp] Saving file at /src/train.ipynb
+[I 08:39:16.104 NotebookApp] Saving file at /src/train.ipynb
+[I 08:39:20.976 NotebookApp] Kernel restarted: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 08:39:22.288 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 08:39:34.341 NotebookApp] Saving file at /src/train.ipynb
+[I 08:39:40.619 NotebookApp] Saving file at /src/train.ipynb
+[I 08:39:48.413 NotebookApp] Kernel restarted: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 08:39:49.801 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[W 08:40:17.347 NotebookApp] 404 GET /favicon.ico (150.107.24.58) 2.03ms referer=None
+[W 08:40:17.354 NotebookApp] 404 GET /favicon.ico (150.107.24.58) 1.84ms referer=None
+[I 08:41:34.363 NotebookApp] Saving file at /src/train.ipynb
+[I 09:01:21.716 NotebookApp] 302 GET /?token=fbf28e49dd640d5a8d23994d3894bfd0ca14f0139a1b3718 (150.107.24.58) 0.61ms
+[I 09:02:33.675 NotebookApp] Kernel started: fd29bcd9-841e-4ff0-a90f-ddb0b7632738
+[I 09:02:34.967 NotebookApp] Adapting to protocol v5.1 for kernel fd29bcd9-841e-4ff0-a90f-ddb0b7632738
+[W 09:03:35.274 NotebookApp] Notebook src/Test_HCR_CNN_LSTM_Model.ipynb is not trusted
+[I 09:03:35.828 NotebookApp] Kernel started: 44d46708-ec48-4b86-a835-554681f352e7
+[I 09:03:37.058 NotebookApp] Adapting to protocol v5.1 for kernel 44d46708-ec48-4b86-a835-554681f352e7
+[I 09:04:20.715 NotebookApp] Saving file at /src/Test_HCR_CNN_LSTM_Model.ipynb
+[W 09:04:20.716 NotebookApp] Saving untrusted notebook src/Test_HCR_CNN_LSTM_Model.ipynb
+[W 09:04:37.190 NotebookApp] Notebook src/Test_HCR_CNN_LSTM_Model.ipynb is not trusted
+[I 09:04:37.814 NotebookApp] Adapting to protocol v5.1 for kernel 44d46708-ec48-4b86-a835-554681f352e7
+[I 09:04:40.094 NotebookApp] Kernel shutdown: 44d46708-ec48-4b86-a835-554681f352e7
+[W 09:05:01.839 NotebookApp] Notebook src/CNN_RNN_CTC_Model_HCR.ipynb is not trusted
+[I 09:05:02.304 NotebookApp] Kernel started: 7dcf1a95-c0fb-40dd-8d68-0c9931fecb11
+[I 09:05:03.515 NotebookApp] Adapting to protocol v5.1 for kernel 7dcf1a95-c0fb-40dd-8d68-0c9931fecb11
+[I 09:05:52.184 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 09:07:02.323 NotebookApp] Saving file at /src/CNN_RNN_CTC_Model_HCR.ipynb
+[W 09:07:02.324 NotebookApp] Saving untrusted notebook src/CNN_RNN_CTC_Model_HCR.ipynb
+[I 09:11:09.862 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 09:12:12.916 NotebookApp] Creating new notebook in /src
+[I 09:12:13.364 NotebookApp] Kernel started: 3831fbcf-3825-4534-b4e8-6b6cd1fef158
+[I 09:12:14.630 NotebookApp] Adapting to protocol v5.1 for kernel 3831fbcf-3825-4534-b4e8-6b6cd1fef158
+[I 09:14:13.410 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:16:13.374 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:18:13.377 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:20:13.378 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:22:13.374 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:24:13.382 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:32:13.397 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:34:13.381 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:36:13.383 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:37:38.236 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:37:49.199 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:37:49.536 NotebookApp] Saving file at /src/ler.ipynb
+[I 09:37:56.110 NotebookApp] Kernel shutdown: 3831fbcf-3825-4534-b4e8-6b6cd1fef158
+[I 09:38:04.697 NotebookApp] Kernel shutdown: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
+[I 09:38:10.535 NotebookApp] Kernel shutdown: 7dcf1a95-c0fb-40dd-8d68-0c9931fecb11
+[I 09:38:18.488 NotebookApp] Kernel shutdown: fd29bcd9-841e-4ff0-a90f-ddb0b7632738
+[I 10:22:08.971 NotebookApp] 302 GET /?token=fbf28e49dd640d5a8d23994d3894bfd0ca14f0139a1b3718 (223.189.3.243) 0.69ms
+[I 10:22:13.731 NotebookApp] 302 GET /?token=fbf28e49dd640d5a8d23994d3894bfd0ca14f0139a1b3718 (223.189.3.243) 0.61ms
+[I 10:22:30.546 NotebookApp] Kernel started: df2df030-ec4e-4e44-b000-345e44fbf143
+[I 10:22:31.826 NotebookApp] Adapting to protocol v5.1 for kernel df2df030-ec4e-4e44-b000-345e44fbf143
+[I 10:23:55.424 NotebookApp] Saving file at /src/Augment.ipynb
+[I 10:23:55.538 NotebookApp] Saving file at /src/Augment.ipynb
+[I 10:24:47.202 NotebookApp] Saving file at /src/Augment.ipynb
+[I 10:26:01.769 NotebookApp] Saving file at /src/Augment.ipynb
+[I 10:26:05.140 NotebookApp] Saving file at /src/Augment.ipynb
+[I 10:26:07.122 NotebookApp] Saving file at /src/Augment.ipynb
+[I 10:26:14.301 NotebookApp] Creating new notebook in /src
+[I 10:26:15.007 NotebookApp] Kernel started: 7ed37009-1b6a-4f51-8397-3218291bd1e9
+[I 10:26:16.274 NotebookApp] Adapting to protocol v5.1 for kernel 7ed37009-1b6a-4f51-8397-3218291bd1e9
+[I 10:27:11.719 NotebookApp] Kernel shutdown: 7ed37009-1b6a-4f51-8397-3218291bd1e9
