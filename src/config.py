@@ -15,4 +15,11 @@ vocab_size = len(vocabulary)
 img_height = 104
 img_width = 688
 
-alpha = 0.01
+alpha = 0.00256
+
+batch_size = 32
+
+#Training parameters
+n_epochs = 10
+resume_epoch = 0
+save_epoch = 1
