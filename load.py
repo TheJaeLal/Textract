@@ -10,10 +10,11 @@ The class is used to load data
 '''
 
 def save_img(img,path):
-    img_dir = os.path.dirname(path)
-    if not os.path.exists(img_dir):
-       os.makedirs(img_dir)
+    #img_dir = os.path.dirname(path)
+    #if not os.path.exists(img_dir):
+    #   os.makedirs(img_dir)
     print('new_path = {}\n'.format(path))
+    img = img.reshape(img.shape[:2])
     plt.imsave(path,img,cmap='gray',format='png')
     return
 
@@ -46,6 +47,8 @@ class loadData:
 
         list_xml= os.listdir(file_xml_location)
         list_dir = os.listdir(file_location)
+        
+        train_label = []; valid_label = []; test_label = []; zombie_label = []
         
         train_array = []; valid_array = []; test_array = []; zombie_array = []
         train_data=[]; test_data=[]; valid_data=[]; zombie_imgs = []
@@ -88,6 +91,9 @@ class loadData:
 
                     #Binarize the image with provided threshold
                     img = ((img > int(thresh_line)).astype(np.uint8))*255
+                   
+                    #Reshaping so that channel is last
+                    img = img.reshape(img.shape + (1,))
 
                     #Store the corresponding labels in a dictionary
                     dict_data[img_file] = line_data
@@ -98,6 +104,7 @@ class loadData:
                         train_data.append(new_path)
                         train_array.append(img)
                         train_text += line_data
+                        train_label.append(line_data)
                         # train_array[img_file] = img
 
                     elif img_file[:-4] in valid_imgs:
@@ -106,6 +113,7 @@ class loadData:
                         valid_array.append(img)
                         # valid_array[img_file] = img
                         valid_text += line_data
+                        valid_label.append(line_data)
                     
                     elif img_file[:-4] in test_imgs:
                         new_path = os.path.join(test_prefix,new_path)
@@ -113,6 +121,7 @@ class loadData:
                         test_array.append(img)
                         # test_array[img_file] = img
                         test_text += line_data
+                        test_label.append(line_data)
 
                     else :
                         new_path = os.path.join(zombie_prefix,new_path)
@@ -120,6 +129,7 @@ class loadData:
                         zombie_array.append(img)
                         # zombie_array[img_file] = img
                         zombie_text += line_data
+                        zombie_label.append(line_data)
 
                     save_img(img,new_path)
 
@@ -134,11 +144,18 @@ class loadData:
         valid_array = np.stack(valid_array,axis=0)
         test_array = np.stack(test_array,axis=0)
         zombie_array = np.stack(zombie_array,axis=0)
+        
+        train_label = np.stack(train_label,axis=0)
+        valid_label = np.stack(valid_label,axis=0)
+        test_label = np.stack(test_label,axis=0)
+        zombie_label = np.stack(zombie_label,axis=0)
 
         arrays = [train_array,valid_array,test_array,zombie_array]
         chars = [train_chars,valid_chars,test_chars,zombie_chars]
         images = [train_data,valid_data,test_data,zombie_imgs]
-        return dict_data,chars,images,arrays
+        labels = [train_label,valid_label,test_label,zombie_label]
+        
+        return dict_data,chars,images,arrays,labels
 
 
     

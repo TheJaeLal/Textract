@@ -45,10 +45,10 @@ def augment(image):
     return out
 
 train_datagen = keras.preprocessing.image.ImageDataGenerator(preprocessing_function=augment)
-train_generator = train_datagen.flow_from_directory(
-                                        directory=img_folder_path,
-                                        target_size=(104,688),
-                                        color_mode='grayscale',class_mode=None,
-                                        batch_size=7,save_to_dir=out_folder_path,
-                                        save_prefix='transformed'
-                                    )
+#train_generator = train_datagen.flow(
+#                                        directory=img_folder_path,
+#                                        target_size=(104,688),
+#                                        color_mode='grayscale',class_mode=None,
+#                                       batch_size=7,save_to_dir=out_folder_path,
+#                                        save_prefix='transformed'
+#                                    )

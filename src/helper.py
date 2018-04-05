@@ -117,21 +117,13 @@ def _batch_x(batch_size,training_list,image_arrays):
         
     return batches_x
 
-def _batch_y(batch_size,training_list,image_labels,vocabulary):
+def _batch_y(train_label,vocabulary):
     
-    
+    #Get the current batch, list of sequences(lists)
+    list_of_labels = [encode_int(train_label[b],vocabulary) for b in range(train_label.shape[0])]
 
-    #--------Batch labels--------#
-    batches_y = []
-    
-    for i in range(0,len(training_list),batch_size):
-        #Get the current batch, list of sequences(lists)
-        current_batch = [encode_int(image_labels[training_list[i+b]],vocabulary) for b in range(batch_size)]
-
-        #Convert the list of sequences(lists) to sparse_tuple_form and add them to batches_y
-        batches_y.append(sparse_tuple_form(current_batch))
-    
-    return batches_y
+    #Convert the list of sequences(lists) to sparse_tuple_form and add them to batches_y
+    return sparse_tuple_form(list_of_labels)
     
 def create_batches_test(batch_size,training_list,image_arrays):
         

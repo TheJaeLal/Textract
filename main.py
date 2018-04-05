@@ -8,17 +8,13 @@ shelve_loc = './'
 
 data = loadData()
 
-dict_data,chars,images,arrays = data.load(images,xml)
+dict_data,chars,images,arrays,labels = data.load(images,xml)
 
-train_arrays,valid_arrays,test_arrays,zombie_arrays = arrays
+train_array,valid_array,test_array,zombie_array = arrays
 train_chars,valid_chars,test_chars,zombie_chars = chars
-train_data,valid_data,test_data,zombie_imgs = images 
+train_data,valid_data,test_data,zombie_imgs = images
+train_label,valid_label,test_label,zombie_label = labels
 
-
-joblib.dump('train_arrays',train_arrays,compress=True)
-joblib.dump('valid_arrays',valid_arrays,compress=True)
-joblib.dump('test_arrays',test_arrays,compress=True)
-joblib.dump('zombie_arrays',zombie_arrays,compress=True)
 
 # #to_remove = ["Words/r06/r06-022/r06-022-03-05.png","Words/a01/a01-117/a01-117-05-02.png","Words/r02/r02-060/r02-060-08-05.png"]
 
@@ -38,9 +34,18 @@ joblib.dump('zombie_arrays',zombie_arrays,compress=True)
 
 
 with shelve.open(shelve_loc+'IAM_Data','c',writeback=True) as shelf:
-	shelf['image_labels'] = dict_data
-	shelf['chars'] = train_chars
-	shelf['train_data'] = train_data
-	shelf['valid_data'] = valid_data
-	shelf['test_data'] = test_data
-	shelf['zombie_data'] = zombie_imgs
+    shelf['image_labels'] = dict_data
+    shelf['chars'] = train_chars
+    shelf['train_data'] = train_data
+    shelf['valid_data'] = valid_data
+    shelf['test_data'] = test_data
+    shelf['zombie_data'] = zombie_imgs
+    shelf['train_label'] = train_label
+    shelf['valid_label'] = valid_label
+    shelf['test_label'] = test_label
+    shelf['zombie_label'] = zombie_label
+
+joblib.dump(train_array,'train_arrays',compress=True)
+joblib.dump(valid_array,'valid_arrays',compress=True)
+joblib.dump(test_array,'test_arrays',compress=True)
+joblib.dump(zombie_array,'zombie_arrays',compress=True)

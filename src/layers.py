@@ -74,17 +74,18 @@ def calc_out_dims(CNN,height,width):
 
 def init_weights(CNN,FC): 
     
+        
     #Weights Initializer
     fc_initializer = tf.contrib.layers.xavier_initializer()
     conv_initializer = tf.contrib.layers.xavier_initializer_conv2d()
-    
+
     wconv_shapes = [] ; bconv_shape = []
     wfc_shapes = []; bfc_shapes = []
-    
+
     #All theses params are created and returned...
     wconv = [] ; bconv = []
     wfc = [] ; bfc = []
-    
+
     #Setup the conv_filter shapes
     for i in range(len(CNN)):
         # i goes from 0 to 4
@@ -98,26 +99,26 @@ def init_weights(CNN,FC):
         else:
             #Output channels/filters of the previous layer..
             ch_in = CNN[i-1]['conv'][2]
-            
+
         #Number of output_channels/filters
         ch_out = CNN[i]['conv'][2]
-        
+
         wconv_shapes.append([filter_size,filter_size,ch_in,ch_out])
-    
+
     #All right here...
     #print('wconv_shapes') 
     #print(wconv_shapes)
-        
+
     #Setup Fully connected weight shapes..
     for i in range(1,len(FC)):
         wfc_shapes.append([ FC[i-1]['units'], FC[i]['units'] ])
         bfc_shapes.append([ FC[i]['units'] ])
-    
+
     #All right here...    
     #print('Fully connected shapes')
     #print(wfc_shapes)
     #print(bfc_shapes)
-    
+
     #Create Weights and Biases
     for i in range(len(CNN)):
         wconv.append(tf.Variable(conv_initializer(wconv_shapes[i])))
@@ -128,9 +129,9 @@ def init_weights(CNN,FC):
     #print(bconv)
     #print(len(wfc_shapes))
     #print(len(bfc_shapes))
-    
+
     for i in range(len(FC)-1):
         wfc.append(tf.Variable(fc_initializer(wfc_shapes[i])))
         bfc.append(tf.Variable(tf.zeros(bfc_shapes[i])))
-        
+
     return wconv,bconv,wfc,bfc

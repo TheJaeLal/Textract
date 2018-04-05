@@ -15,4 +15,4 @@ vocab_size = len(vocabulary)
 img_height = 104
 img_width = 688
 
-alpha = 1e-4
+alpha = 0.01

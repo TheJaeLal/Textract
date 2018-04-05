@@ -1,342 +1,327 @@
-[I 06:26:35.908 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
-[W 06:26:37.394 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
-[I 06:26:37.445 NotebookApp] JupyterLab alpha preview extension loaded from /home/ubuntu/anaconda3/lib/python3.6/site-packages/jupyterlab
+[I 03:27:23.604 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 03:27:24.425 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 03:27:24.465 NotebookApp] JupyterLab alpha preview extension loaded from /home/ubuntu/anaconda3/lib/python3.6/site-packages/jupyterlab
 JupyterLab v0.27.0
 Known labextensions:
-[I 06:26:37.448 NotebookApp] Running the core application with no additional extensions or settings
-[I 06:26:37.454 NotebookApp] Serving notebooks from local directory: /home/ubuntu/hcr-ann
-[I 06:26:37.454 NotebookApp] 0 active kernels 
-[I 06:26:37.454 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/?token=fbf28e49dd640d5a8d23994d3894bfd0ca14f0139a1b3718
-[I 06:26:37.454 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 06:26:37.455 NotebookApp] 
+[I 03:27:24.467 NotebookApp] Running the core application with no additional extensions or settings
+[I 03:27:24.473 NotebookApp] Serving notebooks from local directory: /home/ubuntu/hcr-ann
+[I 03:27:24.473 NotebookApp] 0 active kernels 
+[I 03:27:24.473 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/?token=288c4919d6275b39544009288bc9c41d7153355efcf15945
+[I 03:27:24.473 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 03:27:24.474 NotebookApp] 
     
     Copy/paste this URL into your browser when you connect for the first time,
     to login with a token:
-        http://localhost:8888/?token=fbf28e49dd640d5a8d23994d3894bfd0ca14f0139a1b3718
-[I 06:27:05.668 NotebookApp] 302 GET /?token=fbf28e49dd640d5a8d23994d3894bfd0ca14f0139a1b3718 (49.32.72.163) 0.79ms
-[W 06:29:20.091 NotebookApp] Notebook src/model.ipynb is not trusted
-[I 06:29:32.588 NotebookApp] Kernel started: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:29:42.286 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[W 06:29:49.294 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180404062635 (49.32.72.163) 12.43ms referer=http://35.200.147.218:8888/notebooks/src/model.ipynb
-[I 06:29:52.498 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:30:10.510 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:31:34.175 NotebookApp] Saving file at /src/model.ipynb
-[W 06:35:32.271 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180404062635 (49.32.72.163) 2.21ms referer=http://35.200.147.218:8888/notebooks/src/model.ipynb
-[W 06:38:09.850 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180404062635 (49.32.72.163) 2.08ms referer=http://35.200.147.218:8888/notebooks/src/model.ipynb
-[I 06:38:18.297 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:38:32.051 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:38:36.467 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:41:52.747 NotebookApp] Saving file at /src/model.ipynb
-[I 06:56:05.945 NotebookApp] 302 GET /?token=fbf28e49dd640d5a8d23994d3894bfd0ca14f0139a1b3718 (150.107.24.58) 0.66ms
-[I 06:56:15.413 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:56:19.031 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:56:20.302 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:57:23.851 NotebookApp] Saving file at /src/config.py
-[I 06:57:29.202 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:57:30.500 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 06:58:15.386 NotebookApp] Saving file at /src/model.ipynb
-[I 06:58:47.090 NotebookApp] Saving file at /load.py
-[I 06:58:53.146 NotebookApp] Saving file at /load.py
-[I 06:59:08.023 NotebookApp] Saving file at /main.py
-[I 06:59:14.408 NotebookApp] Saving file at /main.py
-[I 07:02:06.790 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:02:08.101 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:02:15.374 NotebookApp] Saving file at /src/model.ipynb
-[I 07:03:13.984 NotebookApp] Saving file at /src/layers.py
-[I 07:03:14.625 NotebookApp] Saving file at /src/layers.py
-[I 07:03:32.919 NotebookApp] Saving file at /src/layers.py
-[I 07:03:39.045 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:03:40.321 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:04:15.390 NotebookApp] Saving file at /src/model.ipynb
-[I 07:05:06.264 NotebookApp] Saving file at /src/layers.py
-[I 07:05:34.859 NotebookApp] Saving file at /src/layers.py
-[I 07:05:35.239 NotebookApp] Saving file at /src/layers.py
-[I 07:05:35.607 NotebookApp] Saving file at /src/layers.py
-[I 07:05:40.974 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:05:42.533 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:06:15.375 NotebookApp] Saving file at /src/model.ipynb
-[I 07:37:49.602 NotebookApp] Saving file at /src/layers.py
-[I 07:37:49.994 NotebookApp] Saving file at /src/layers.py
-[I 07:37:50.406 NotebookApp] Saving file at /src/layers.py
-[I 07:37:55.575 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:37:56.835 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:38:15.365 NotebookApp] Saving file at /src/model.ipynb
-[I 07:39:00.269 NotebookApp] Saving file at /src/model.ipynb
-[I 07:39:03.979 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:39:05.253 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:39:31.648 NotebookApp] Saving file at /src/model.ipynb
-[I 07:39:32.107 NotebookApp] Saving file at /src/model.ipynb
-[I 07:39:35.333 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:39:36.610 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:40:15.363 NotebookApp] Saving file at /src/model.ipynb
-[I 07:45:26.542 NotebookApp] Saving file at /src/layers.py
-[I 07:45:31.176 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:45:32.444 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:46:15.367 NotebookApp] Saving file at /src/model.ipynb
-[I 07:46:37.956 NotebookApp] Saving file at /src/layers.py
-[I 07:47:09.986 NotebookApp] Saving file at /src/layers.py
-[I 07:47:10.402 NotebookApp] Saving file at /src/layers.py
-[I 07:47:10.858 NotebookApp] Saving file at /src/layers.py
-[I 07:47:11.417 NotebookApp] Saving file at /src/layers.py
-[I 07:47:17.266 NotebookApp] Saving file at /src/layers.py
-[I 07:47:17.700 NotebookApp] Saving file at /src/layers.py
-[I 07:47:18.043 NotebookApp] Saving file at /src/layers.py
-[I 07:47:22.088 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:47:23.368 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:47:36.153 NotebookApp] Saving file at /src/layers.py
-[I 07:48:11.705 NotebookApp] Saving file at /src/layers.py
-[I 07:48:12.107 NotebookApp] Saving file at /src/layers.py
-[I 07:48:12.747 NotebookApp] Saving file at /src/layers.py
-[I 07:48:15.355 NotebookApp] Saving file at /src/model.ipynb
-[I 07:48:18.877 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:48:20.163 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:49:17.923 NotebookApp] Saving file at /src/layers.py
-[I 07:49:18.382 NotebookApp] Saving file at /src/layers.py
-[I 07:49:22.753 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:49:24.062 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:50:04.641 NotebookApp] Saving file at /src/layers.py
-[I 07:50:05.040 NotebookApp] Saving file at /src/layers.py
-[I 07:50:05.417 NotebookApp] Saving file at /src/layers.py
-[I 07:50:05.865 NotebookApp] Saving file at /src/layers.py
-[I 07:50:06.441 NotebookApp] Saving file at /src/layers.py
-[I 07:50:15.363 NotebookApp] Saving file at /src/model.ipynb
-[I 07:50:30.328 NotebookApp] Saving file at /src/layers.py
-[I 07:50:48.145 NotebookApp] Saving file at /src/layers.py
-[I 07:50:48.545 NotebookApp] Saving file at /src/layers.py
-[I 07:50:50.376 NotebookApp] Saving file at /src/layers.py
-[I 07:50:50.720 NotebookApp] Saving file at /src/layers.py
-[I 07:51:07.277 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:51:08.622 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:52:15.367 NotebookApp] Saving file at /src/model.ipynb
-[I 07:55:56.909 NotebookApp] Saving file at /src/layers.py
-[I 07:55:57.311 NotebookApp] Saving file at /src/layers.py
-[I 07:56:08.496 NotebookApp] Saving file at /src/layers.py
-[I 07:56:08.911 NotebookApp] Saving file at /src/layers.py
-[I 07:56:09.224 NotebookApp] Saving file at /src/layers.py
-[I 07:56:15.040 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:56:16.542 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:56:50.965 NotebookApp] Saving file at /src/layers.py
-[I 07:56:51.271 NotebookApp] Saving file at /src/layers.py
-[I 07:57:47.078 NotebookApp] Saving file at /src/layers.py
-[I 07:57:47.430 NotebookApp] Saving file at /src/layers.py
-[I 07:57:49.118 NotebookApp] Saving file at /src/layers.py
-[I 07:57:49.441 NotebookApp] Saving file at /src/layers.py
-[I 07:57:53.718 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:57:55.039 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:58:15.367 NotebookApp] Saving file at /src/model.ipynb
-[I 07:59:07.085 NotebookApp] Saving file at /src/config.py
-[I 07:59:07.448 NotebookApp] Saving file at /src/config.py
-[I 07:59:07.791 NotebookApp] Saving file at /src/config.py
-[I 07:59:12.087 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 07:59:13.375 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:00:10.095 NotebookApp] Saving file at /src/config.py
-[I 08:00:10.486 NotebookApp] Saving file at /src/config.py
-[I 08:00:10.792 NotebookApp] Saving file at /src/config.py
-[I 08:00:14.390 NotebookApp] Saving file at /src/config.py
-[I 08:00:14.798 NotebookApp] Saving file at /src/config.py
-[I 08:00:15.198 NotebookApp] Saving file at /src/config.py
-[I 08:00:15.357 NotebookApp] Saving file at /src/model.ipynb
-[I 08:00:38.782 NotebookApp] Saving file at /src/config.py
-[I 08:00:39.216 NotebookApp] Saving file at /src/config.py
-[I 08:00:45.021 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:00:46.318 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:01:52.845 NotebookApp] Saving file at /src/layers.py
-[I 08:01:53.245 NotebookApp] Saving file at /src/layers.py
-[I 08:01:53.541 NotebookApp] Saving file at /src/layers.py
-[I 08:02:15.364 NotebookApp] Saving file at /src/model.ipynb
-[I 08:02:35.901 NotebookApp] Saving file at /src/layers.py
-[I 08:02:36.370 NotebookApp] Saving file at /src/layers.py
-[I 08:02:36.788 NotebookApp] Saving file at /src/layers.py
-[I 08:02:48.140 NotebookApp] Saving file at /src/layers.py
-[I 08:02:52.773 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:02:54.118 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:03:35.856 NotebookApp] Saving file at /src/layers.py
-[I 08:03:36.201 NotebookApp] Saving file at /src/layers.py
-[I 08:03:42.208 NotebookApp] Saving file at /src/layers.py
-[I 08:03:42.743 NotebookApp] Saving file at /src/layers.py
-[I 08:03:43.479 NotebookApp] Saving file at /src/layers.py
-[I 08:04:15.370 NotebookApp] Saving file at /src/model.ipynb
-[I 08:04:56.582 NotebookApp] Saving file at /src/model.ipynb
-[I 08:04:57.001 NotebookApp] Saving file at /src/model.ipynb
-[I 08:05:00.292 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:05:01.690 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:05:26.639 NotebookApp] Saving file at /src/layers.py
-[I 08:05:27.040 NotebookApp] Saving file at /src/layers.py
-[I 08:05:41.521 NotebookApp] Saving file at /src/model.ipynb
-[I 08:05:41.970 NotebookApp] Saving file at /src/model.ipynb
-[I 08:05:42.270 NotebookApp] Saving file at /src/model.ipynb
-[I 08:05:46.647 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:05:47.963 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:06:15.358 NotebookApp] Saving file at /src/model.ipynb
-[I 08:07:08.312 NotebookApp] Saving file at /src/model.ipynb
-[I 08:07:08.713 NotebookApp] Saving file at /src/model.ipynb
-[I 08:07:09.209 NotebookApp] Saving file at /src/model.ipynb
-[I 08:07:09.711 NotebookApp] Saving file at /src/model.ipynb
-[I 08:07:10.107 NotebookApp] Saving file at /src/model.ipynb
-[I 08:07:26.878 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:07:28.205 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:08:15.357 NotebookApp] Saving file at /src/model.ipynb
-[I 08:10:06.703 NotebookApp] Saving file at /src/Arch.py
-[I 08:10:07.621 NotebookApp] Saving file at /src/Arch.py
-[I 08:10:15.372 NotebookApp] Saving file at /src/model.ipynb
-[I 08:10:46.464 NotebookApp] Saving file at /src/model.ipynb
-[I 08:10:46.751 NotebookApp] Saving file at /src/model.ipynb
-[I 08:10:51.310 NotebookApp] Saving file at /src/model.ipynb
-[I 08:10:51.638 NotebookApp] Saving file at /src/model.ipynb
-[I 08:10:51.990 NotebookApp] Saving file at /src/model.ipynb
-[I 08:10:55.523 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:10:56.741 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:11:12.941 NotebookApp] Saving file at /src/model.ipynb
-[I 08:11:13.353 NotebookApp] Saving file at /src/model.ipynb
-[I 08:11:18.789 NotebookApp] Saving file at /src/model.ipynb
-[I 08:11:19.181 NotebookApp] Saving file at /src/model.ipynb
-[I 08:11:22.879 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:11:24.186 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:11:48.641 NotebookApp] Saving file at /src/model.ipynb
-[I 08:11:48.985 NotebookApp] Saving file at /src/model.ipynb
-[I 08:11:49.374 NotebookApp] Saving file at /src/model.ipynb
-[I 08:11:49.784 NotebookApp] Saving file at /src/model.ipynb
-[I 08:11:54.439 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:11:55.658 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:12:12.726 NotebookApp] Saving file at /src/config.py
-[I 08:12:13.085 NotebookApp] Saving file at /src/config.py
-[I 08:12:15.357 NotebookApp] Saving file at /src/model.ipynb
-[I 08:12:17.240 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:12:18.563 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:12:32.572 NotebookApp] Saving file at /src/model.ipynb
-[I 08:12:32.921 NotebookApp] Saving file at /src/model.ipynb
-[I 08:12:36.066 NotebookApp] Kernel restarted: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:12:37.408 NotebookApp] Adapting to protocol v5.1 for kernel e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:13:10.315 NotebookApp] Saving file at /src/model.ipynb
-[I 08:13:10.782 NotebookApp] Saving file at /src/model.ipynb
-[I 08:13:11.389 NotebookApp] Saving file at /src/model.ipynb
-[I 08:13:11.756 NotebookApp] Saving file at /src/model.ipynb
-[I 08:20:39.155 NotebookApp] Uploading file to /src/model.py
-[I 08:20:45.238 NotebookApp] Kernel shutdown: e1dce94d-81da-48c3-b733-5e21ed36ffba
-[I 08:21:53.236 NotebookApp] Saving file at /src/model.py
-[I 08:21:58.745 NotebookApp] Saving file at /src/model.py
-[I 08:22:19.188 NotebookApp] Creating new file in /src
-[I 08:22:29.762 NotebookApp] Saving file at /src/train.py
-[I 08:22:30.010 NotebookApp] Saving file at /src/train.py
-[I 08:22:35.082 NotebookApp] Saving file at /src/train.py
-[I 08:22:35.291 NotebookApp] Saving file at /src/train.py
-[I 08:22:39.696 NotebookApp] Saving file at /src/train.py
-[I 08:22:42.881 NotebookApp] Saving file at /src/train.py
-[I 08:22:43.208 NotebookApp] Saving file at /src/train.py
-[I 08:22:50.490 NotebookApp] Saving file at /src/train.py
-[I 08:22:50.791 NotebookApp] Saving file at /src/train.py
-[I 08:22:53.847 NotebookApp] Kernel started: 27f7e3a0-3c40-4078-a908-cfdff60903d3
-[I 08:22:55.051 NotebookApp] Adapting to protocol v5.1 for kernel 27f7e3a0-3c40-4078-a908-cfdff60903d3
-[I 08:23:19.990 NotebookApp] Uploading file to /src/Augment.py
-[I 08:23:45.968 NotebookApp] Saving file at /src/Augment.py
-[I 08:23:46.778 NotebookApp] Saving file at /src/Augment.py
-[I 08:23:57.441 NotebookApp] Saving file at /src/Augment.py
-[I 08:23:57.848 NotebookApp] Saving file at /src/Augment.py
-[I 08:23:58.129 NotebookApp] Saving file at /src/Augment.py
-[I 08:24:01.952 NotebookApp] Saving file at /src/Augment.py
-[I 08:24:02.447 NotebookApp] Saving file at /src/Augment.py
-[I 08:24:02.743 NotebookApp] Saving file at /src/Augment.py
-[I 08:24:26.511 NotebookApp] Saving file at /src/Augment.py
-[I 08:24:26.855 NotebookApp] Saving file at /src/Augment.py
-[I 08:24:31.514 NotebookApp] Saving file at /src/Augment.py
-[I 08:24:31.974 NotebookApp] Saving file at /src/Augment.py
-[I 08:24:32.295 NotebookApp] Saving file at /src/Augment.py
-[I 08:24:53.434 NotebookApp] Saving file at /src/train.py
-[I 08:25:10.137 NotebookApp] Saving file at /src/train.py
-[I 08:25:29.291 NotebookApp] Kernel shutdown: 27f7e3a0-3c40-4078-a908-cfdff60903d3
-[I 08:25:33.874 NotebookApp] Creating new notebook in /src
-[I 08:25:34.338 NotebookApp] Kernel started: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 08:25:35.565 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 08:26:55.976 NotebookApp] Saving file at /src/train.ipynb
-[I 08:27:08.961 NotebookApp] Saving file at /src/train.ipynb
-[I 08:27:34.345 NotebookApp] Saving file at /src/train.ipynb
-[I 08:27:45.715 NotebookApp] Saving file at /src/train.ipynb
-[I 08:27:46.041 NotebookApp] Saving file at /src/train.ipynb
-[I 08:27:53.220 NotebookApp] Saving file at /src/train.ipynb
-[I 08:28:38.483 NotebookApp] Saving file at /src/train.ipynb
-[I 08:28:38.913 NotebookApp] Saving file at /src/train.ipynb
-[I 08:28:39.257 NotebookApp] Saving file at /src/train.ipynb
-[I 08:31:24.808 NotebookApp] Saving file at /src/train.ipynb
-[I 08:31:25.273 NotebookApp] Saving file at /src/train.ipynb
-[I 08:31:26.105 NotebookApp] Saving file at /src/train.ipynb
-[I 08:31:26.414 NotebookApp] Saving file at /src/train.ipynb
-[I 08:31:28.720 NotebookApp] Saving file at /src/train.ipynb
-[I 08:31:39.396 NotebookApp] Saving file at /src/train.ipynb
-[I 08:31:39.790 NotebookApp] Saving file at /src/train.ipynb
-[I 08:32:05.125 NotebookApp] Saving file at /src/train.ipynb
-[I 08:32:14.887 NotebookApp] Saving file at /src/train.ipynb
-[I 08:32:15.381 NotebookApp] Saving file at /src/train.ipynb
-[I 08:32:16.222 NotebookApp] Saving file at /src/train.ipynb
-[I 08:32:16.794 NotebookApp] Saving file at /src/train.ipynb
-[I 08:33:34.343 NotebookApp] Saving file at /src/train.ipynb
-[I 08:34:57.046 NotebookApp] Saving file at /src/train.ipynb
-[I 08:34:57.389 NotebookApp] Saving file at /src/train.ipynb
-[I 08:35:48.680 NotebookApp] Saving file at /src/Augment.py
-[I 08:35:49.119 NotebookApp] Saving file at /src/Augment.py
-[I 08:35:49.430 NotebookApp] Saving file at /src/Augment.py
-[I 08:37:54.743 NotebookApp] Kernel restarted: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 08:37:56.027 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 08:39:08.183 NotebookApp] Kernel interrupted: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 08:39:15.186 NotebookApp] Saving file at /src/train.ipynb
-[I 08:39:15.698 NotebookApp] Saving file at /src/train.ipynb
-[I 08:39:16.104 NotebookApp] Saving file at /src/train.ipynb
-[I 08:39:20.976 NotebookApp] Kernel restarted: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 08:39:22.288 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 08:39:34.341 NotebookApp] Saving file at /src/train.ipynb
-[I 08:39:40.619 NotebookApp] Saving file at /src/train.ipynb
-[I 08:39:48.413 NotebookApp] Kernel restarted: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 08:39:49.801 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[W 08:40:17.347 NotebookApp] 404 GET /favicon.ico (150.107.24.58) 2.03ms referer=None
-[W 08:40:17.354 NotebookApp] 404 GET /favicon.ico (150.107.24.58) 1.84ms referer=None
-[I 08:41:34.363 NotebookApp] Saving file at /src/train.ipynb
-[I 09:01:21.716 NotebookApp] 302 GET /?token=fbf28e49dd640d5a8d23994d3894bfd0ca14f0139a1b3718 (150.107.24.58) 0.61ms
-[I 09:02:33.675 NotebookApp] Kernel started: fd29bcd9-841e-4ff0-a90f-ddb0b7632738
-[I 09:02:34.967 NotebookApp] Adapting to protocol v5.1 for kernel fd29bcd9-841e-4ff0-a90f-ddb0b7632738
-[W 09:03:35.274 NotebookApp] Notebook src/Test_HCR_CNN_LSTM_Model.ipynb is not trusted
-[I 09:03:35.828 NotebookApp] Kernel started: 44d46708-ec48-4b86-a835-554681f352e7
-[I 09:03:37.058 NotebookApp] Adapting to protocol v5.1 for kernel 44d46708-ec48-4b86-a835-554681f352e7
-[I 09:04:20.715 NotebookApp] Saving file at /src/Test_HCR_CNN_LSTM_Model.ipynb
-[W 09:04:20.716 NotebookApp] Saving untrusted notebook src/Test_HCR_CNN_LSTM_Model.ipynb
-[W 09:04:37.190 NotebookApp] Notebook src/Test_HCR_CNN_LSTM_Model.ipynb is not trusted
-[I 09:04:37.814 NotebookApp] Adapting to protocol v5.1 for kernel 44d46708-ec48-4b86-a835-554681f352e7
-[I 09:04:40.094 NotebookApp] Kernel shutdown: 44d46708-ec48-4b86-a835-554681f352e7
-[W 09:05:01.839 NotebookApp] Notebook src/CNN_RNN_CTC_Model_HCR.ipynb is not trusted
-[I 09:05:02.304 NotebookApp] Kernel started: 7dcf1a95-c0fb-40dd-8d68-0c9931fecb11
-[I 09:05:03.515 NotebookApp] Adapting to protocol v5.1 for kernel 7dcf1a95-c0fb-40dd-8d68-0c9931fecb11
-[I 09:05:52.184 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 09:07:02.323 NotebookApp] Saving file at /src/CNN_RNN_CTC_Model_HCR.ipynb
-[W 09:07:02.324 NotebookApp] Saving untrusted notebook src/CNN_RNN_CTC_Model_HCR.ipynb
-[I 09:11:09.862 NotebookApp] Adapting to protocol v5.1 for kernel e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 09:12:12.916 NotebookApp] Creating new notebook in /src
-[I 09:12:13.364 NotebookApp] Kernel started: 3831fbcf-3825-4534-b4e8-6b6cd1fef158
-[I 09:12:14.630 NotebookApp] Adapting to protocol v5.1 for kernel 3831fbcf-3825-4534-b4e8-6b6cd1fef158
-[I 09:14:13.410 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:16:13.374 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:18:13.377 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:20:13.378 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:22:13.374 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:24:13.382 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:32:13.397 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:34:13.381 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:36:13.383 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:37:38.236 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:37:49.199 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:37:49.536 NotebookApp] Saving file at /src/ler.ipynb
-[I 09:37:56.110 NotebookApp] Kernel shutdown: 3831fbcf-3825-4534-b4e8-6b6cd1fef158
-[I 09:38:04.697 NotebookApp] Kernel shutdown: e5f58265-75c3-4a6e-8d5a-0e85e5cb93f3
-[I 09:38:10.535 NotebookApp] Kernel shutdown: 7dcf1a95-c0fb-40dd-8d68-0c9931fecb11
-[I 09:38:18.488 NotebookApp] Kernel shutdown: fd29bcd9-841e-4ff0-a90f-ddb0b7632738
-[I 10:22:08.971 NotebookApp] 302 GET /?token=fbf28e49dd640d5a8d23994d3894bfd0ca14f0139a1b3718 (223.189.3.243) 0.69ms
-[I 10:22:13.731 NotebookApp] 302 GET /?token=fbf28e49dd640d5a8d23994d3894bfd0ca14f0139a1b3718 (223.189.3.243) 0.61ms
-[I 10:22:30.546 NotebookApp] Kernel started: df2df030-ec4e-4e44-b000-345e44fbf143
-[I 10:22:31.826 NotebookApp] Adapting to protocol v5.1 for kernel df2df030-ec4e-4e44-b000-345e44fbf143
-[I 10:23:55.424 NotebookApp] Saving file at /src/Augment.ipynb
-[I 10:23:55.538 NotebookApp] Saving file at /src/Augment.ipynb
-[I 10:24:47.202 NotebookApp] Saving file at /src/Augment.ipynb
-[I 10:26:01.769 NotebookApp] Saving file at /src/Augment.ipynb
-[I 10:26:05.140 NotebookApp] Saving file at /src/Augment.ipynb
-[I 10:26:07.122 NotebookApp] Saving file at /src/Augment.ipynb
-[I 10:26:14.301 NotebookApp] Creating new notebook in /src
-[I 10:26:15.007 NotebookApp] Kernel started: 7ed37009-1b6a-4f51-8397-3218291bd1e9
-[I 10:26:16.274 NotebookApp] Adapting to protocol v5.1 for kernel 7ed37009-1b6a-4f51-8397-3218291bd1e9
-[I 10:27:11.719 NotebookApp] Kernel shutdown: 7ed37009-1b6a-4f51-8397-3218291bd1e9
+        http://localhost:8888/?token=288c4919d6275b39544009288bc9c41d7153355efcf15945
+[I 03:27:46.178 NotebookApp] 302 GET /?token=288c4919d6275b39544009288bc9c41d7153355efcf15945 (27.4.99.127) 1.29ms
+[I 03:28:21.183 NotebookApp] Kernel started: 8599f516-976d-4fb1-8f32-88d3a13611b7
+[I 03:28:22.677 NotebookApp] Adapting to protocol v5.1 for kernel 8599f516-976d-4fb1-8f32-88d3a13611b7
+[I 03:28:38.562 NotebookApp] Kernel restarted: 8599f516-976d-4fb1-8f32-88d3a13611b7
+[I 03:28:40.222 NotebookApp] Adapting to protocol v5.1 for kernel 8599f516-976d-4fb1-8f32-88d3a13611b7
+2018-04-05 03:30:00.862927: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+[I 03:30:21.387 NotebookApp] Saving file at /src/train.ipynb
+[W 03:30:35.092 NotebookApp] delete /data/test_arrays
+[W 03:30:35.101 NotebookApp] delete /data/zombie_arrays
+[W 03:30:35.110 NotebookApp] delete /data/valid_arrays
+[W 03:30:35.113 NotebookApp] delete /data/train_arrays
+[I 03:30:54.916 NotebookApp] Kernel restarted: 8599f516-976d-4fb1-8f32-88d3a13611b7
+[I 03:30:56.328 NotebookApp] Adapting to protocol v5.1 for kernel 8599f516-976d-4fb1-8f32-88d3a13611b7
+2018-04-05 03:31:31.236751: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+[I 03:32:21.720 NotebookApp] Saving file at /src/train.ipynb
+[I 03:34:21.738 NotebookApp] Saving file at /src/train.ipynb
+[I 03:36:02.340 NotebookApp] Kernel started: 931d3c92-8990-410b-b28e-2e2f79c92e32
+[I 03:36:03.713 NotebookApp] Adapting to protocol v5.1 for kernel 931d3c92-8990-410b-b28e-2e2f79c92e32
+[I 03:38:02.410 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 03:40:02.422 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 03:42:02.431 NotebookApp] Saving file at /src/Scale_down.ipynb
+[W 03:43:02.527 NotebookApp] Notebook Save_Image_Arrays.ipynb is not trusted
+[I 03:43:02.779 NotebookApp] Kernel started: a3051034-122e-469c-ae78-406abd5ecae1
+[I 03:43:04.157 NotebookApp] Adapting to protocol v5.1 for kernel a3051034-122e-469c-ae78-406abd5ecae1
+[I 03:45:02.867 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[W 03:45:02.868 NotebookApp] Saving untrusted notebook Save_Image_Arrays.ipynb
+[I 03:47:02.869 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[W 03:47:02.870 NotebookApp] Saving untrusted notebook Save_Image_Arrays.ipynb
+[I 03:48:41.772 NotebookApp] Kernel restarted: a3051034-122e-469c-ae78-406abd5ecae1
+[W 03:48:41.778 NotebookApp] zmq message arrived on closed channel
+[I 03:48:43.342 NotebookApp] Adapting to protocol v5.1 for kernel a3051034-122e-469c-ae78-406abd5ecae1
+[I 03:49:02.890 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 03:51:02.799 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 03:52:31.378 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 03:53:02.815 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 03:53:53.699 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 03:53:56.691 NotebookApp] Kernel restarted: a3051034-122e-469c-ae78-406abd5ecae1
+[I 03:53:58.318 NotebookApp] Adapting to protocol v5.1 for kernel a3051034-122e-469c-ae78-406abd5ecae1
+[I 03:55:02.825 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 03:55:20.302 NotebookApp] Kernel shutdown: a3051034-122e-469c-ae78-406abd5ecae1
+[I 03:55:24.850 NotebookApp] Saving file at /src/train.ipynb
+[I 03:55:29.158 NotebookApp] Kernel shutdown: 8599f516-976d-4fb1-8f32-88d3a13611b7
+[I 03:55:39.788 NotebookApp] Adapting to protocol v5.1 for kernel 931d3c92-8990-410b-b28e-2e2f79c92e32
+[I 03:55:49.803 NotebookApp] Kernel restarted: 931d3c92-8990-410b-b28e-2e2f79c92e32
+[I 03:55:51.463 NotebookApp] Adapting to protocol v5.1 for kernel 931d3c92-8990-410b-b28e-2e2f79c92e32
+[I 03:57:39.756 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:01:40.753 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:02:18.921 NotebookApp] Kernel restarted: 931d3c92-8990-410b-b28e-2e2f79c92e32
+[W 04:02:18.927 NotebookApp] zmq message arrived on closed channel
+[I 04:02:20.577 NotebookApp] Adapting to protocol v5.1 for kernel 931d3c92-8990-410b-b28e-2e2f79c92e32
+[I 04:03:22.821 NotebookApp] Kernel restarted: 931d3c92-8990-410b-b28e-2e2f79c92e32
+[I 04:03:24.388 NotebookApp] Adapting to protocol v5.1 for kernel 931d3c92-8990-410b-b28e-2e2f79c92e32
+[I 04:03:39.844 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:05:39.755 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:07:39.768 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:08:01.137 NotebookApp] Kernel shutdown: 931d3c92-8990-410b-b28e-2e2f79c92e32
+[W 04:08:15.271 NotebookApp] Session not found: session_id='fcb3bebe-1967-4094-9417-023276241fef'
+[W 04:08:15.272 NotebookApp] 404 DELETE /api/sessions/fcb3bebe-1967-4094-9417-023276241fef (27.4.99.127) 1.91ms referer=http://35.200.147.218:8888/tree/src
+[I 04:09:16.934 NotebookApp] Kernel started: 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:09:18.340 NotebookApp] Adapting to protocol v5.1 for kernel 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:09:26.013 NotebookApp] Kernel restarted: 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[W 04:09:26.019 NotebookApp] zmq message arrived on closed channel
+[I 04:09:27.591 NotebookApp] Adapting to protocol v5.1 for kernel 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:09:48.176 NotebookApp] Kernel restarted: 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:09:49.812 NotebookApp] Adapting to protocol v5.1 for kernel 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:10:07.810 NotebookApp] Kernel restarted: 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[W 04:10:07.816 NotebookApp] zmq message arrived on closed channel
+[I 04:10:09.475 NotebookApp] Adapting to protocol v5.1 for kernel 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:10:35.969 NotebookApp] Kernel restarted: 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:10:37.536 NotebookApp] Adapting to protocol v5.1 for kernel 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:10:50.411 NotebookApp] Kernel restarted: 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:10:52.070 NotebookApp] Adapting to protocol v5.1 for kernel 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:11:04.071 NotebookApp] Kernel restarted: 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:11:05.624 NotebookApp] Adapting to protocol v5.1 for kernel 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:11:16.949 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:11:49.699 NotebookApp] Kernel restarted: 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:11:51.785 NotebookApp] Adapting to protocol v5.1 for kernel 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:12:06.823 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:12:09.977 NotebookApp] Kernel restarted: 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:12:11.627 NotebookApp] Adapting to protocol v5.1 for kernel 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[I 04:12:49.322 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:12:54.724 NotebookApp] Kernel shutdown: 8a6a1926-c82f-4695-b048-f8ea5dd5a1af
+[W 04:13:06.291 NotebookApp] delete /data/test_arrays
+[W 04:13:06.303 NotebookApp] delete /data/zombie_arrays
+[W 04:13:06.314 NotebookApp] delete /data/train_arrays
+[W 04:13:06.354 NotebookApp] delete /data/valid_arrays
+[I 04:13:31.599 NotebookApp] Kernel started: d1c818b3-e683-442c-94e9-c0b1235daf94
+[I 04:13:33.066 NotebookApp] Adapting to protocol v5.1 for kernel d1c818b3-e683-442c-94e9-c0b1235daf94
+[I 04:13:40.911 NotebookApp] Kernel restarted: d1c818b3-e683-442c-94e9-c0b1235daf94
+[I 04:13:42.372 NotebookApp] Adapting to protocol v5.1 for kernel d1c818b3-e683-442c-94e9-c0b1235daf94
+[I 04:13:55.266 NotebookApp] Saving file at /src/train.ipynb
+[I 04:13:56.200 NotebookApp] Saving file at /src/train.ipynb
+[I 04:13:56.600 NotebookApp] Saving file at /src/train.ipynb
+[I 04:14:00.513 NotebookApp] Kernel restarted: d1c818b3-e683-442c-94e9-c0b1235daf94
+[I 04:14:02.128 NotebookApp] Adapting to protocol v5.1 for kernel d1c818b3-e683-442c-94e9-c0b1235daf94
+[I 04:14:38.785 NotebookApp] Kernel started: 39b20cdd-d47a-4d14-afb8-b1173c91bcc6
+[I 04:14:40.202 NotebookApp] Adapting to protocol v5.1 for kernel 39b20cdd-d47a-4d14-afb8-b1173c91bcc6
+[I 04:14:44.754 NotebookApp] Adapting to protocol v5.1 for kernel 39b20cdd-d47a-4d14-afb8-b1173c91bcc6
+[W 04:14:44.786 NotebookApp] zmq message arrived on closed channel
+[W 04:14:44.790 NotebookApp] zmq message arrived on closed channel
+[W 04:14:44.966 NotebookApp] zmq message arrived on closed channel
+[W 04:14:44.969 NotebookApp] zmq message arrived on closed channel
+[I 04:15:31.740 NotebookApp] Saving file at /src/train.ipynb
+[I 04:15:37.457 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:15:37.867 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:16:01.325 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:16:01.611 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:16:13.307 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:16:16.489 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:16:16.986 NotebookApp] Saving file at /src/Scale_down.ipynb
+[I 04:16:20.858 NotebookApp] Kernel shutdown: 39b20cdd-d47a-4d14-afb8-b1173c91bcc6
+[W 04:16:20.860 NotebookApp] zmq message arrived on closed channel
+[W 04:16:20.862 NotebookApp] zmq message arrived on closed channel
+[W 04:16:20.863 NotebookApp] zmq message arrived on closed channel
+[I 04:16:26.456 NotebookApp] Kernel shutdown: d1c818b3-e683-442c-94e9-c0b1235daf94
+[I 04:16:33.184 NotebookApp] Kernel started: e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:16:34.587 NotebookApp] Adapting to protocol v5.1 for kernel e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:18:03.490 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:18:33.216 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:19:04.512 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:19:10.353 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:19:31.851 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:19:32.195 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:19:36.339 NotebookApp] Kernel restarted: e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:19:38.004 NotebookApp] Adapting to protocol v5.1 for kernel e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:19:59.502 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:20:04.498 NotebookApp] Kernel restarted: e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:20:06.194 NotebookApp] Adapting to protocol v5.1 for kernel e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:20:12.810 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:20:15.353 NotebookApp] Kernel restarted: e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:20:17.008 NotebookApp] Adapting to protocol v5.1 for kernel e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:20:27.181 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:20:30.099 NotebookApp] Kernel restarted: e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:20:31.756 NotebookApp] Adapting to protocol v5.1 for kernel e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:20:33.197 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:20:40.262 NotebookApp] Saving file at /Save_Image_Arrays.ipynb
+[I 04:20:42.449 NotebookApp] Kernel shutdown: e98cb998-f288-478d-ac48-0e1e329693b1
+[I 04:20:46.331 NotebookApp] Kernel started: 0652fa39-7a5b-42bb-8586-9b07d2eb38e7
+[I 04:20:47.768 NotebookApp] Adapting to protocol v5.1 for kernel 0652fa39-7a5b-42bb-8586-9b07d2eb38e7
+[I 04:20:50.194 NotebookApp] Saving file at /src/train.ipynb
+[I 04:20:57.748 NotebookApp] Kernel restarted: 0652fa39-7a5b-42bb-8586-9b07d2eb38e7
+[I 04:20:59.409 NotebookApp] Adapting to protocol v5.1 for kernel 0652fa39-7a5b-42bb-8586-9b07d2eb38e7
+[I 04:21:22.906 NotebookApp] Kernel shutdown: 0652fa39-7a5b-42bb-8586-9b07d2eb38e7
+[W 04:21:35.529 NotebookApp] delete /data/test_array
+[W 04:21:35.536 NotebookApp] delete /data/train_array
+[W 04:21:35.545 NotebookApp] delete /data/valid_array
+[W 04:21:35.548 NotebookApp] delete /data/zombie_array
+[I 04:22:21.932 NotebookApp] Kernel started: c868652b-15a1-40cf-b050-644162c159f3
+[I 04:22:23.787 NotebookApp] Kernel restarted: c868652b-15a1-40cf-b050-644162c159f3
+[I 04:22:23.791 NotebookApp] Adapting to protocol v5.1 for kernel c868652b-15a1-40cf-b050-644162c159f3
+[I 04:22:25.440 NotebookApp] Adapting to protocol v5.1 for kernel c868652b-15a1-40cf-b050-644162c159f3
+2018-04-05 04:22:36.089133: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+[I 04:23:43.837 NotebookApp] Kernel interrupted: c868652b-15a1-40cf-b050-644162c159f3
+[I 04:24:21.966 NotebookApp] Saving file at /src/train.ipynb
+[I 04:24:46.092 NotebookApp] Kernel restarted: c868652b-15a1-40cf-b050-644162c159f3
+[I 04:24:47.755 NotebookApp] Adapting to protocol v5.1 for kernel c868652b-15a1-40cf-b050-644162c159f3
+2018-04-05 04:24:58.485686: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+[I 04:26:21.974 NotebookApp] Saving file at /src/train.ipynb
+[I 04:38:21.849 NotebookApp] Kernel interrupted: c868652b-15a1-40cf-b050-644162c159f3
+[I 04:39:20.774 NotebookApp] Kernel restarted: c868652b-15a1-40cf-b050-644162c159f3
+[I 04:39:22.360 NotebookApp] Adapting to protocol v5.1 for kernel c868652b-15a1-40cf-b050-644162c159f3
+2018-04-05 04:39:33.019118: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+[I 04:39:47.791 NotebookApp] Saving file at /src/train.ipynb
+2018-04-05 05:23:42.094725: W tensorflow/core/framework/op_kernel.cc:1198] Failed precondition: len(sequence_length) != batch_size.  len(sequence_length):  32 batch_size: 17
+[I 05:53:39.536 NotebookApp] 302 GET /?token=288c4919d6275b39544009288bc9c41d7153355efcf15945 (150.107.24.58) 1.67ms
+[I 05:53:47.983 NotebookApp] Adapting to protocol v5.1 for kernel c868652b-15a1-40cf-b050-644162c159f3
+[I 05:54:03.768 NotebookApp] Kernel restarted: c868652b-15a1-40cf-b050-644162c159f3
+[I 05:54:05.281 NotebookApp] Adapting to protocol v5.1 for kernel c868652b-15a1-40cf-b050-644162c159f3
+[I 05:54:15.433 NotebookApp] Kernel restarted: c868652b-15a1-40cf-b050-644162c159f3
+[I 05:54:16.869 NotebookApp] Adapting to protocol v5.1 for kernel c868652b-15a1-40cf-b050-644162c159f3
+2018-04-05 05:54:28.031189: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+[I 05:55:47.890 NotebookApp] Saving file at /src/train.ipynb
+[I 05:57:47.912 NotebookApp] Saving file at /src/train.ipynb
+[I 05:59:47.911 NotebookApp] Saving file at /src/train.ipynb
+[I 06:01:47.891 NotebookApp] Saving file at /src/train.ipynb
+[I 06:03:47.894 NotebookApp] Saving file at /src/train.ipynb
+[I 06:05:47.890 NotebookApp] Saving file at /src/train.ipynb
+[I 06:07:47.889 NotebookApp] Saving file at /src/train.ipynb
+[I 06:09:47.895 NotebookApp] Saving file at /src/train.ipynb
+[I 06:10:07.553 NotebookApp] Kernel started: 1a3219c7-13d8-4323-8118-e167f1e360d6
+[I 06:10:09.302 NotebookApp] Adapting to protocol v5.1 for kernel 1a3219c7-13d8-4323-8118-e167f1e360d6
+[I 06:10:27.656 NotebookApp] Saving file at /src/find_ler.ipynb
+[I 06:10:46.497 NotebookApp] Kernel shutdown: 1a3219c7-13d8-4323-8118-e167f1e360d6
+[W 06:10:46.502 NotebookApp] zmq message arrived on closed channel
+[I 06:11:48.119 NotebookApp] Saving file at /src/train.ipynb
+[I 06:13:48.914 NotebookApp] Saving file at /src/train.ipynb
+[I 06:15:48.903 NotebookApp] Saving file at /src/train.ipynb
+[I 06:17:47.892 NotebookApp] Saving file at /src/train.ipynb
+[I 06:19:48.110 NotebookApp] Saving file at /src/train.ipynb
+[I 06:20:43.357 NotebookApp] Kernel started: 4edbce21-5ba9-4ea3-bb5c-24dfa2813c3c
+[I 06:20:45.226 NotebookApp] Adapting to protocol v5.1 for kernel 4edbce21-5ba9-4ea3-bb5c-24dfa2813c3c
+[I 06:21:48.122 NotebookApp] Saving file at /src/train.ipynb
+[I 06:23:47.910 NotebookApp] Saving file at /src/train.ipynb
+[I 06:25:09.660 NotebookApp] Kernel shutdown: 4edbce21-5ba9-4ea3-bb5c-24dfa2813c3c
+[W 06:25:09.663 NotebookApp] zmq message arrived on closed channel
+[W 06:25:09.665 NotebookApp] zmq message arrived on closed channel
+[W 06:25:09.667 NotebookApp] zmq message arrived on closed channel
+[I 06:25:47.894 NotebookApp] Saving file at /src/train.ipynb
+[I 06:26:31.733 NotebookApp] Saving file at /src/model.py
+[I 06:26:37.801 NotebookApp] Saving file at /src/train.ipynb
+[I 06:26:37.946 NotebookApp] Copying src/train.ipynb to /src
+[I 06:26:39.034 NotebookApp] Kernel started: 4f27cf8f-e718-4ab7-898e-c5634018e351
+[I 06:26:41.041 NotebookApp] Adapting to protocol v5.1 for kernel 4f27cf8f-e718-4ab7-898e-c5634018e351
+[I 06:26:46.380 NotebookApp] Kernel restarted: 4f27cf8f-e718-4ab7-898e-c5634018e351
+[I 06:26:54.382 NotebookApp] Adapting to protocol v5.1 for kernel 4f27cf8f-e718-4ab7-898e-c5634018e351
+[W 06:27:00.731 NotebookApp] File already exists: src/find_ler.ipynb
+[W 06:27:00.731 NotebookApp] 409 PATCH /api/contents/src/train-Copy1.ipynb (150.107.24.58) 2.49ms referer=http://35.200.147.218:8888/notebooks/src/train-Copy1.ipynb
+[I 06:27:47.877 NotebookApp] Saving file at /src/train.ipynb
+[I 06:28:39.051 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:28:56.463 NotebookApp] Saving file at /src/train.ipynb
+[I 06:29:06.713 NotebookApp] Saving file at /src/train.ipynb
+[I 06:29:47.877 NotebookApp] Saving file at /src/train.ipynb
+[I 06:31:48.898 NotebookApp] Saving file at /src/train.ipynb
+[I 06:32:06.812 NotebookApp] Saving file at /src/model.py
+[I 06:32:39.262 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:33:18.599 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:33:47.885 NotebookApp] Saving file at /src/train.ipynb
+[I 06:34:55.803 NotebookApp] Saving file at /src/model.py
+[I 06:35:01.954 NotebookApp] Saving file at /src/model.py
+[I 06:35:17.579 NotebookApp] Saving file at /src/train.ipynb
+[I 06:35:31.507 NotebookApp] Creating new file in /src
+[I 06:35:47.899 NotebookApp] Saving file at /src/train.ipynb
+[I 06:37:05.587 NotebookApp] Saving file at /src/ler_model.py
+[I 06:37:47.895 NotebookApp] Saving file at /src/train.ipynb
+[I 06:38:25.442 NotebookApp] Saving file at /src/ler_model.py
+[I 06:38:32.009 NotebookApp] Saving file at /src/ler_model.py
+2018-04-05 06:38:55.458055: W tensorflow/core/framework/op_kernel.cc:1198] Failed precondition: len(sequence_length) != batch_size.  len(sequence_length):  32 batch_size: 17
+[I 06:39:47.896 NotebookApp] Saving file at /src/train.ipynb
+[I 06:40:39.040 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:40:55.629 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:42:39.036 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:44:12.184 NotebookApp] Saving file at /src/ler_model.py
+[I 06:44:18.059 NotebookApp] Saving file at /src/ler_model.py
+[I 06:44:18.548 NotebookApp] Saving file at /src/ler_model.py
+[I 06:44:18.878 NotebookApp] Saving file at /src/ler_model.py
+[I 06:44:26.278 NotebookApp] Kernel shutdown: c868652b-15a1-40cf-b050-644162c159f3
+[I 06:44:39.267 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:44:47.019 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:45:17.368 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:45:17.835 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:45:35.934 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:45:45.194 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:45:57.105 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:46:00.176 NotebookApp] Kernel restarted: 4f27cf8f-e718-4ab7-898e-c5634018e351
+[I 06:46:02.093 NotebookApp] Adapting to protocol v5.1 for kernel 4f27cf8f-e718-4ab7-898e-c5634018e351
+2018-04-05 06:46:13.115207: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+[I 06:46:39.027 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:46:55.043 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:46:59.793 NotebookApp] Kernel restarted: 4f27cf8f-e718-4ab7-898e-c5634018e351
+[I 06:47:01.208 NotebookApp] Adapting to protocol v5.1 for kernel 4f27cf8f-e718-4ab7-898e-c5634018e351
+2018-04-05 06:47:11.602227: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+[I 06:48:39.036 NotebookApp] Saving file at /src/train-Copy1.ipynb
+2018-04-05 06:48:59.534506: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:48:59.536376: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.565078: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.565887: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.566651: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.567398: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.568219: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.569095: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.569765: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.570403: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.571092: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.571227: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.571629: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.571918: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.572119: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.572749: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.573448: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.573737: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.573812: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.574119: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.574801: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.572749: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.574874: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.575655: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.575754: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.575778: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.576385: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.576564: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.576625: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.574813: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.577010: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.577479: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.577818: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+2018-04-05 06:49:13.578015: W tensorflow/core/util/ctc/ctc_loss_calculator.cc:144] No valid path found.
+[I 06:50:39.029 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:51:32.644 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:53:51.333 NotebookApp] Kernel started: 4a0a2f4b-0a50-4d80-a438-c3c22bb19000
+[I 06:53:52.674 NotebookApp] Adapting to protocol v5.1 for kernel 4a0a2f4b-0a50-4d80-a438-c3c22bb19000
+[I 06:54:39.047 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:56:39.258 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:57:15.122 NotebookApp] Kernel restarted: 4a0a2f4b-0a50-4d80-a438-c3c22bb19000
+[I 06:57:16.497 NotebookApp] Adapting to protocol v5.1 for kernel 4a0a2f4b-0a50-4d80-a438-c3c22bb19000
+[I 06:57:21.490 NotebookApp] Kernel interrupted: 4a0a2f4b-0a50-4d80-a438-c3c22bb19000
+[I 06:57:51.352 NotebookApp] Saving file at /src/train.ipynb
+[I 06:58:16.562 NotebookApp] Saving file at /src/config.py
+[I 06:58:43.519 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 06:59:58.841 NotebookApp] Saving file at /src/train-Copy1.ipynb
+[I 07:00:02.273 NotebookApp] Kernel shutdown: 4f27cf8f-e718-4ab7-898e-c5634018e351
+[I 07:00:16.770 NotebookApp] Kernel restarted: 4a0a2f4b-0a50-4d80-a438-c3c22bb19000
+[I 07:00:18.228 NotebookApp] Adapting to protocol v5.1 for kernel 4a0a2f4b-0a50-4d80-a438-c3c22bb19000
+2018-04-05 07:00:29.313249: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+[I 07:01:51.344 NotebookApp] Saving file at /src/train.ipynb
+[I 07:03:51.340 NotebookApp] Saving file at /src/train.ipynb
+[I 07:05:51.343 NotebookApp] Saving file at /src/train.ipynb
+[I 07:07:51.343 NotebookApp] Saving file at /src/train.ipynb
+[I 07:09:51.340 NotebookApp] Saving file at /src/train.ipynb
+[I 07:11:51.333 NotebookApp] Saving file at /src/train.ipynb
+[I 07:12:22.390 NotebookApp] Kernel interrupted: 4a0a2f4b-0a50-4d80-a438-c3c22bb19000
+[I 07:12:48.809 NotebookApp] Saving file at /src/train.ipynb
+[I 07:12:52.323 NotebookApp] Kernel shutdown: 4a0a2f4b-0a50-4d80-a438-c3c22bb19000
