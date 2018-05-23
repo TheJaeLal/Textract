@@ -25,6 +25,12 @@ dropout = { 'conv':[1,1,1,0.5,0.5,0.5,0.5],
 #Toggle Data Augmentation
 augment_data = False
 
+#Use addition train_data (3000+ other zombie_images)
+use_more_data=False
+
+#Which set to use for Validation 'valid' or 'test'
+test_set='valid'
+
 #Regularization (weight decay)
 decay = 0.0
 

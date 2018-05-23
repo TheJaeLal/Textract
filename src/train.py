@@ -7,45 +7,34 @@ import time
 import model
 from Augment import train_datagen, valid_datagen
 import helper
-from train_config import vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,momentum,summary_epoch,dropout
+from train_config import vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,momentum,summary_epoch,dropout,use_more_data
 from Arch import CNN
 import layers
-
-#Unused Import...
-# import matplotlib.pyplot as plt
 
 mount_point = '../'
 
 with shelve.open(mount_point+'IAM_Data','c') as shelf:
     train_label = shelf['train_label']
-    valid_label = shelf['valid_label']
-
-    #For testing overfitting..
-#     valid_label = shelf['train_label'][:1024]
     
-#     If more data needed use zombie data
-    zombie_label = shelf['zombie_label'][:1024]
-    
-    #For finding accuracy on test data
-    #test_label = shelf['test_label']
+    valid_label = shelf[valid_set+'_label']
 
+#   If more data needed use zombie data
+    if use_more_data:
+        zombie_label = shelf['zombie_label']
 
-train_array = joblib.load(mount_point+'data/train_array')
-valid_array = joblib.load(mount_point+'data/valid_array')
-
-#For testing overfitting.. 
-# valid_array = joblib.load(mount_point+'data/train_array')[:1024]
+#Training and Validation Input Images (As Numpy Arrays)
+train_array = joblib.load(os.path.join(mount_point,'data','train_array'))
+valid_array = joblib.load(os.path.join(mount_point,'data',valid_set+'_array'))
 
 #If additional data is needed...
-zombie_array = joblib.load(mount_point+'data/zombie_array')[:1024]
-
-#For finding accuracy on test data
-#test_array = joblib.load(mount_point+'data/test_array')
+if use_more_data:
+    zombie_array = joblib.load(os.path.join(mount_point,'data','zombie_array'))
 
 ##*****Increase the training dataset...*****
 ##Add the zombie array to the train_array and do the same for labels...
-train_array = np.concatenate((train_array,zombie_array))
-train_label = np.concatenate((train_label,zombie_label))
+if use_more_data:
+    train_array = np.concatenate((train_array,zombie_array))
+    train_label = np.concatenate((train_label,zombie_label))
 
 #Initializer the model/graph
 graph,dropout_lstm,dropout_fc,inputs,time_steps,targets,loss,train,decoded,label_error_rate,seq_len,is_training,conv_dropout,gradients,interim_dropout = model.model()
@@ -55,15 +44,12 @@ graph,dropout_lstm,dropout_fc,inputs,time_steps,targets,loss,train,decoded,label
 
 train_generator = train_datagen.flow(train_array,train_label,batch_size)
 valid_generator = valid_datagen.flow(valid_array,valid_label,valid_batch_size)
-#test_generator = valid_datagen.flow(test_array,test_label,valid_batch_size)
 
 num_training_samples = train_array.shape[0]
 num_valid_samples = valid_array.shape[0]
-#num_test_samples = test_array.shape[0]
 
 num_batches = int(ceil(num_training_samples/batch_size))
 num_vbatches = int(ceil(num_valid_samples/valid_batch_size))
-#num_vbatches = int(ceil(num_test_samples/valid_batch_size))
 
 with tf.Session(graph = graph) as sess:
         
@@ -88,7 +74,6 @@ with tf.Session(graph = graph) as sess:
         train_loss = 0.0    
         count = 0
         
-#         print('Training loop')
         #Mini Batch loop
         for x,y in train_generator:
         
@@ -106,8 +91,7 @@ with tf.Session(graph = graph) as sess:
             #widths = np.array(widths)
             
             actual_batch_size = x.shape[0]
-            
-#             print('Train Minibatch:',count)
+        
             
             if count == num_batches:
                 break
@@ -121,21 +105,11 @@ with tf.Session(graph = graph) as sess:
                              interim_dropout:dropout['interim_fc'],is_training:True
                         }
             
-#             print('Going for backprop and loss')
-            
-#             print('running optimizer')
             _,loss_val = sess.run([train,loss],feed_dict=feed_train)
-        
-#             print('ran optimizer')
-            
-            #loss_val = sess.run(loss,feed_dict = feed_train)
-    
-#             print('Came out of backprop and loss')
             
             train_loss += loss_val
             
             count+=1
-            
             
         train_loss /= num_batches         
               
@@ -145,19 +119,13 @@ with tf.Session(graph = graph) as sess:
             valid_loss,ler = 0.0,0.0
             
             count = 0
-            
-#             print('Validation Loop')
-            
-#Change this to valid, once done with testing...
+
             for xv,yv in valid_generator: 
                 
                 if count == num_vbatches:
                     break
                 
-#                 print('Valid Minibatch',count)
                 
-                #Validatation feed...
-
                 yv,widths = np.hsplit(yv,2)
 
                 #widths = np.squeeze(widths,axis=1)
@@ -169,6 +137,7 @@ with tf.Session(graph = graph) as sess:
                 valid_size = xv.shape[0]
                 sparse_targets = helper._batch_y(yv,vocabulary)
                 
+                #Validatation feed...
                 feed_valid = {
                              inputs:xv,targets:sparse_targets,
                              time_steps:[seq_len]*valid_size,
