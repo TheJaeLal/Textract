@@ -1,49 +1,36 @@
 import tensorflow as tf
 import numpy as np
-import shelve
-import joblib
+
 from math import ceil
 import time
-import model
-from Augment import train_datagen, valid_datagen
-import helper
-from train_config import vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,momentum,summary_epoch,dropout,use_more_data
+
+from model import ANN_Model
+from datagen import train_generator, valid_generator
+from train_config import mount_point,vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,summary_epoch,dropout
 from Arch import CNN
 import layers
-
-mount_point = '../'
-
-with shelve.open(mount_point+'IAM_Data','c') as shelf:
-    train_label = shelf['train_label']
-    
-    valid_label = shelf[valid_set+'_label']
-
-#   If more data needed use zombie data
-    if use_more_data:
-        zombie_label = shelf['zombie_label']
-
-#Training and Validation Input Images (As Numpy Arrays)
-train_array = joblib.load(os.path.join(mount_point,'data','train_array'))
-valid_array = joblib.load(os.path.join(mount_point,'data',valid_set+'_array'))
-
-#If additional data is needed...
-if use_more_data:
-    zombie_array = joblib.load(os.path.join(mount_point,'data','zombie_array'))
-
-##*****Increase the training dataset...*****
-##Add the zombie array to the train_array and do the same for labels...
-if use_more_data:
-    train_array = np.concatenate((train_array,zombie_array))
-    train_label = np.concatenate((train_label,zombie_label))
+import helper
 
 #Initializer the model/graph
-graph,dropout_lstm,dropout_fc,inputs,time_steps,targets,loss,train,decoded,label_error_rate,seq_len,is_training,conv_dropout,gradients,interim_dropout = model.model()
+model = ANN_Model()
 
-##If you want to see augmented Images...
-# train_generator = train_datagen.flow(train_array,train_label,batch_size,save_to_dir=mount_point+'Augmented', save_prefix='train')
+graph = model[0]
+dropout_lstm = model[1]
+dropout_fc = model[2]
+inputs = model[3]
+time_steps = model[4]
+targets = model[5]
+loss = model[6]
+train = model[7]
+decoded = model[8]
+label_error_rate = model[9]
+seq_len = model[10]
+is_training = model[11]
+conv_dropout = model[12]
+gradients = model[13]
+interim_dropout = model[14]
 
-train_generator = train_datagen.flow(train_array,train_label,batch_size)
-valid_generator = valid_datagen.flow(valid_array,valid_label,valid_batch_size)
+# graph,dropout_lstm,dropout_fc,inputs,time_steps,targets,loss,train,decoded,label_error_rate,seq_len,is_training,conv_dropout,gradients,interim_dropout = ANN_Model()
 
 num_training_samples = train_array.shape[0]
 num_valid_samples = valid_array.shape[0]
@@ -124,7 +111,6 @@ with tf.Session(graph = graph) as sess:
                 
                 if count == num_vbatches:
                     break
-                
                 
                 yv,widths = np.hsplit(yv,2)
 

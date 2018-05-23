@@ -29,7 +29,7 @@ augment_data = False
 use_more_data=False
 
 #Which set to use for Validation 'valid' or 'test'
-test_set='valid'
+valid_set='valid'
 
 #Regularization (weight decay)
 decay = 0.0
