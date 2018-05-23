@@ -10,6 +10,7 @@ from Augment import valid_datagen
 import helper
 from test_config import vocabulary,test_batch_size,mount_point,prediction_set
 from Arch import CNN
+import matplotlib.pyplot as plt
 
 #Generating Labels and image names
 with shelve.open(mount_point+'IAM_Data','c') as shelf:
