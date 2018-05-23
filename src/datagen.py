@@ -2,7 +2,7 @@ import shelve
 import joblib
 from train_config import mount_point,use_more_data,valid_set,batch_size,valid_batch_size
 from Augment import train_datagen,valid_datagen
-
+import os
 
 with shelve.open(mount_point+'IAM_Data','c') as shelf:
     train_label = shelf['train_label']

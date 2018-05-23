@@ -23,7 +23,6 @@ test_array = joblib.load(mount_point+'data/test_array')
 
 graph,dropout_lstm,dropout_fc,inputs,time_steps,targets,loss,train,decoded,label_error_rate,seq_len,is_training,conv_dropout,gradients,interim_dropout = model.model()
 
-
 # ## Test Parameters
 
 test_generator = valid_datagen.flow(test_array,test_label,test_batch_size)

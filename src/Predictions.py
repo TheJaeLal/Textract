@@ -1,4 +1,3 @@
-
 import tensorflow as tf
 import numpy as np
 import shelve
@@ -106,7 +105,6 @@ original_img = infer_inputs[0][0]
 original_img = original_img.reshape(original_img.shape[:2])
 
 #original_img.shape
-
 plt.imsave('test_input.jpg',original_img,cmap='gray',format='jpg')
 
 original_label = infer_targets[0][0]
