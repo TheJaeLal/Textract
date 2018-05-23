@@ -1,4 +1,4 @@
-from config import vocab_size
+from train_config import vocab_size
 
 #Format: 'conv':[filter_size,strides,num_filters], 'pool':[strides]
 

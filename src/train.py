@@ -7,7 +7,7 @@ import time
 import model
 from Augment import train_datagen, valid_datagen
 import helper
-from config import vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,momentum,summary_epoch,dropout
+from train_config import vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,momentum,summary_epoch,dropout
 from Arch import CNN
 import layers
 

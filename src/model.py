@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import layers
-from config import vocab_size, img_width,img_height, alpha,cell_clip,first_decay_steps,t_mul,m_mul,momentum,decay
+from train_config import vocab_size, img_width,img_height, alpha,cell_clip,first_decay_steps,t_mul,m_mul,momentum,decay
 from Arch import CNN, BRNN, FC, Interim_FC
 import sys
 

@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.python.client import device_lib
+#from tensorflow.python.client import device_lib
 from math import ceil
 
 def get_available_gpus():
