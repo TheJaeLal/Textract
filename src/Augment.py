@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 import numpy as np
 from aug_config import *
-from config import augment_data
+from train_config import augment_data
 import random
 
 def augment(image):

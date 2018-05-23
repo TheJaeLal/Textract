@@ -26,10 +26,10 @@ dropout = { 'conv':[1,1,1,0.5,0.5,0.5,0.5],
 augment_data = False
 
 #Use addition train_data (3000+ other zombie_images)
-use_more_data=False
+use_more_data = False
 
 #Which set to use for Validation 'valid' or 'test'
-valid_set='valid'
+valid_set = 'valid'
 
 #Regularization (weight decay)
 decay = 0.0
@@ -52,8 +52,8 @@ summary_epoch = 150
 #Not using as of now!
 #CLR parameters
 first_decay_steps = 800
-t_mul=2.0
-m_mul=1.0
+t_mul = 2.0
+m_mul = 1.0
 
 #LSTM clipping
 cell_clip = -1

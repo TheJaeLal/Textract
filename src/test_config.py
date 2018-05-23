@@ -22,6 +22,7 @@ infer_batch_size = 1
 
 resume_epoch = 37
 model_dir = 'saved_models_ler0.07_leakyrelu'
+model_prefix = 'cnn_lstm_fc_'
 
 #Set on which prediction is to be done valid/test
 prediction_set = 'valid'

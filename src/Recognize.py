@@ -1,0 +1,101 @@
+
+import tensorflow as tf
+import numpy as np
+import shelve
+import joblib
+import os
+from math import ceil
+import time
+import layers
+import model
+from Augment import valid_datagen
+import helper
+from test_config import vocabulary,infer_batch_size,mount_point,input_dir,resume_epoch,img_height,img_width,model_dir,model_prefix
+from Arch import CNN
+import matplotlib.pyplot as plt
+
+#Importing model parameters
+model_params = model.model()
+
+graph = model_params[0]
+dropout_lstm = model_params[1]
+dropout_fc = model_params[2]
+inputs = model_params[3]
+time_steps = model_params[4]
+targets = model_params[5]
+loss = model_params[6]
+train = model_params[7]
+decoded = model_params[8]
+label_error_rate = model_params[9]
+seq_len = model_params[10]
+is_training = model_params[11]
+conv_dropout = model_params[12]
+gradients = model_params[13]
+interim_dropout = model_params[14]
+
+#Generating images
+valid_generator = valid_datagen.flow_from_directory(mount_point+input_dir,target_size=(img_height,img_width),color_mode='grayscale',batch_size = infer_batch_size)
+
+num_vbatches = 1
+
+
+#Inputs for images, outputs for predictions, targets for labels
+infer_inputs = []
+infer_outputs = []
+infer_targets = []
+
+
+with tf.Session(graph = graph) as sess:
+        
+    saver = tf.train.Saver(max_to_keep=None)
+    
+    sess.run(tf.global_variables_initializer())
+    
+    timer  = 0
+
+    saver.restore(sess, os.path.join(mount_point,model_dir,model_prefix)+str(resume_epoch))
+
+    start_time = time.time()
+
+    count = 0
+
+    for x,y in valid_generator:
+       
+        infer_inputs.append(x)
+        
+        print(y)
+        
+        print(x.shape)
+        
+        actual_batch_size = x.shape[0]
+        
+        widths = [189]
+        
+        if count == num_vbatches:
+            break
+
+        feed = {
+                     inputs:x,
+                     time_steps:widths,conv_dropout:[1]*len(CNN),
+                     dropout_fc:1,dropout_lstm:1,interim_dropout:1,
+                     is_training:False
+                }
+
+        d = sess.run([decoded],feed_dict=feed)
+        infer_outputs.append(d)
+        count+=1
+
+#infer_outputs[0][0][0][1]
+
+#Prediction string (PROBABLY GOES TO FLASK SERVER)
+content = "".join([vocabulary[char] for char in infer_outputs[0][0][0][1]])
+print(content)
+
+# #Validating input image with prediction
+# original_img = infer_inputs[0][0]
+# original_img = original_img.reshape(original_img.shape[:2])
+
+# #original_img.shape
+
+# plt.imsave('test_input.jpg',original_img,cmap='gray',format='jpg')
+
