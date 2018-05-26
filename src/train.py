@@ -54,7 +54,7 @@ with tf.Session(graph = graph) as sess:
     
     #Resume training from resume_epoch
     if resume_epoch != 0:
-        saver.restore(sess, mount_point+'saved_models/cnn_lstm_fc_'+str(resume_epoch))
+        saver.restore(sess, os.path.join(mount_point,'saved_models','cnn_lstm_fc_'+str(resume_epoch)))
     
     #Epoch Loop
     for e in range(resume_epoch,n_epochs):

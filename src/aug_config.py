@@ -11,16 +11,16 @@ out_folder_path = '../Augmented'
 zr = 0.05
 
 #height-shift range
-hsr = 0.0
+hsr = 0.05
 
 #width-shift range
-wsr = 0.05
+wsr = 0.07
 
 #shear range
 shr = 0.01
 
 #Rotation range
-ror = 3
+ror = 2.5
 
 #For introducing a blank baseline (making img similar to baseline-removed imgs)
 baseline_upper_bound = 70

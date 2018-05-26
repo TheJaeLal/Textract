@@ -40,6 +40,7 @@ def _get_label_data(more_train_data):
 def get_generators():
     """Returns training and Validation generators
     """
+    global num_train,num_valid
     
     train_array,valid_array = _get_img_data(more_train_data)
     train_label,valid_label = _get_label_data(more_train_data)

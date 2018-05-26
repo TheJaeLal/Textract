@@ -42,8 +42,8 @@ alpha = 0.0005
 #Not in use yet..
 momentum = 0.0
 
-batch_size = 64
-valid_batch_size = 64
+batch_size = 256
+valid_batch_size = 256
 
 #Training parameters
 n_epochs = 1000
