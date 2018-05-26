@@ -14,13 +14,13 @@ vocab_size = len(vocabulary)+1
 #Model parameters
 img_height = 114
 img_width = 758
-
-input_dir = 'Test_Images/Model_Input'
+            
+input_dir = 'Test_Images/ImgenhOutput_Center'
 
 test_batch_size = 64
 infer_batch_size = 1
 
-resume_epoch = 99
+resume_epoch = 34
 model_dir = 'saved_models'
 model_prefix = 'cnn_lstm_fc_'
 

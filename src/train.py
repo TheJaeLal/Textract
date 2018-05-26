@@ -3,6 +3,7 @@ import numpy as np
 
 from math import ceil
 import time
+import os
 
 from model import ANN_Model
 from train_config import mount_point,vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,summary_epoch,dropout

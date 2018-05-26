@@ -33,9 +33,11 @@ gradients = model_params[13]
 interim_dropout = model_params[14]
 
 #Generating images
-valid_generator = valid_datagen.flow_from_directory(os.path.join(mount_point,input_dir),target_size=(img_height,img_width),color_mode='grayscale',batch_size = infer_batch_size,shuffle=False)
+valid_generator = valid_datagen.flow_from_directory( os.path.join(mount_point,input_dir),
+                                            target_size=(img_height,img_width), color_mode='grayscale',
+                                            batch_size = infer_batch_size, shuffle=False )
 
-num_vbatches = 5
+num_vbatches = 4
 
 #Inputs for images, outputs for predictions, targets for labels
 infer_inputs = []

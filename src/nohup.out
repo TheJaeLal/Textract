@@ -1,0 +1,5942 @@
+2018-05-26 15:52:12.291914: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:898] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-05-26 15:52:12.292227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla M60 major: 5 minor: 2 memoryClockRate(GHz): 1.1775
+pciBusID: 0000:00:1e.0
+totalMemory: 7.43GiB freeMemory: 7.35GiB
+2018-05-26 15:52:12.292248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-05-26 15:52:12.570570: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-26 15:52:12.570614: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-05-26 15:52:12.570623: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-05-26 15:52:12.570838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7099 MB memory) -> physical GPU (device: 0, name: Tesla M60, pci bus id: 0000:00:1e.0, compute capability: 5.2)
+loss:[9.76481819]
+loss:[14.1531639]
+loss:[12.9515]
+loss:[10.8140411]
+loss:[12.1473742]
+loss:[12.6001663]
+loss:[11.2265406]
+loss:[14.3406706]
+loss:[11.5155287]
+loss:[14.2699766]
+loss:[12.2754488]
+loss:[12.5496931]
+loss:[11.5661268]
+loss:[13.6562986]
+loss:[11.4798431]
+loss:[13.0517807]
+loss:[12.4911337]
+loss:[14.8775301]
+loss:[11.5631208]
+loss:[12.4489632]
+loss:[16.0218372]
+loss:[9.59105778]
+loss:[14.9261503]
+loss:[12.737155]
+loss:[12.4030151]
+loss:[15.0874834]
+loss:[11.7908583]
+loss:[12.0515137]
+loss:[11.0079432]
+loss:[15.7213907]
+loss:[13.4291983]
+loss:[15.7923727]
+loss:[10.83181]
+loss:[16.496397]
+loss:[13.7346201]
+loss:[14.5214376]
+loss:[13.9370527]
+loss:[14.4753532]
+loss:[12.9539747]
+loss:[12.7808685]
+loss:[13.9952621]
+loss:[13.5702982]
+loss:[14.4350586]
+loss:[13.1997919]
+loss:[17.4210033]
+loss:[13.7438498]
+loss:[13.6120481]
+loss:[14.3402205]
+loss:[14.4938402]
+loss:[9.29687595]
+loss:[13.0904665]
+loss:[15.3950567]
+loss:[15.9900818]
+loss:[15.2349405]
+loss:[13.988616]
+loss:[13.9158669]
+loss:[12.3548021]
+loss:[12.2804031]
+loss:[13.7189]
+loss:[12.5016127]
+loss:[16.2162666]
+loss:[12.0002642]
+loss:[18.53228]
+loss:[12.9285469]
+loss:[13.5842314]
+loss:[10.6633272]
+loss:[16.1312351]
+loss:[11.7953539]
+loss:[10.3423529]
+loss:[15.8890657]
+loss:[14.6728926]
+loss:[13.9809027]
+loss:[15.1093521]
+loss:[13.4781561]
+loss:[13.8837614]
+loss:[13.0698729]
+loss:[13.0977678]
+loss:[17.8671246]
+loss:[14.026248]
+loss:[14.2326813]
+loss:[12.7702684]
+loss:[13.4495726]
+loss:[10.9136419]
+loss:[13.946312]
+loss:[15.4586334]
+loss:[14.3600225]
+loss:[13.9734039]
+loss:[9.40795898]
+loss:[11.3271341]
+loss:[16.0497227]
+loss:[19.1075573]
+loss:[11.996686]
+loss:[10.8297653]
+loss:[13.5093451]
+loss:[12.3638411]
+loss:[15.8031693]
+loss:[12.0784302]
+loss:[14.5259218]
+loss:[14.4518404]
+loss:[12.5433512]
+loss:[11.7260447]
+loss:[15.3158045]
+loss:[12.3388414]
+loss:[15.5356913]
+loss:[11.4287519]
+loss:[18.838686]
+loss:[16.2368412]
+loss:[9.68502331]
+loss:[12.2933197]
+loss:[13.3117571]
+loss:[12.5410357]
+loss:[11.4385681]
+loss:[13.6121912]
+loss:[14.8437662]
+loss:[14.3868914]
+loss:[14.4302511]
+loss:[11.5912704]
+loss:[14.104619]
+loss:[13.6861296]
+loss:[14.0758791]
+loss:[10.8214922]
+loss:[16.1199474]
+loss:[13.1558409]
+loss:[11.6578684]
+loss:[12.7783728]
+loss:[13.776803]
+loss:[14.0857439]
+loss:[12.8213348]
+loss:[11.9499521]
+loss:[14.0603533]
+loss:[12.7483797]
+loss:[13.9525251]
+loss:[18.3149624]
+loss:[14.9909163]
+loss:[12.6082735]
+loss:[12.9733496]
+loss:[12.4572172]
+loss:[11.7838488]
+loss:[12.9743776]
+loss:[13.2152605]
+loss:[12.6739607]
+loss:[11.3204956]
+loss:[13.1966858]
+loss:[16.3092594]
+loss:[13.7499113]
+loss:[18.0221539]
+loss:[13.3902617]
+loss:[14.998395]
+loss:[13.2436094]
+loss:[18.5064373]
+loss:[14.4035873]
+loss:[15.4091444]
+loss:[13.7280073]
+loss:[15.4534483]
+loss:[12.4728842]
+loss:[13.2583323]
+loss:[12.4099607]
+loss:[13.2705498]
+loss:[14.5775099]
+loss:[13.9627466]
+loss:[10.2878752]
+loss:[18.8700809]
+loss:[13.9038963]
+loss:[12.0841904]
+loss:[13.098278]
+loss:[13.1583281]
+loss:[12.5642805]
+loss:[11.3840914]
+loss:[13.9012327]
+loss:[10.8374434]
+loss:[13.1165991]
+loss:[10.0798769]
+loss:[10.026082]
+loss:[12.4398918]
+loss:[14.0614042]
+loss:[14.3953476]
+loss:[12.2300901]
+loss:[16.334156]
+loss:[11.9645605]
+loss:[14.2799988]
+loss:[13.4445801]
+loss:[12.893302]
+loss:[12.8711548]
+loss:[10.4157381]
+loss:[12.2561312]
+loss:[12.99615]
+loss:[16.2415428]
+loss:[10.8114729]
+loss:[12.1148176]
+loss:[11.3822184]
+loss:[17.9760647]
+loss:[11.9582062]
+loss:[14.9620047]
+loss:[14.5702009]
+loss:[14.9426193]
+loss:[16.1125183]
+loss:[11.440361]
+loss:[14.9335365]
+loss:[16.6319218]
+loss:[13.1186724]
+loss:[10.9687471]
+loss:[12.9628601]
+loss:[12.6670799]
+loss:[11.2288742]
+loss:[16.276228]
+loss:[11.2122526]
+loss:[10.7774734]
+loss:[12.851552]
+loss:[11.5681581]
+loss:[13.7412138]
+loss:[11.2261515]
+loss:[14.2620325]
+loss:[14.4346342]
+loss:[14.788147]
+loss:[13.3022947]
+loss:[13.8786345]
+loss:[15.0363798]
+loss:[8.55456257]
+loss:[15.2742491]
+loss:[15.6853628]
+loss:[12.396759]
+loss:[10.0943966]
+loss:[15.4353218]
+loss:[17.1254406]
+loss:[11.467598]
+loss:[11.6654005]
+loss:[13.5607452]
+loss:[12.8066587]
+loss:[14.8188734]
+loss:[10.7649279]
+loss:[15.2531023]
+loss:[12.8382759]
+loss:[15.3539305]
+loss:[14.746501]
+loss:[12.1526537]
+loss:[14.1241674]
+loss:[12.1741486]
+loss:[13.3454323]
+loss:[13.043766]
+loss:[16.950798]
+loss:[13.5868177]
+loss:[10.1186152]
+loss:[13.7711363]
+loss:[13.2729149]
+loss:[14.3779135]
+loss:[9.7680769]
+loss:[14.8538389]
+loss:[11.0163641]
+loss:[13.1421156]
+loss:[13.4992552]
+loss:[15.8450155]
+loss:[13.9846849]
+loss:[11.5942564]
+loss:[11.7907095]
+loss:[13.2366133]
+loss:[12.7417221]
+loss:[12.2638397]
+loss:[13.2970095]
+loss:[9.99801445]
+loss:[15.4080362]
+loss:[14.1068773]
+loss:[15.1075106]
+loss:[11.1463346]
+loss:[13.4221992]
+loss:[13.4484587]
+loss:[11.9739656]
+loss:[12.5819426]
+loss:[13.4029703]
+loss:[11.4514303]
+loss:[12.302165]
+loss:[11.720952]
+loss:[10.5106087]
+loss:[11.6474466]
+loss:[17.0435047]
+loss:[13.6945]
+loss:[14.7671127]
+loss:[15.4574432]
+loss:[12.8873339]
+loss:[12.9409685]
+loss:[12.9060354]
+loss:[14.5134401]
+loss:[14.3019819]
+loss:[11.5487213]
+loss:[15.1276102]
+loss:[13.2114401]
+loss:[15.8969498]
+loss:[12.9629364]
+loss:[14.8642912]
+loss:[13.5513487]
+loss:[13.0497284]
+loss:[14.130868]
+loss:[12.666584]
+loss:[10.5126343]
+loss:[15.4673204]
+loss:[13.4494638]
+loss:[15.725811]
+loss:[10.5856256]
+loss:[10.3790121]
+loss:[12.2277784]
+loss:[12.4436655]
+loss:[14.2597494]
+loss:[13.3905993]
+loss:[10.9049225]
+loss:[14.1487989]
+loss:[11.5920095]
+loss:[11.7160616]
+loss:[15.0648499]
+loss:[11.2044678]
+loss:[12.5820656]
+loss:[11.7671051]
+loss:[10.5553579]
+loss:[12.9978037]
+loss:[14.5928144]
+loss:[14.280941]
+loss:[12.2371321]
+loss:[10.9893084]
+loss:[13.7135344]
+loss:[11.4932327]
+loss:[15.9184237]
+loss:[16.1890354]
+loss:[13.9439993]
+loss:[15.5959702]
+loss:[12.4104624]
+loss:[13.8682909]
+loss:[12.697526]
+loss:[16.0581818]
+loss:[12.2755785]
+loss:[13.3379698]
+loss:[15.5048189]
+loss:[12.2036371]
+loss:[12.1988401]
+loss:[12.9202042]
+loss:[14.7511091]
+loss:[11.8669748]
+loss:[13.2294436]
+loss:[16.6797161]
+loss:[16.2317905]
+loss:[10.7463722]
+loss:[14.1232023]
+loss:[10.5082617]
+loss:[12.7043152]
+loss:[12.0259399]
+loss:[13.8962526]
+loss:[13.8453836]
+loss:[15.2140493]
+loss:[12.3695192]
+loss:[14.1939]
+loss:[12.9117813]
+loss:[15.1757231]
+loss:[11.1799116]
+loss:[15.8965731]
+loss:[10.8121519]
+loss:[14.9191933]
+loss:[11.4045401]
+loss:[13.7999105]
+loss:[14.2893953]
+loss:[13.2939043]
+loss:[11.9525938]
+loss:[13.6879835]
+loss:[8.91233349]
+loss:[13.6662016]
+loss:[13.6825523]
+loss:[13.0706911]
+loss:[12.6128263]
+loss:[12.7897215]
+loss:[11.9058428]
+loss:[13.0792274]
+loss:[10.0199537]
+loss:[13.0469885]
+loss:[11.6404715]
+loss:[13.9496412]
+loss:[11.4816055]
+loss:[12.3096399]
+loss:[11.8838959]
+loss:[13.1131449]
+loss:[10.9870253]
+loss:[15.6635408]
+loss:[14.2705507]
+loss:[11.8384123]
+loss:[12.8659134]
+loss:[14.6122732]
+loss:[14.6888552]
+loss:[9.76141071]
+loss:[9.41247272]
+loss:[13.2795563]
+loss:[14.6583862]
+loss:[13.8966217]
+loss:[15.7621336]
+loss:[15.9888334]
+loss:[11.496356]
+loss:[14.6325502]
+loss:[15.5347261]
+loss:[12.6162872]
+loss:[15.6055298]
+loss:[11.5094566]
+loss:[11.6843081]
+loss:[13.3755493]
+loss:[16.2313137]
+loss:[12.3480406]
+loss:[12.2628403]
+loss:[15.6249514]
+loss:[15.0379915]
+loss:[13.1793852]
+loss:[12.0168772]
+++Conv layer info info:
+Num_filters =  64
+Kernel_size =  3
+Strides =  1
+activation =  leaky_relu
+is_training =  Tensor("Placeholder:0", dtype=bool)
+dropout =  Tensor("strided_slice:0", shape=(), dtype=float32)
+--Max_pool info:
+Strides =  (3, 2)
+++Conv layer info info:
+Num_filters =  128
+Kernel_size =  3
+Strides =  1
+activation =  leaky_relu
+is_training =  Tensor("Placeholder:0", dtype=bool)
+dropout =  Tensor("strided_slice_1:0", shape=(), dtype=float32)
+--Max_pool info:
+Strides =  (3, 2)
+++Conv layer info info:
+Num_filters =  256
+Kernel_size =  3
+Strides =  1
+activation =  leaky_relu
+is_training =  Tensor("Placeholder:0", dtype=bool)
+dropout =  Tensor("strided_slice_2:0", shape=(), dtype=float32)
+++Conv layer info info:
+Num_filters =  256
+Kernel_size =  3
+Strides =  1
+activation =  leaky_relu
+is_training =  Tensor("Placeholder:0", dtype=bool)
+dropout =  Tensor("strided_slice_3:0", shape=(), dtype=float32)
+--Max_pool info:
+Strides =  (3, 1)
+++Conv layer info info:
+Num_filters =  512
+Kernel_size =  3
+Strides =  1
+activation =  leaky_relu
+is_training =  Tensor("Placeholder:0", dtype=bool)
+dropout =  Tensor("strided_slice_4:0", shape=(), dtype=float32)
+++Conv layer info info:
+Num_filters =  512
+Kernel_size =  3
+Strides =  1
+activation =  leaky_relu
+is_training =  Tensor("Placeholder:0", dtype=bool)
+dropout =  Tensor("strided_slice_5:0", shape=(), dtype=float32)
+--Max_pool info:
+Strides =  (3, 1)
+++Conv layer info info:
+Num_filters =  512
+Kernel_size =  2
+Strides =  1
+activation =  leaky_relu
+is_training =  Tensor("Placeholder:0", dtype=bool)
+dropout =  Tensor("strided_slice_6:0", shape=(), dtype=float32)
+Convolution_Output_size:(1,189)
+LSTM_Output_size: (?, 189, 512)
+**Fully connected info:
+units =  80
+activation =  None
+is_training =  Tensor("Placeholder:0", dtype=bool)
+dropout =  Tensor("Placeholder_3:0", dtype=float32)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+Epoch: 35, train_loss:13.45, valid_loss:14.07, ler:0.09 in 389.28 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 36, train_loss:13.24, valid_loss:13.31, ler:0.08 in 235.70 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)loss:[16.1426773]
+loss:[10.8650694]
+loss:[13.8944206]
+loss:[15.9062014]
+loss:[15.8905945]
+loss:[14.4908714]
+loss:[12.5513659]
+loss:[12.6377144]
+loss:[10.6817732]
+loss:[11.4351168]
+loss:[13.7012434]
+loss:[13.9563856]
+loss:[10.3124332]
+loss:[12.4582624]
+loss:[13.2494707]
+loss:[12.3913527]
+loss:[14.5724859]
+loss:[16.313303]
+loss:[9.86813641]
+loss:[15.9342546]
+loss:[15.1926804]
+loss:[10.9404573]
+loss:[12.6820936]
+loss:[12.0998192]
+loss:[11.4989443]
+loss:[14.5552015]
+loss:[12.0283613]
+loss:[12.6245193]
+loss:[11.8978577]
+loss:[13.4582815]
+loss:[9.61273289]
+loss:[15.5829649]
+loss:[10.4382582]
+loss:[10.4248972]
+loss:[13.6739759]
+loss:[10.8131628]
+loss:[16.3647232]
+loss:[11.1313362]
+loss:[16.035387]
+loss:[15.2933197]
+loss:[13.6399374]
+loss:[13.0367661]
+loss:[15.0807219]
+loss:[11.6620483]
+loss:[17.5381527]
+loss:[11.5266581]
+loss:[15.2602158]
+loss:[13.7575293]
+loss:[13.8980761]
+loss:[12.8912268]
+loss:[14.1596212]
+loss:[12.6061983]
+loss:[14.5977936]
+loss:[15.4304857]
+loss:[11.9898]
+loss:[11.6071939]
+loss:[11.2630663]
+loss:[11.0871477]
+loss:[13.4737711]
+loss:[11.2577591]
+loss:[14.2378912]
+loss:[13.0658369]
+loss:[12.3327856]
+loss:[14.5209427]
+loss:[11.1217527]
+loss:[16.5750179]
+loss:[11.7371531]
+loss:[12.4609756]
+loss:[11.6219664]
+loss:[9.9807806]
+loss:[17.4117393]
+loss:[11.63585]
+loss:[12.7141447]
+loss:[13.82582]
+loss:[14.8659143]
+loss:[13.2814894]
+loss:[11.6980057]
+loss:[15.2585707]
+loss:[12.5324631]
+loss:[16.5150509]
+loss:[12.984683]
+loss:[14.3118715]
+loss:[11.4173517]
+loss:[10.5260515]
+loss:[10.2814445]
+loss:[14.5774183]
+loss:[11.7378435]
+loss:[12.9507723]
+loss:[12.6634245]
+loss:[12.108963]
+loss:[9.10268402]
+loss:[11.9795141]
+loss:[11.604495]
+loss:[12.200408]
+loss:[11.887681]
+loss:[12.664937]
+loss:[13.4574251]
+loss:[13.0411034]
+loss:[14.5032415]
+loss:[13.9190855]
+loss:[13.5305099]
+loss:[14.1469622]
+loss:[13.0789843]
+loss:[14.294179]
+loss:[13.231761]
+loss:[13.5606499]
+loss:[13.6968956]
+loss:[11.6467562]
+loss:[10.6187601]
+loss:[10.5161295]
+loss:[12.7350922]
+loss:[17.8534698]
+loss:[9.27608871]
+loss:[14.3700457]
+loss:[12.7036562]
+loss:[15.1246672]
+loss:[12.6223984]
+loss:[13.6348572]
+loss:[9.95884]
+loss:[11.7187529]
+loss:[9.47365665]
+loss:[15.3344545]
+loss:[11.643733]
+loss:[12.6598043]
+loss:[12.5772352]
+loss:[13.448597]
+loss:[11.6546326]
+loss:[14.5376654]
+loss:[15.1808863]
+loss:[12.8939629]
+loss:[9.61537933]
+loss:[11.2925215]
+loss:[14.1976347]
+loss:[13.6208239]
+loss:[13.6342916]
+loss:[15.1575813]
+loss:[10.1811466]
+loss:[12.1971483]
+loss:[14.2844667]
+loss:[10.4321909]
+loss:[15.2075233]
+loss:[15.0332336]
+loss:[15.5194521]
+loss:[13.5527945]
+loss:[10.2152433]
+loss:[12.6118135]
+loss:[14.151639]
+loss:[13.4239473]
+loss:[11.0164232]
+loss:[11.9934082]
+loss:[13.2812548]
+loss:[10.1863356]
+loss:[13.3952684]
+loss:[11.613205]
+loss:[14.1637201]
+loss:[13.4148407]
+loss:[12.7180643]
+loss:[13.9715548]
+loss:[13.9412584]
+loss:[14.8686934]
+loss:[16.9352455]
+loss:[13.1367083]
+loss:[14.5860567]
+loss:[15.7315865]
+loss:[16.6482773]
+loss:[18.0360031]
+loss:[15.4482269]
+loss:[11.9075089]
+loss:[15.9572144]
+loss:[12.0738268]
+loss:[11.7572403]
+loss:[11.7514086]
+loss:[11.4794722]
+loss:[12.9599142]
+loss:[11.5302782]
+loss:[12.5960388]
+loss:[12.8703308]
+loss:[12.9400635]
+loss:[16.83395]
+loss:[13.8208094]
+loss:[12.7821455]
+loss:[13.0396576]
+loss:[12.0789413]
+loss:[14.064949]
+loss:[12.0022631]
+loss:[13.7473154]
+loss:[11.5929823]
+loss:[10.8762331]
+loss:[13.624486]
+loss:[12.1786528]
+loss:[13.838273]
+loss:[10.320899]
+loss:[24.7557049]
+loss:[11.6274118]
+loss:[15.303216]
+loss:[12.1874628]
+loss:[11.0554008]
+loss:[11.9533129]
+loss:[11.5071592]
+loss:[15.6213274]
+loss:[11.9792376]
+loss:[11.096364]
+loss:[12.4998884]
+loss:[14.3799515]
+loss:[10.1669207]
+loss:[14.8856611]
+loss:[12.4410324]
+loss:[12.969696]
+loss:[15.3358202]
+loss:[13.0204725]
+loss:[13.9409943]
+loss:[13.6763229]
+loss:[13.0339537]
+loss:[12.7798605]
+loss:[11.0022821]
+loss:[11.8726702]
+loss:[10.8210077]
+loss:[12.0511513]
+loss:[12.2103014]
+loss:[13.5327883]
+loss:[16.8832092]
+loss:[12.3929262]
+loss:[12.9983253]
+loss:[10.9763365]
+loss:[12.2679901]
+loss:[12.5069323]
+loss:[13.9035788]
+loss:[13.1592064]
+loss:[13.4734116]
+loss:[16.1341209]
+loss:[12.9930153]
+loss:[15.2393751]
+loss:[10.1763029]
+loss:[10.3473]
+loss:[16.1453]
+loss:[14.8980684]
+loss:[11.8501167]
+loss:[11.489872]
+loss:[11.0727873]
+loss:[12.888875]
+loss:[12.1676941]
+loss:[12.4813738]
+loss:[15.2897215]
+loss:[12.3110209]
+loss:[12.995822]
+loss:[11.5718279]
+loss:[12.213378]
+loss:[11.2843885]
+loss:[13.044982]
+loss:[9.7807169]
+loss:[11.3607283]
+loss:[12.4496498]
+loss:[9.98576355]
+loss:[12.7909803]
+loss:[10.88416]
+loss:[13.5139513]
+loss:[13.5714827]
+loss:[13.0583162]
+loss:[13.9982233]
+loss:[11.5714798]
+loss:[14.1544371]
+loss:[12.0449495]
+loss:[13.8808184]
+loss:[11.9101782]
+loss:[12.0877752]
+loss:[15.2606916]
+loss:[14.365325]
+loss:[14.5442657]
+loss:[15.3765974]
+loss:[14.4765472]
+loss:[15.3907471]
+loss:[15.2596807]
+loss:[10.1514177]
+loss:[12.0232115]
+loss:[17.0202904]
+loss:[14.5468521]
+loss:[14.6394758]
+loss:[9.93730068]
+loss:[12.3670359]
+loss:[14.5735197]
+loss:[11.2813215]
+loss:[10.4543962]
+loss:[14.7203827]
+loss:[13.8273077]
+loss:[13.9187508]
+loss:[12.9159613]
+loss:[10.9134445]
+loss:[15.5748339]
+loss:[12.3627853]
+loss:[11.793191]
+loss:[15.4311152]
+loss:[11.0751925]
+loss:[13.2716436]
+loss:[11.6785088]
+loss:[15.9964628]
+loss:[11.6775484]
+loss:[14.2891111]
+loss:[14.6588449]
+loss:[14.7456656]
+loss:[16.1297722]
+loss:[16.5238762]
+loss:[14.4250536]
+loss:[12.5497255]
+loss:[9.61180878]
+loss:[13.0432405]
+loss:[15.661273]
+loss:[11.0913954]
+loss:[12.0401564]
+loss:[10.6195078]
+loss:[14.3339767]
+loss:[15.7007971]
+loss:[12.8262329]
+loss:[15.0675964]
+loss:[14.5209656]
+loss:[12.122386]
+loss:[12.2954073]
+loss:[11.398941]
+loss:[13.3785295]
+loss:[13.112915]
+loss:[11.4962425]
+loss:[9.1440239]
+loss:[12.625001]
+loss:[12.9115801]
+loss:[8.73691845]
+loss:[10.219368]
+loss:[10.3227119]
+loss:[17.1835499]
+loss:[10.60748]
+loss:[12.3196688]
+loss:[11.8342772]
+loss:[14.0310907]
+loss:[14.5196352]
+loss:[10.9817915]
+loss:[12.0465193]
+loss:[15.1997061]
+loss:[12.2040052]
+loss:[13.9686689]
+loss:[11.5802307]
+loss:[9.48043728]
+loss:[13.4383173]
+loss:[14.1865168]
+loss:[11.859787]
+loss:[12.4187346]
+loss:[15.5138922]
+loss:[13.3157263]
+loss:[14.7869291]
+loss:[15.2771654]
+loss:[10.004344]
+loss:[14.3494606]
+loss:[13.0170326]
+loss:[12.8806429]
+loss:[14.0390549]
+loss:[11.7342567]
+loss:[16.7681675]
+loss:[13.279582]
+loss:[14.1891556]
+loss:[17.1328278]
+loss:[11.6813669]
+loss:[14.1486959]
+loss:[11.9082031]
+loss:[11.4341049]
+loss:[11.5249758]
+loss:[13.5136938]
+loss:[11.2467031]
+loss:[12.039669]
+loss:[12.9518242]
+loss:[13.9921274]
+loss:[10.2458725]
+loss:[12.1456194]
+loss:[13.4321051]
+loss:[13.6654406]
+loss:[13.1884432]
+loss:[14.007884]
+loss:[12.434186]
+loss:[15.2727613]
+loss:[10.3702211]
+loss:[11.9931]
+loss:[13.1710615]
+loss:[10.3481703]
+loss:[10.6251516]
+loss:[13.6911974]
+loss:[13.2135277]
+loss:[12.7030678]
+loss:[13.0700569]
+loss:[12.3882837]
+loss:[10.4606199]
+loss:[15.4021578]
+loss:[12.1254377]
+loss:[16.3207169]
+loss:[11.5413561]
+loss:[11.5036211]
+loss:[13.8851366]
+loss:[10.8004274]
+loss:[12.7947206]
+loss:[17.3117046]
+loss:[13.1252413]
+loss:[12.3481226]
+loss:[11.2821198]
+loss:[13.5659971]
+loss:[13.2060232]
+loss:[11.6047211]
+loss:[12.7526217]
+loss:[12.8747931]
+loss:[14.097332]
+loss:[12.3815947]
+loss:[12.7014284]
+loss:[12.2460051]
+loss:[15.980649]
+loss:[15.4942675]
+loss:[13.8857603]
+loss:[14.782546]
+loss:[12.0141258]
+loss:[10.9043274]
+loss:[13.8499269]
+loss:[13.3167448]
+loss:[12.95504]
+loss:[13.142087]
+loss:[12.9972639]
+loss:[11.0920858]
+loss:[10.5912476]
+loss:[10.7190094]
+loss:[10.9274645]
+loss:[13.4837265]
+loss:[10.3934374]
+loss:[11.7648249]
+loss:[11.1821108]
+loss:[14.2512846]
+loss:[9.77701187]
+loss:[13.0556269]
+loss:[11.8509016]
+loss:[17.1454754]
+loss:[13.1232224]
+loss:[12.5358505]
+loss:[12.6879072]
+loss:[11.1462555]
+loss:[10.9900885]
+loss:[9.78922367]
+loss:[13.4080658]
+loss:[12.8040323]
+loss:[16.8255672]
+loss:[12.0427847]
+loss:[11.1029673]
+loss:[13.3802385]
+loss:[10.6556911]
+loss:[13.9099436]
+loss:[11.599719]
+loss:[13.9468117]
+loss:[10.9777336]
+loss:[11.3602982]
+loss:[11.492671]
+loss:[14.2257566]
+loss:[11.7271109]
+loss:[14.9866819]
+loss:[14.5419188]
+loss:[13.558135]
+loss:[14.2952604]
+loss:[10.975769]
+loss:[15.5516272]
+loss:[11.1502008]
+loss:[14.8019857]
+loss:[14.5837784]
+loss:[14.2753448]
+loss:[10.8633432]
+loss:[14.0173597]
+loss:[15.3232527]
+loss:[10.4597807]
+loss:[10.8780165]
+loss:[13.8042679]
+loss:[13.1609316]
+loss:[12.4270248]
+loss:[12.7970381]
+loss:[12.7517929]
+loss:[11.7684135]
+loss:[12.3623686]
+loss:[12.5314684]
+loss:[11.7643967]
+loss:[13.7039871]
+loss:[12.9263458]
+loss:[15.5025]
+loss:[13.6628418]
+loss:[13.3687029]
+loss:[9.8142767]
+loss:[12.0499458]
+loss:[12.5486832]
+loss:[15.2239761]
+loss:[11.9932833]
+loss:[13.107357]
+loss:[11.2392931]
+loss:[12.9334307]
+loss:[14.0921631]
+loss:[9.38217926]
+loss:[13.5630522]
+loss:[14.7620592]
+loss:[14.4832916]
+loss:[10.3304749]
+loss:[15.1083412]
+loss:[11.2464752]
+loss:[12.6081]
+loss:[9.2956543]
+loss:[14.4448652]
+loss:[16.5989647]
+loss:[10.4571104]
+loss:[10.3655119]
+loss:[13.8006744]
+loss:[12.2458487]
+loss:[12.7910204]
+loss:[10.4607172]
+loss:[13.3716402]
+loss:[12.5328321]
+loss:[11.8716459]
+loss:[9.46302891]
+loss:[11.3847876]
+loss:[12.7121191]
+loss:[12.0684919]
+loss:[14.0218096]
+loss:[14.76509]
+loss:[12.6501884]
+loss:[15.2898359]
+loss:[13.5901833]
+loss:[9.80694866]
+loss:[16.6442242]
+loss:[11.2898512]
+loss:[11.0848341]
+loss:[14.2393808]
+loss:[12.3806801]
+loss:[14.636014]
+loss:[14.8937159]
+loss:[10.2257357]
+loss:[10.4832163]
+loss:[10.5670557]
+loss:[11.3446341]
+loss:[12.4317255]
+loss:[14.6901808]
+loss:[13.990242]
+loss:[10.6521187]
+loss:[12.0603075]
+loss:[11.0559435]
+loss:[12.7237129]
+loss:[17.2659836]
+loss:[14.1282606]
+loss:[10.6260614]
+loss:[14.3546991]
+loss:[11.5207739]
+loss:[11.6588106]
+loss:[11.2532721]
+loss:[15.1258469]
+
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 37, train_loss:13.19, valid_loss:13.16, ler:0.08 in 234.93 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 38, train_loss:13.06, valid_loss:13.48, ler:0.09 in 234.73 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 39, train_loss:12.93, valid_loss:12.94, ler:0.08 in 234.89 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 40, train_loss:12.83, valid_loss:12.93, ler:0.08 in 376.15 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of yloss:[13.3427076]
+loss:[12.2229586]
+loss:[11.9787264]
+loss:[13.2426023]
+loss:[13.6316719]
+loss:[13.0496244]
+loss:[11.5935326]
+loss:[13.8824692]
+loss:[12.1469812]
+loss:[11.6763687]
+loss:[15.3206854]
+loss:[11.5470505]
+loss:[14.2741346]
+loss:[12.3498993]
+loss:[11.9609842]
+loss:[14.2063627]
+loss:[12.079071]
+loss:[14.2429705]
+loss:[13.4203291]
+loss:[11.7821341]
+loss:[14.3617401]
+loss:[13.0851059]
+loss:[11.2412081]
+loss:[13.1465864]
+loss:[12.5154371]
+loss:[12.5256186]
+loss:[12.0812874]
+loss:[16.485693]
+loss:[12.4902534]
+loss:[13.4430361]
+loss:[11.3779221]
+loss:[15.2312593]
+loss:[14.5077543]
+loss:[11.0397005]
+loss:[13.0508299]
+loss:[14.010376]
+loss:[12.7754717]
+loss:[16.7079029]
+loss:[15.0671968]
+loss:[11.6498156]
+loss:[11.8637686]
+loss:[12.5395279]
+loss:[12.7823381]
+loss:[14.3869658]
+loss:[14.6330595]
+loss:[12.532752]
+loss:[13.4325666]
+loss:[13.6746035]
+loss:[13.2325592]
+loss:[9.41550827]
+loss:[11.4493685]
+loss:[12.2071733]
+loss:[14.6786375]
+loss:[13.4140882]
+loss:[11.7681923]
+loss:[11.6678724]
+loss:[11.7871017]
+loss:[11.588933]
+loss:[12.0179319]
+loss:[10.7661438]
+loss:[13.0286379]
+loss:[9.89186287]
+loss:[11.9797258]
+loss:[10.6531382]
+loss:[14.3534622]
+loss:[13.1898699]
+loss:[11.635438]
+loss:[11.3599119]
+loss:[12.0156584]
+loss:[10.2976446]
+loss:[14.4863787]
+loss:[11.3877068]
+loss:[13.3681517]
+loss:[13.5069551]
+loss:[9.23495388]
+loss:[13.3297701]
+loss:[14.3564062]
+loss:[10.8612862]
+loss:[10.6736641]
+loss:[12.217392]
+loss:[10.4022713]
+loss:[12.0312147]
+loss:[16.1711674]
+loss:[11.4332161]
+loss:[15.6030073]
+loss:[11.5721016]
+loss:[10.6857986]
+loss:[13.4375181]
+loss:[9.96557236]
+loss:[11.9421768]
+loss:[12.6360521]
+loss:[10.9733114]
+loss:[13.7037172]
+loss:[14.3714867]
+loss:[10.8725405]
+loss:[13.1697741]
+loss:[10.3370066]
+loss:[14.1428795]
+loss:[12.3212805]
+loss:[15.256012]
+loss:[10.1583366]
+loss:[9.91239]
+loss:[13.0636673]
+loss:[11.4341278]
+loss:[16.5673809]
+loss:[15.5431976]
+loss:[14.4501543]
+loss:[10.2244835]
+loss:[11.7841148]
+loss:[13.8050566]
+loss:[9.95624256]
+loss:[12.4152403]
+loss:[11.1507072]
+loss:[13.497365]
+loss:[12.3860598]
+loss:[11.8478594]
+loss:[14.8778276]
+loss:[12.4383421]
+loss:[9.92393494]
+loss:[12.4259939]
+loss:[11.3484955]
+loss:[14.9929]
+loss:[16.3286247]
+loss:[12.9923906]
+loss:[12.3131561]
+loss:[12.1179228]
+loss:[13.4704514]
+loss:[12.7645607]
+loss:[12.8845072]
+loss:[15.2191057]
+loss:[13.9860611]
+loss:[12.2247629]
+loss:[13.6836281]
+loss:[12.5554686]
+loss:[11.6668701]
+loss:[10.0960569]
+loss:[10.335124]
+loss:[11.7880983]
+loss:[13.6212416]
+loss:[15.1960649]
+loss:[12.8999758]
+loss:[10.5946417]
+loss:[10.3801603]
+loss:[12.0475645]
+loss:[11.8554945]
+loss:[12.8946953]
+loss:[15.6019335]
+loss:[10.4815302]
+loss:[12.4648743]
+loss:[12.6061392]
+loss:[13.1188498]
+loss:[10.2229385]
+loss:[11.5713396]
+loss:[15.7190371]
+loss:[12.4817238]
+loss:[14.6027451]
+loss:[10.5316677]
+loss:[12.0519171]
+loss:[11.4615631]
+loss:[13.1701927]
+loss:[13.8286362]
+loss:[16.7331371]
+loss:[12.9805059]
+loss:[12.9000063]
+loss:[9.82529354]
+loss:[12.706996]
+loss:[10.6359186]
+loss:[12.104146]
+loss:[12.6726494]
+loss:[10.4527359]
+loss:[13.1372404]
+loss:[12.0947266]
+loss:[12.4398184]
+loss:[11.2430239]
+loss:[13.6944132]
+loss:[12.9273252]
+loss:[13.0445938]
+loss:[14.2964201]
+loss:[15.8177567]
+loss:[13.7783852]
+loss:[13.9001513]
+loss:[11.4807329]
+loss:[11.1546926]
+loss:[15.744895]
+loss:[13.9514799]
+loss:[13.4803362]
+loss:[15.6051102]
+loss:[14.070756]
+loss:[14.1993151]
+loss:[10.101902]
+loss:[13.4238825]
+loss:[13.8576012]
+loss:[9.93484211]
+loss:[12.9660568]
+loss:[12.1916628]
+loss:[9.42741299]
+loss:[12.8656569]
+loss:[12.2377329]
+loss:[13.0288534]
+loss:[11.2701788]
+loss:[12.8931046]
+loss:[11.5718813]
+loss:[13.1704788]
+loss:[11.6418924]
+loss:[10.4365158]
+loss:[13.5507364]
+loss:[11.8152514]
+loss:[13.3465195]
+loss:[14.1676111]
+loss:[11.1980162]
+loss:[10.3896246]
+loss:[10.9106369]
+loss:[12.4742689]
+loss:[15.3431902]
+loss:[14.2078247]
+loss:[13.7798815]
+loss:[12.8300562]
+loss:[13.1198168]
+loss:[12.6344643]
+loss:[12.6772604]
+loss:[13.9586077]
+loss:[13.0406246]
+loss:[13.3031845]
+loss:[13.0060921]
+loss:[10.4237385]
+loss:[11.5803556]
+loss:[11.5602751]
+loss:[12.1135092]
+loss:[12.1752367]
+loss:[12.1340866]
+loss:[12.120697]
+loss:[14.1875496]
+loss:[9.16033649]
+loss:[11.027709]
+loss:[15.8052111]
+loss:[14.2608566]
+loss:[12.8374939]
+loss:[12.8297281]
+loss:[14.2623167]
+loss:[13.538044]
+loss:[12.6882172]
+loss:[13.5388832]
+loss:[12.590169]
+loss:[12.8670225]
+loss:[12.3747473]
+loss:[13.6194582]
+loss:[13.7193222]
+loss:[11.4534073]
+loss:[11.8228693]
+loss:[8.91065502]
+loss:[13.794281]
+loss:[11.3791647]
+loss:[12.4504957]
+loss:[11.0791903]
+loss:[13.0743952]
+loss:[15.1410675]
+loss:[13.1487198]
+loss:[9.16384888]
+loss:[14.0050535]
+loss:[10.4229193]
+loss:[11.6882601]
+loss:[15.4342241]
+loss:[8.8662138]
+loss:[16.3752136]
+loss:[11.8920488]
+loss:[10.9848299]
+loss:[12.7442017]
+loss:[15.0467558]
+loss:[11.6194687]
+loss:[12.6877928]
+loss:[12.3708105]
+loss:[10.9341192]
+loss:[11.9284601]
+loss:[15.3185539]
+loss:[10.8456221]
+loss:[14.5388842]
+loss:[9.69420147]
+loss:[13.9399948]
+loss:[14.2089119]
+loss:[13.8988466]
+loss:[14.0326109]
+loss:[12.6881819]
+loss:[9.35682774]
+loss:[11.2453499]
+loss:[14.4139633]
+loss:[14.1618309]
+loss:[16.2013206]
+loss:[12.999176]
+loss:[12.9981375]
+loss:[15.3765287]
+loss:[12.4069748]
+loss:[13.5878868]
+loss:[11.9714746]
+loss:[12.1529455]
+loss:[13.8310499]
+loss:[12.9688797]
+loss:[11.2832794]
+loss:[13.4064751]
+loss:[14.6537123]
+loss:[12.0185518]
+loss:[11.5824938]
+loss:[11.9553909]
+loss:[10.0321054]
+loss:[11.2713804]
+loss:[11.6518173]
+loss:[14.7745943]
+loss:[13.491231]
+loss:[13.1804695]
+loss:[11.2668762]
+loss:[10.1925964]
+loss:[11.1280212]
+loss:[11.4611969]
+loss:[17.3908901]
+loss:[11.5415506]
+loss:[15.6745596]
+loss:[9.37427616]
+loss:[12.1015139]
+loss:[14.0126495]
+loss:[12.3478937]
+loss:[11.5160942]
+loss:[12.6306925]
+loss:[13.0734749]
+loss:[8.57165432]
+loss:[13.2910233]
+loss:[13.336853]
+loss:[15.5671692]
+loss:[14.1147852]
+loss:[13.3181992]
+loss:[13.4372072]
+loss:[12.4700575]
+loss:[11.1761169]
+loss:[10.592515]
+loss:[12.114274]
+loss:[10.2011251]
+loss:[12.7976904]
+loss:[13.461853]
+loss:[10.7080917]
+loss:[11.564002]
+loss:[9.84600544]
+loss:[12.1678591]
+loss:[12.5468903]
+loss:[8.81808567]
+loss:[12.6596375]
+loss:[10.4810266]
+loss:[17.0647869]
+loss:[12.2189789]
+loss:[13.2895727]
+loss:[11.2363386]
+loss:[12.3980322]
+loss:[10.9723701]
+loss:[8.80292511]
+loss:[13.9690552]
+loss:[11.2948503]
+loss:[9.1560688]
+loss:[10.4905682]
+loss:[10.4873667]
+loss:[14.7253036]
+loss:[9.2239027]
+loss:[16.4058704]
+loss:[11.3118973]
+loss:[13.1570282]
+loss:[11.3724012]
+loss:[13.6117182]
+loss:[13.6687899]
+loss:[12.7027473]
+loss:[13.3678741]
+loss:[12.3370094]
+loss:[12.7449064]
+loss:[10.8152189]
+loss:[18.1865635]
+loss:[15.8435307]
+loss:[9.82936859]
+loss:[14.969945]
+loss:[13.9771957]
+loss:[13.8123312]
+loss:[11.8047895]
+loss:[14.0650215]
+loss:[12.9121351]
+loss:[13.9523239]
+loss:[15.8628197]
+loss:[13.5108681]
+loss:[12.932229]
+loss:[11.8206663]
+loss:[15.8119888]
+loss:[9.85914707]
+loss:[11.15448]
+loss:[13.0533104]
+loss:[16.0803604]
+loss:[14.7701979]
+loss:[12.4815826]
+loss:[13.2139845]
+loss:[10.6315069]
+loss:[14.0980082]
+loss:[13.6108942]
+loss:[11.178299]
+loss:[13.2264547]
+loss:[10.1878681]
+loss:[12.0545378]
+loss:[10.2846041]
+loss:[13.667201]
+loss:[12.6236801]
+loss:[10.3196287]
+loss:[12.3490019]
+loss:[10.5403099]
+loss:[10.8611116]
+loss:[11.2383871]
+loss:[13.4981489]
+loss:[12.1605253]
+loss:[11.6748857]
+loss:[11.3476324]
+loss:[12.9982119]
+loss:[9.66213799]
+loss:[10.5239077]
+loss:[12.4955931]
+loss:[10.2989702]
+loss:[10.0178518]
+loss:[9.0464592]
+loss:[12.0218124]
+loss:[12.1981955]
+loss:[13.1691771]
+loss:[11.0242386]
+loss:[11.5817261]
+loss:[16.0810986]
+loss:[13.3450289]
+loss:[13.9512434]
+loss:[16.4871]
+loss:[15.1471071]
+loss:[10.9181623]
+loss:[13.6682329]
+loss:[12.3456573]
+loss:[10.1804743]
+loss:[11.5336266]
+loss:[10.4646292]
+loss:[12.3452501]
+loss:[15.3673391]
+loss:[11.9526358]
+loss:[12.6231]
+loss:[13.508522]
+loss:[14.9042931]
+loss:[11.3805456]
+loss:[12.8408728]
+loss:[14.5054398]
+loss:[16.3437614]
+loss:[10.2832193]
+loss:[12.8659678]
+loss:[14.7963028]
+loss:[11.5048475]
+loss:[12.7078676]
+loss:[12.695034]
+loss:[18.1520157]
+loss:[11.2040625]
+loss:[11.9892988]
+loss:[12.2963333]
+loss:[12.2517748]
+loss:[15.1498299]
+loss:[12.6326752]
+loss:[7.92055559]
+loss:[11.1239443]
+loss:[11.729434]
+loss:[10.9659271]
+loss:[12.3167038]
+loss:[13.8705988]
+loss:[9.64152241]
+loss:[9.84576]
+loss:[13.057889]
+loss:[13.6420174]
+loss:[14.7988291]
+loss:[13.9004593]
+loss:[11.7057524]
+loss:[10.1875219]
+loss:[10.3362427]
+loss:[11.5168486]
+loss:[13.7100782]
+loss:[9.55103]
+loss:[13.0524797]
+loss:[13.9518623]
+loss:[10.2249]
+loss:[11.1838331]
+loss:[12.5894403]
+loss:[12.5285826]
+loss:[13.7761812]
+loss:[9.80088139]
+loss:[17.5616646]
+loss:[11.5888548]
+loss:[11.2421846]
+loss:[14.412323]
+loss:[13.3261232]
+loss:[12.3299017]
+loss:[10.4229212]
+loss:[8.84681797]
+loss:[13.1616182]
+loss:[13.7304764]
+loss:[11.7263403]
+loss:[11.3436079]
+loss:[17.5893726]
+loss:[13.4315786]
+loss:[9.81430721]
+loss:[9.11674881]
+loss:[15.3188181]
+loss:[12.8262072]
+loss:[10.8781595]
+loss:[9.32437801]
+loss:[12.2071409]
+loss:[13.9942484]
+loss:[12.8999863]
+loss:[10.1246529]
+loss:[12.2616224]
+loss:[12.6901236]
+loss:[15.058979]
+loss:[11.4428682]
+loss:[11.6480627]
+loss:[13.4146729]
+loss:[12.4402666]
+loss:[14.1702642]
+loss:[11.8188248]
+loss:[11.5677223]
+loss:[15.2787943]
+loss:[13.3168211]
+loss:[9.93204784]
+loss:[9.19868088]
+loss:[15.7831144]
+loss:[14.1003046]
+loss:[10.2100878]
+loss:[11.7278137]
+loss:[12.8405008]
+loss:[11.2503738]
+loss:[11.5611696]
+loss:[12.8142538]
+loss:[13.0430946]
+ (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 41, train_loss:12.66, valid_loss:12.54, ler:0.08 in 234.94 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 42, train_loss:12.63, valid_loss:12.65, ler:0.08 in 234.92 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 43, train_loss:12.57, valid_loss:12.83, ler:0.08 in 234.83 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+loss:[12.0404062]
+loss:[14.6780195]
+loss:[13.4415026]
+loss:[10.5061836]
+loss:[13.4100904]
+loss:[10.9068403]
+loss:[13.2286806]
+loss:[11.4448748]
+loss:[13.031517]
+loss:[15.5569582]
+loss:[15.3689795]
+loss:[13.1847076]
+loss:[12.2614517]
+loss:[15.0968962]
+loss:[13.7250824]
+loss:[13.2181864]
+loss:[15.0330095]
+loss:[11.7620363]
+loss:[12.0988874]
+loss:[11.2924109]
+loss:[14.4013138]
+loss:[9.69585323]
+loss:[13.0416784]
+loss:[9.56262684]
+loss:[10.6713781]
+loss:[13.0750198]
+loss:[10.1337042]
+loss:[12.0126877]
+loss:[11.5350313]
+loss:[12.3366041]
+loss:[12.7278595]
+loss:[10.1510839]
+loss:[11.1588526]
+loss:[10.825242]
+loss:[11.906456]
+loss:[11.4894552]
+loss:[14.4044294]
+loss:[16.7859421]
+loss:[12.4237137]
+loss:[13.1893768]
+loss:[13.6893167]
+loss:[13.3546906]
+loss:[11.7148561]
+loss:[14.2949991]
+loss:[14.0355768]
+loss:[13.7180014]
+loss:[14.0821533]
+loss:[12.5285807]
+loss:[12.0564451]
+loss:[10.7798271]
+loss:[13.9365206]
+loss:[11.828968]
+loss:[11.2645187]
+loss:[11.0813904]
+loss:[10.8674088]
+loss:[11.1201906]
+loss:[13.0278559]
+loss:[14.3922453]
+loss:[12.6464548]
+loss:[14.1222572]
+loss:[11.4652824]
+loss:[14.2826538]
+loss:[12.2750673]
+loss:[11.0393991]
+loss:[13.1953096]
+loss:[13.5256119]
+loss:[11.1130056]
+loss:[12.6397905]
+loss:[10.0172167]
+loss:[11.5576935]
+loss:[12.7713089]
+loss:[11.7158051]
+loss:[9.3609581]
+loss:[10.8762283]
+loss:[12.3975639]
+loss:[11.2925501]
+loss:[8.86079]
+loss:[11.8831491]
+loss:[11.3591499]
+loss:[11.1861753]
+loss:[11.1675262]
+loss:[11.1669798]
+loss:[13.775177]
+loss:[14.2136774]
+loss:[13.1064405]
+loss:[13.7615433]
+loss:[10.6608582]
+loss:[13.7216082]
+loss:[16.7107353]
+loss:[12.9585876]
+loss:[11.3981171]
+loss:[13.8926897]
+loss:[11.6700134]
+loss:[12.278079]
+loss:[10.4856043]
+loss:[14.5957556]
+loss:[12.7723341]
+loss:[14.2629776]
+loss:[11.5840607]
+loss:[14.0098906]
+loss:[13.0295982]
+loss:[13.3342237]
+loss:[11.7834787]
+loss:[9.52992]
+loss:[11.7669172]
+loss:[10.35672]
+loss:[11.5589638]
+loss:[11.9291182]
+loss:[13.776185]
+loss:[14.3509684]
+loss:[11.6545258]
+loss:[13.2493286]
+loss:[10.9868383]
+loss:[10.9625397]
+loss:[11.3915014]
+loss:[9.88951683]
+loss:[16.2406178]
+loss:[12.3003798]
+loss:[9.88673687]
+loss:[11.524704]
+loss:[13.1896515]
+loss:[11.5787802]
+loss:[11.709259]
+loss:[10.1666975]
+loss:[12.0391569]
+loss:[13.3065081]
+loss:[13.3261137]
+loss:[14.6881342]
+loss:[10.9611044]
+loss:[10.6815109]
+loss:[11.147419]
+loss:[14.1517286]
+loss:[13.0643663]
+loss:[10.3971834]
+loss:[8.02719688]
+loss:[13.4039612]
+loss:[11.6464052]
+loss:[11.2078066]
+loss:[16.3378429]
+loss:[13.314415]
+loss:[10.43859]
+loss:[11.4502821]
+loss:[11.9659071]
+loss:[10.9681778]
+loss:[12.5000315]
+loss:[12.1379023]
+loss:[10.3058519]
+loss:[12.3466005]
+loss:[11.1431856]
+loss:[11.4902697]
+loss:[9.58654594]
+loss:[10.2321682]
+loss:[13.7142916]
+loss:[11.1780815]
+loss:[14.5604887]
+loss:[12.3602104]
+loss:[12.2924461]
+loss:[10.701108]
+loss:[12.779892]
+loss:[15.6384077]
+loss:[15.3243189]
+loss:[13.5041361]
+loss:[15.2665129]
+loss:[13.2981539]
+loss:[12.154274]
+loss:[11.4231062]
+loss:[12.8161821]
+loss:[11.9419737]
+loss:[12.1909266]
+loss:[11.6476717]
+loss:[11.2236633]
+loss:[16.565588]
+loss:[13.8072548]
+loss:[13.4380217]
+loss:[12.2012939]
+loss:[10.5664454]
+loss:[10.5716534]
+loss:[11.0986357]
+loss:[11.8732834]
+loss:[11.2768049]
+loss:[16.7518253]
+loss:[12.5858469]
+loss:[11.9063597]
+loss:[10.338706]
+loss:[10.4507494]
+loss:[10.1290407]
+loss:[10.5062866]
+loss:[13.3373671]
+loss:[13.0376434]
+loss:[10.5393476]
+loss:[13.700963]
+loss:[12.5966845]
+loss:[14.3543043]
+loss:[12.751132]
+loss:[11.1982985]
+loss:[12.5729647]
+loss:[12.0072832]
+loss:[12.7483444]
+loss:[14.2250795]
+loss:[11.2768354]
+loss:[14.5532684]
+loss:[12.5433226]
+loss:[12.0775328]
+loss:[11.7376204]
+loss:[11.7412157]
+loss:[12.3977318]
+loss:[11.5762]
+loss:[12.0575399]
+loss:[10.1686831]
+loss:[14.5343523]
+loss:[11.9890165]
+loss:[8.72042751]
+loss:[15.3765898]
+loss:[14.7200356]
+loss:[12.0542984]
+loss:[12.3245649]
+loss:[9.90767765]
+loss:[10.6715269]
+loss:[12.3275919]
+loss:[11.4723139]
+loss:[14.5475082]
+loss:[14.3053932]
+loss:[11.6514053]
+loss:[9.84898663]
+loss:[14.4951601]
+loss:[12.5930824]
+loss:[12.902667]
+loss:[11.1989174]
+loss:[12.3934107]
+loss:[13.3585863]
+loss:[13.6585226]
+loss:[11.4622316]
+loss:[15.3235359]
+loss:[8.57670212]
+loss:[11.3870497]
+loss:[12.535655]
+loss:[11.7503204]
+loss:[10.7628975]
+loss:[10.227313]
+loss:[12.5497971]
+loss:[13.7937365]
+loss:[12.2300081]
+loss:[13.460124]
+loss:[11.3239145]
+loss:[9.84370136]
+loss:[10.8322477]
+loss:[13.4795198]
+loss:[11.3567896]
+loss:[12.0706758]
+loss:[12.2619047]
+loss:[12.9672279]
+loss:[12.5653076]
+loss:[10.9797792]
+loss:[12.4555712]
+loss:[10.4107857]
+loss:[10.6545305]
+loss:[12.6875677]
+loss:[11.3314676]
+loss:[10.9648867]
+loss:[13.1216669]
+loss:[10.264492]
+loss:[11.7116594]
+loss:[14.1423922]
+loss:[11.8072519]
+loss:[8.23210049]
+loss:[11.6280746]
+loss:[14.4135847]
+loss:[10.7777786]
+loss:[12.2332497]
+loss:[10.4861298]
+loss:[13.3508577]
+loss:[8.73762226]
+loss:[12.0226746]
+loss:[9.96922112]
+loss:[11.6396456]
+loss:[10.5273085]
+loss:[9.40598774]
+loss:[13.1749916]
+loss:[8.74732113]
+loss:[11.0275259]
+loss:[13.4812899]
+loss:[10.4211359]
+loss:[11.2096586]
+loss:[9.1403017]
+loss:[13.1399927]
+loss:[13.8241892]
+loss:[15.5092392]
+loss:[13.7794619]
+loss:[8.92657]
+loss:[11.5348845]
+loss:[10.2545404]
+loss:[10.6015654]
+loss:[11.6882257]
+loss:[11.8486528]
+loss:[12.8182344]
+loss:[12.1800699]
+loss:[10.3105536]
+loss:[11.8060102]
+loss:[9.83525753]
+loss:[11.1788969]
+loss:[11.6335344]
+loss:[16.1720524]
+loss:[13.1072273]
+loss:[13.3520041]
+loss:[12.2108879]
+loss:[12.9251356]
+loss:[10.9248581]
+loss:[15.0299606]
+loss:[8.43368244]
+loss:[13.2118731]
+loss:[13.420804]
+loss:[13.1257172]
+loss:[9.0425539]
+loss:[17.2438679]
+loss:[13.1350565]
+loss:[10.8206053]
+loss:[12.0276909]
+loss:[13.9996443]
+loss:[9.73498344]
+loss:[12.3237715]
+loss:[11.4764814]
+loss:[9.74963093]
+loss:[12.5914259]
+loss:[12.5171747]
+loss:[10.5016031]
+loss:[10.3610048]
+loss:[15.4809113]
+loss:[11.4233274]
+loss:[11.1770563]
+loss:[8.96359539]
+loss:[10.0579786]
+loss:[11.4912186]
+loss:[12.2898512]
+loss:[11.4240084]
+loss:[11.5869055]
+loss:[9.09709549]
+loss:[14.554637]
+loss:[12.8494415]
+loss:[11.3020897]
+loss:[12.1463051]
+loss:[13.3468351]
+loss:[11.9299316]
+loss:[12.0186081]
+loss:[10.2492161]
+loss:[13.2623243]
+loss:[11.3699369]
+loss:[13.2819023]
+loss:[12.6632118]
+loss:[11.2475252]
+loss:[12.6305199]
+loss:[13.5738802]
+loss:[12.7911253]
+loss:[12.7958822]
+loss:[13.0794373]
+loss:[12.8841505]
+loss:[11.5424547]
+loss:[13.5656424]
+loss:[12.6485443]
+loss:[12.4463043]
+loss:[10.6444445]
+loss:[13.1026659]
+loss:[11.3741655]
+loss:[11.1684151]
+loss:[10.856102]
+loss:[11.2091551]
+loss:[12.6206474]
+loss:[10.5442762]
+loss:[11.9976377]
+loss:[16.0107117]
+loss:[9.85364628]
+loss:[13.2332535]
+loss:[11.2380896]
+loss:[11.2866402]
+loss:[11.6154785]
+loss:[12.1131163]
+loss:[11.1348343]
+loss:[13.3652239]
+loss:[12.8975906]
+loss:[15.2033272]
+loss:[10.377305]
+loss:[11.7501554]
+loss:[13.7053175]
+loss:[14.4068041]
+loss:[12.2762346]
+loss:[16.748106]
+loss:[12.5630445]
+loss:[9.70595837]
+loss:[12.3708506]
+loss:[13.1849594]
+loss:[12.9701662]
+loss:[15.0315599]
+loss:[11.3736982]
+loss:[13.3953962]
+loss:[13.2004881]
+loss:[16.3303814]
+loss:[11.5789461]
+loss:[8.78341866]
+loss:[11.9492311]
+loss:[11.9953756]
+loss:[10.1787825]
+loss:[9.92786598]
+loss:[11.8193235]
+loss:[12.8320189]
+loss:[13.2179451]
+loss:[13.4596987]
+loss:[11.8416977]
+loss:[14.2527895]
+loss:[12.0484858]
+loss:[11.6292009]
+loss:[11.0890779]
+loss:[10.4129953]
+loss:[13.4243689]
+loss:[10.6915731]
+loss:[11.7901545]
+loss:[12.3344755]
+loss:[12.4279013]
+loss:[12.3267756]
+loss:[9.02684498]
+loss:[10.4541464]
+loss:[13.3607626]
+loss:[12.1556044]
+loss:[9.16153145]
+loss:[13.2327576]
+loss:[13.6190901]
+loss:[13.9147863]
+loss:[9.59830189]
+loss:[10.297658]
+loss:[12.033206]
+loss:[13.7371092]
+loss:[12.3259993]
+loss:[15.6283293]
+loss:[10.4197302]
+loss:[10.4801769]
+loss:[12.4893274]
+loss:[10.5206842]
+loss:[13.1256552]
+loss:[12.2812624]
+loss:[11.1598101]
+loss:[13.6206856]
+loss:[11.8799562]
+loss:[11.2774324]
+loss:[14.2442751]
+loss:[9.27339172]
+loss:[11.7777138]
+loss:[17.1731434]
+loss:[17.4235134]
+loss:[13.5570803]
+loss:[8.40536308]
+loss:[11.8401299]
+loss:[9.65811634]
+loss:[10.7154846]
+loss:[12.7019777]
+loss:[14.8521528]
+loss:[13.7567873]
+loss:[11.6656561]
+loss:[12.1891165]
+loss:[13.9133635]
+loss:[14.4673204]
+loss:[13.3242617]
+loss:[10.3951826]
+loss:[12.1420135]
+loss:[13.0865021]
+loss:[14.2556992]
+loss:[12.7046385]
+loss:[10.1838379]
+loss:[12.5449286]
+loss:[12.8361597]
+loss:[14.1920013]
+loss:[13.2688103]
+loss:[14.9161444]
+loss:[9.70923328]
+loss:[13.1870184]
+loss:[12.1677141]
+loss:[12.2663956]
+loss:[11.3195467]
+loss:[10.1625395]
+loss:[14.1849146]
+loss:[12.1464033]
+loss:[12.5317183]
+loss:[11.6165915]
+loss:[10.5145817]
+loss:[12.9113626]
+loss:[11.5162382]
+loss:[14.5998297]
+loss:[10.5225401]
+loss:[9.40299129]
+loss:[10.1851959]
+loss:[11.4257154]
+loss:[12.7959089]
+loss:[14.4021311]
+loss:[9.78678799]
+loss:[13.642395]
+loss:[11.6345253]
+loss:[12.6958656]
+loss:[11.5723524]
+loss:[16.7642822]
+loss:[11.5668421]
+loss:[11.7202959]
+loss:[15.1071272]
+loss:[12.557683]
+loss:[9.34122181]
+loss:[11.4514046]
+loss:[10.6564493]
+loss:[13.8179655]
+loss:[11.4406157]
+loss:[11.078908]
+loss:[7.74949646]
+loss:[13.0258713]
+loss:[11.1747828]
+loss:[8.6140995]
+loss:[12.3475847]
+loss:[13.3450975]
+loss:[11.8255205]
+loss:[14.0187111]
+loss:[13.957901]
+loss:[11.9950514]
+loss:[9.12928295]
+loss:[12.1598015]
+loss:[13.0826559]
+loss:[13.8127632]
+loss:[12.7574053]
+loss:[11.4364624]
+loss:[10.9907866]
+loss:[10.4982882]
+loss:[10.8022842]
+loss:[12.924943]
+loss:[10.5225496]
+loss:[8.93936062]
+loss:[8.80345631]
+loss:[10.5553474]
+loss:[12.8221703]
+loss:[12.6362696]
+loss:[15.2702818]
+loss:[11.9989014]
+loss:[10.1824427]
+loss:[10.4705973]
+loss:[11.9520645]
+loss:[8.27712822]
+loss:[11.0931063]
+loss:[9.43184376]
+loss:[12.3292208]
+loss:[11.2126245]
+loss:[9.6967659]
+loss:[11.4174452]
+loss:[13.0872793]
+loss:[12.3902769]
+Epoch: 44, train_loss:12.34, valid_loss:13.13, ler:0.08 in 234.68 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 45, train_loss:12.18, valid_loss:12.56, ler:0.08 in 378.49 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 46, train_loss:11.96, valid_loss:12.54, ler:0.08 in 234.84 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 47, train_loss:12.15, valid_loss:12.75, ler:0.08 in 234.85 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of yloss:[11.9075384]
+loss:[11.8222809]
+loss:[11.2062654]
+loss:[12.8419523]
+loss:[9.32850647]
+loss:[15.0535212]
+loss:[13.4689798]
+loss:[14.1441269]
+loss:[11.6593885]
+loss:[10.9751129]
+loss:[17.8222828]
+loss:[14.2060404]
+loss:[15.7055254]
+loss:[11.7337112]
+loss:[11.516387]
+loss:[12.5160074]
+loss:[11.0259552]
+loss:[9.99379444]
+loss:[10.2541742]
+loss:[11.2146788]
+loss:[12.1633177]
+loss:[13.6704016]
+loss:[11.3803644]
+loss:[9.9123888]
+loss:[9.54284]
+loss:[16.8612976]
+loss:[13.9715424]
+loss:[12.6869736]
+loss:[8.8523674]
+loss:[10.7186098]
+loss:[16.6782913]
+loss:[12.5860825]
+loss:[12.7225084]
+loss:[10.0358343]
+loss:[10.1420898]
+loss:[12.2947741]
+loss:[8.81375217]
+loss:[13.0714035]
+loss:[10.0675545]
+loss:[10.6430655]
+loss:[12.7428484]
+loss:[10.8511076]
+loss:[11.8683014]
+loss:[11.9044924]
+loss:[14.3187]
+loss:[15.4915113]
+loss:[11.5945587]
+loss:[11.6257582]
+loss:[10.8745985]
+loss:[11.2091303]
+loss:[13.4095459]
+loss:[14.6555777]
+loss:[11.0310526]
+loss:[10.829628]
+loss:[13.2882614]
+loss:[15.3646851]
+loss:[9.87189]
+loss:[11.3251419]
+loss:[10.9615259]
+loss:[15.0103388]
+loss:[12.9029264]
+loss:[19.2286396]
+loss:[13.7405901]
+loss:[12.787529]
+loss:[11.4678774]
+loss:[13.1040316]
+loss:[12.0669937]
+loss:[9.9261446]
+loss:[11.5411873]
+loss:[11.5203371]
+loss:[14.7666082]
+loss:[11.3011198]
+loss:[16.2013206]
+loss:[14.7577791]
+loss:[11.9941988]
+loss:[10.8834534]
+loss:[13.9529381]
+loss:[10.5605917]
+loss:[10.9625158]
+loss:[13.5501184]
+loss:[11.7958603]
+loss:[14.3703127]
+loss:[11.391]
+loss:[9.05940533]
+loss:[10.2086]
+loss:[10.7329941]
+loss:[13.4362211]
+loss:[9.12952423]
+loss:[10.4627905]
+loss:[13.4917669]
+loss:[13.8339739]
+loss:[13.5413523]
+loss:[10.8633204]
+loss:[11.8041811]
+loss:[9.37165737]
+loss:[13.5385399]
+loss:[11.8560982]
+loss:[12.3157396]
+loss:[12.0580549]
+loss:[10.862915]
+loss:[10.9014845]
+loss:[12.7967072]
+loss:[13.6785469]
+loss:[11.166501]
+loss:[9.14783859]
+loss:[13.3790932]
+loss:[11.5413361]
+loss:[13.4386244]
+loss:[10.5788956]
+loss:[11.6983137]
+loss:[9.83818245]
+loss:[11.7003412]
+loss:[12.4315796]
+loss:[12.2015839]
+loss:[10.51723]
+loss:[11.0035563]
+loss:[8.66892719]
+loss:[11.5809755]
+loss:[10.3430462]
+loss:[11.1211958]
+loss:[8.80338287]
+loss:[13.7909851]
+loss:[10.4623423]
+loss:[9.78418732]
+loss:[14.7022524]
+loss:[12.5532312]
+loss:[12.2034521]
+loss:[10.0945358]
+loss:[14.8883104]
+loss:[12.6820784]
+loss:[13.108264]
+loss:[10.7576017]
+loss:[10.3957825]
+loss:[11.2801971]
+loss:[10.828392]
+loss:[14.1662855]
+loss:[10.1774015]
+loss:[10.6234875]
+loss:[11.7629271]
+loss:[11.4905777]
+loss:[12.1775408]
+loss:[11.153614]
+loss:[10.305234]
+loss:[11.7286339]
+loss:[11.3735552]
+loss:[14.6547155]
+loss:[11.7164841]
+loss:[14.5586576]
+loss:[10.9531584]
+loss:[11.096386]
+loss:[11.9052534]
+loss:[11.1609688]
+loss:[13.0625305]
+loss:[12.5513182]
+loss:[11.7500458]
+loss:[11.8009539]
+loss:[14.3400087]
+loss:[11.259716]
+loss:[13.2646904]
+loss:[11.487896]
+loss:[11.684268]
+loss:[13.5889044]
+loss:[12.6554136]
+loss:[11.2464228]
+loss:[12.0308943]
+loss:[9.34289742]
+loss:[10.5522051]
+loss:[13.7223883]
+loss:[11.2864485]
+loss:[7.44493675]
+loss:[10.2546568]
+loss:[12.9053688]
+loss:[10.9994841]
+loss:[11.0163755]
+loss:[10.0930681]
+loss:[9.1421175]
+loss:[10.9503021]
+loss:[11.2642488]
+loss:[10.9742498]
+loss:[10.3033152]
+loss:[11.7086153]
+loss:[12.9894981]
+loss:[14.9061403]
+loss:[11.8352823]
+loss:[8.89400482]
+loss:[13.4889]
+loss:[11.8575745]
+loss:[11.3577814]
+loss:[10.0913811]
+loss:[19.4951878]
+loss:[11.9493256]
+loss:[11.2244568]
+loss:[15.0513067]
+loss:[11.0990419]
+loss:[11.0054436]
+loss:[11.9561586]
+loss:[10.3182287]
+loss:[12.1937284]
+loss:[12.3974457]
+loss:[8.63953495]
+loss:[11.8723221]
+loss:[11.9326849]
+loss:[11.8335114]
+loss:[12.1081247]
+loss:[12.6318626]
+loss:[10.2641497]
+loss:[13.6514292]
+loss:[13.5249624]
+loss:[14.0753584]
+loss:[12.0863647]
+loss:[12.7587814]
+loss:[9.79360294]
+loss:[11.2185946]
+loss:[8.81924438]
+loss:[12.1151094]
+loss:[12.8089209]
+loss:[13.3593607]
+loss:[10.4466667]
+loss:[12.4647703]
+loss:[13.3944044]
+loss:[15.1079683]
+loss:[12.4670153]
+loss:[12.9964647]
+loss:[12.7137175]
+loss:[11.5789557]
+loss:[13.9267149]
+loss:[11.4410582]
+loss:[11.4569368]
+loss:[10.5420809]
+loss:[11.413516]
+loss:[14.4100952]
+loss:[11.0683317]
+loss:[9.93011475]
+loss:[9.25638199]
+loss:[9.39415264]
+loss:[11.2423172]
+loss:[11.4483824]
+loss:[13.6401215]
+loss:[11.4216728]
+loss:[10.3600655]
+loss:[11.9583864]
+loss:[13.2768373]
+loss:[12.6851873]
+loss:[11.6261139]
+loss:[12.1975451]
+loss:[12.7910566]
+loss:[12.8729935]
+loss:[13.513999]
+loss:[11.2297029]
+loss:[11.2295122]
+loss:[13.3756]
+loss:[12.6966934]
+loss:[13.5025549]
+loss:[12.6523819]
+loss:[11.3142805]
+loss:[9.92274]
+loss:[13.5240469]
+loss:[13.6713667]
+loss:[12.4014435]
+loss:[11.7321777]
+loss:[12.3548689]
+loss:[14.319438]
+loss:[10.7753983]
+loss:[16.8208427]
+loss:[12.5763397]
+loss:[10.8868866]
+loss:[11.8030882]
+loss:[9.40261]
+loss:[10.8751268]
+loss:[13.6363478]
+loss:[10.9734116]
+loss:[10.0802031]
+loss:[11.9363356]
+loss:[10.9230776]
+loss:[10.7408142]
+loss:[10.3272867]
+loss:[10.5021935]
+loss:[10.5231113]
+loss:[10.6850481]
+loss:[12.1900282]
+loss:[9.98687458]
+loss:[11.5773211]
+loss:[10.2579165]
+loss:[8.75083447]
+loss:[12.9347754]
+loss:[12.0209684]
+loss:[12.3905153]
+loss:[9.80577755]
+loss:[10.2865248]
+loss:[12.2292557]
+loss:[12.9208574]
+loss:[10.5670509]
+loss:[10.8200188]
+loss:[10.3354883]
+loss:[9.87592602]
+loss:[8.61986637]
+loss:[8.10137939]
+loss:[12.5084562]
+loss:[9.77670097]
+loss:[12.3217087]
+loss:[10.556159]
+loss:[9.42042255]
+loss:[13.5529737]
+loss:[12.3787737]
+loss:[13.8035631]
+loss:[14.7879105]
+loss:[10.8394089]
+loss:[11.6169357]
+loss:[11.6173019]
+loss:[10.84373]
+loss:[13.4903183]
+loss:[13.1701918]
+loss:[12.6774864]
+loss:[12.5808554]
+loss:[8.15428066]
+loss:[12.0652952]
+loss:[12.5391836]
+loss:[10.9577751]
+loss:[12.3956499]
+loss:[9.89793396]
+loss:[14.3180571]
+loss:[12.5102692]
+loss:[11.172267]
+loss:[12.7710466]
+loss:[12.8180199]
+loss:[12.3123789]
+loss:[9.19656086]
+loss:[13.3414698]
+loss:[11.5477524]
+loss:[11.2538748]
+loss:[10.6520271]
+loss:[11.0367479]
+loss:[9.91188812]
+loss:[11.5173492]
+loss:[11.6436701]
+loss:[12.8100357]
+loss:[12.2929487]
+loss:[12.9250593]
+loss:[15.0563517]
+loss:[10.8429718]
+loss:[13.0172653]
+loss:[10.4057808]
+loss:[11.7176743]
+loss:[10.9729147]
+loss:[11.9123735]
+loss:[11.3917694]
+loss:[12.5889969]
+loss:[11.7999372]
+loss:[9.69223]
+loss:[10.842555]
+loss:[10.1483755]
+loss:[13.7370262]
+loss:[10.183753]
+loss:[13.4794817]
+loss:[12.2901258]
+loss:[12.5961914]
+loss:[16.2742538]
+loss:[11.0785952]
+loss:[13.7787247]
+loss:[19.1276855]
+loss:[12.3390579]
+loss:[15.0075827]
+loss:[13.846817]
+loss:[13.227046]
+loss:[11.6845503]
+loss:[9.90252876]
+loss:[15.6207838]
+loss:[13.2739105]
+loss:[11.6005049]
+loss:[11.2484894]
+loss:[14.1739807]
+loss:[11.235611]
+loss:[10.9757223]
+loss:[13.3561516]
+loss:[14.0500441]
+loss:[11.8970337]
+loss:[9.54152584]
+loss:[11.0527086]
+loss:[9.95052719]
+loss:[9.79939365]
+loss:[11.9766054]
+loss:[11.877121]
+loss:[11.9253731]
+loss:[14.074604]
+loss:[14.5029345]
+loss:[10.9067755]
+loss:[13.687274]
+loss:[11.825736]
+loss:[11.5439615]
+loss:[12.7885208]
+loss:[9.2084465]
+loss:[10.0827675]
+loss:[13.0530472]
+loss:[12.0046349]
+loss:[11.7065096]
+loss:[9.98539448]
+loss:[10.7338438]
+loss:[8.88775826]
+loss:[8.8595]
+loss:[11.8793859]
+loss:[10.5435457]
+loss:[10.6113291]
+loss:[11.6433716]
+loss:[14.0543699]
+loss:[11.6003771]
+loss:[11.8654127]
+loss:[9.90823]
+loss:[9.89982]
+loss:[10.5600138]
+loss:[11.5582466]
+loss:[11.1869154]
+loss:[12.1746283]
+loss:[13.2869635]
+loss:[11.2916021]
+loss:[14.490756]
+loss:[12.3401136]
+loss:[12.7032537]
+loss:[11.8469963]
+loss:[9.98326492]
+loss:[11.3703928]
+loss:[14.1297789]
+loss:[13.4174929]
+loss:[13.5601473]
+loss:[12.2934294]
+loss:[12.6040468]
+loss:[10.8009462]
+loss:[12.6769209]
+loss:[9.83875561]
+loss:[10.9085398]
+loss:[9.25759]
+loss:[11.6992617]
+loss:[11.8718443]
+loss:[9.70161629]
+loss:[12.5108414]
+loss:[9.93849468]
+loss:[11.1788187]
+loss:[10.9936724]
+loss:[11.6857538]
+loss:[11.4018173]
+loss:[10.33043]
+loss:[13.9456739]
+loss:[13.6407957]
+loss:[9.96717739]
+loss:[13.1018858]
+loss:[11.9263601]
+loss:[16.1932983]
+loss:[9.14605427]
+loss:[13.5539598]
+loss:[11.6735868]
+loss:[12.7079172]
+loss:[10.9097404]
+loss:[13.3652773]
+loss:[9.76385784]
+loss:[13.4575644]
+loss:[12.4373007]
+loss:[9.14185619]
+loss:[12.3775816]
+loss:[10.5092258]
+loss:[9.01873]
+loss:[12.8609772]
+loss:[11.7533979]
+loss:[12.4607267]
+loss:[10.7376709]
+loss:[14.2727671]
+loss:[13.9950485]
+loss:[10.9016533]
+loss:[10.1315584]
+loss:[10.2897539]
+loss:[9.00854778]
+loss:[8.35149479]
+loss:[10.1382284]
+loss:[12.1666136]
+loss:[12.9791441]
+loss:[11.6345444]
+loss:[12.7911301]
+loss:[12.0875196]
+loss:[11.5974932]
+loss:[9.55979824]
+loss:[11.498435]
+loss:[11.1478548]
+loss:[10.4475031]
+loss:[12.4233627]
+loss:[12.807991]
+loss:[10.6817274]
+loss:[13.9129829]
+loss:[8.39850903]
+loss:[12.8825312]
+loss:[20.1936646]
+loss:[10.0429029]
+loss:[10.4506235]
+loss:[12.9916811]
+loss:[10.8750267]
+loss:[11.0838089]
+loss:[12.0052376]
+loss:[11.7011595]
+loss:[12.698204]
+loss:[12.4583511]
+loss:[12.5027924]
+loss:[8.97877312]
+loss:[9.17214203]
+loss:[11.4698496]
+loss:[10.609971]
+loss:[11.3189726]
+loss:[12.0842247]
+loss:[10.1290102]
+loss:[11.0545549]
+loss:[11.1670427]
+loss:[12.8007889]
+loss:[12.7393951]
+loss:[13.2886686]
+loss:[9.92466354]
+loss:[14.0773315]
+loss:[12.4211988]
+loss:[11.9685936]
+loss:[12.2867918]
+loss:[14.1514969]
+loss:[13.6083918]
+loss:[11.6788816]
+loss:[11.2508936]
+loss:[11.3419371]
+loss:[10.4527664]
+loss:[11.8459444]
+loss:[11.5104094]
+loss:[10.0785942]
+loss:[13.1904373]
+loss:[9.83714199]
+loss:[11.3767967]
+loss:[9.98156071]
+loss:[11.8939238]
+loss:[12.0815458]
+loss:[10.0707359]
+loss:[12.1041746]
+loss:[10.908433]
+loss:[10.3570585]
+loss:[9.28337765]
+loss:[11.8491163]
+loss:[11.4296074]
+loss:[10.4268847]
+loss:[12.2006607]
+loss:[11.8018942]
+loss:[10.3866777]
+loss:[13.0426092]
+loss:[10.7027349]
+loss:[12.6755228]
+loss:[12.5288897]
+ (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 48, train_loss:11.93, valid_loss:13.01, ler:0.08 in 234.70 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 49, train_loss:11.71, valid_loss:12.30, ler:0.08 in 234.64 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 50, train_loss:11.68, valid_loss:13.18, ler:0.08 in 379.20 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 51, train_loss:11.60, valid_loss:11.95, ler:0.07 in 234.61 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)loss:[11.4543314]
+loss:[10.382556]
+loss:[10.0333185]
+loss:[12.4341164]
+loss:[12.8572206]
+loss:[11.4049606]
+loss:[12.6207151]
+loss:[11.978344]
+loss:[10.9208803]
+loss:[12.8052645]
+loss:[9.06446457]
+loss:[11.6875162]
+loss:[12.1645708]
+loss:[11.988224]
+loss:[9.87738]
+loss:[11.5362654]
+loss:[11.4818697]
+loss:[12.6786032]
+loss:[13.9834852]
+loss:[11.1135664]
+loss:[12.9349279]
+loss:[10.5526323]
+loss:[11.221242]
+loss:[13.4635153]
+loss:[8.46807194]
+loss:[12.5863447]
+loss:[12.4325495]
+loss:[10.0535288]
+loss:[14.3766212]
+loss:[11.6080923]
+loss:[8.80335712]
+loss:[12.9519854]
+loss:[11.8854599]
+loss:[11.0127802]
+loss:[10.9593859]
+loss:[11.7986288]
+loss:[10.0096407]
+loss:[9.81914]
+loss:[15.8807726]
+loss:[9.4899931]
+loss:[13.7576323]
+loss:[12.1341696]
+loss:[10.3532314]
+loss:[13.1953964]
+loss:[10.3258581]
+loss:[12.0074043]
+loss:[11.7175283]
+loss:[11.3849449]
+loss:[10.4370356]
+loss:[13.5869341]
+loss:[11.819438]
+loss:[10.2292347]
+loss:[9.35484219]
+loss:[12.0337362]
+loss:[9.21172905]
+loss:[9.43643475]
+loss:[11.1595125]
+loss:[14.0445099]
+loss:[11.1652145]
+loss:[8.15995216]
+loss:[10.0903254]
+loss:[9.65841293]
+loss:[13.845314]
+loss:[11.8877]
+loss:[10.2629156]
+loss:[10.3463449]
+loss:[10.9313]
+loss:[10.705369]
+loss:[11.915225]
+loss:[13.1125135]
+loss:[13.2128191]
+loss:[11.9407959]
+loss:[11.4986877]
+loss:[11.7979813]
+loss:[12.4630213]
+loss:[10.1799154]
+loss:[11.6071939]
+loss:[11.3226938]
+loss:[13.098752]
+loss:[10.6654253]
+loss:[9.28782845]
+loss:[10.8021698]
+loss:[10.3450441]
+loss:[10.420887]
+loss:[13.1736984]
+loss:[12.904563]
+loss:[11.4871979]
+loss:[12.0555162]
+loss:[12.61689]
+loss:[14.2322035]
+loss:[11.8216696]
+loss:[10.0618773]
+loss:[10.6305685]
+loss:[10.4565535]
+loss:[8.45861816]
+loss:[10.6180315]
+loss:[11.2545805]
+loss:[11.1536713]
+loss:[11.9663687]
+loss:[10.4946222]
+loss:[10.9226542]
+loss:[7.80626059]
+loss:[9.37080193]
+loss:[15.5357313]
+loss:[11.8415461]
+loss:[10.827239]
+loss:[9.41097641]
+loss:[12.9957933]
+loss:[10.3320742]
+loss:[14.7390242]
+loss:[15.279315]
+loss:[14.8100433]
+loss:[13.2035799]
+loss:[14.33459]
+loss:[11.1596441]
+loss:[11.1501093]
+loss:[12.9592123]
+loss:[13.5018892]
+loss:[11.7381668]
+loss:[10.5757866]
+loss:[14.5944414]
+loss:[10.2853651]
+loss:[11.2956924]
+loss:[12.3982401]
+loss:[11.5784187]
+loss:[11.0405912]
+loss:[12.116437]
+loss:[10.6378813]
+loss:[17.7353134]
+loss:[13.5649233]
+loss:[12.8626509]
+loss:[11.7586393]
+loss:[13.6406584]
+loss:[8.97703648]
+loss:[13.7275314]
+loss:[11.8335733]
+loss:[12.3463221]
+loss:[9.43039703]
+loss:[11.4486113]
+loss:[10.6976805]
+loss:[11.8611755]
+loss:[10.3477659]
+loss:[14.1970482]
+loss:[12.3702087]
+loss:[15.2150393]
+loss:[10.3436813]
+loss:[10.1655884]
+loss:[12.288475]
+loss:[11.7051659]
+loss:[9.58261299]
+loss:[10.0540667]
+loss:[13.0758543]
+loss:[10.8748169]
+loss:[12.2344904]
+loss:[9.44385815]
+loss:[8.31484604]
+loss:[14.5657835]
+loss:[12.3981781]
+loss:[11.4549227]
+loss:[11.4848661]
+loss:[12.3754301]
+loss:[10.0550585]
+loss:[11.2409067]
+loss:[10.111537]
+loss:[12.3127718]
+loss:[10.7630768]
+loss:[13.3570719]
+loss:[9.94729137]
+loss:[11.7044344]
+loss:[9.3517313]
+loss:[12.7171659]
+loss:[12.5302887]
+loss:[13.7750959]
+loss:[12.876523]
+loss:[8.29989719]
+loss:[9.19795322]
+loss:[9.4461956]
+loss:[13.4848566]
+loss:[14.500701]
+loss:[14.8224745]
+loss:[11.9786959]
+loss:[11.4559746]
+loss:[12.5723162]
+loss:[10.7993698]
+loss:[13.0984421]
+loss:[11.5122652]
+loss:[10.5058451]
+loss:[14.4333906]
+loss:[11.4233894]
+loss:[12.3358612]
+loss:[10.3561373]
+loss:[12.0845032]
+loss:[10.5873308]
+loss:[13.845]
+loss:[8.9437418]
+loss:[10.1289415]
+loss:[12.2766542]
+loss:[12.3023643]
+loss:[11.7739477]
+loss:[12.2796869]
+loss:[9.74887753]
+loss:[9.75334549]
+loss:[9.07116222]
+loss:[9.53827763]
+loss:[11.255249]
+loss:[11.1940584]
+loss:[15.1836882]
+loss:[11.5399199]
+loss:[10.5235796]
+loss:[12.0201941]
+loss:[12.5972261]
+loss:[9.19985676]
+loss:[11.394455]
+loss:[12.5609655]
+loss:[8.15349483]
+loss:[12.7569342]
+loss:[8.36797428]
+loss:[12.4039383]
+loss:[11.030612]
+loss:[8.24283314]
+loss:[9.9718008]
+loss:[8.83636665]
+loss:[9.76831436]
+loss:[12.7276888]
+loss:[10.5387306]
+loss:[14.6697006]
+loss:[9.74595356]
+loss:[12.2433958]
+loss:[11.922245]
+loss:[11.4077368]
+loss:[9.33181381]
+loss:[9.10377598]
+loss:[11.2707748]
+loss:[10.2486191]
+loss:[15.958642]
+loss:[12.524559]
+loss:[9.91886616]
+loss:[10.0044222]
+loss:[11.673768]
+loss:[14.9797869]
+loss:[9.41797733]
+loss:[10.7789183]
+loss:[11.0002184]
+loss:[8.9793787]
+loss:[11.4039879]
+loss:[9.15285587]
+loss:[10.7834044]
+loss:[14.684783]
+loss:[10.0064459]
+loss:[11.413518]
+loss:[10.0481176]
+loss:[10.5844431]
+loss:[12.2396746]
+loss:[11.1553621]
+loss:[12.62605]
+loss:[10.1915894]
+loss:[13.3593445]
+loss:[10.976017]
+loss:[9.32572842]
+loss:[13.0943632]
+loss:[11.4522753]
+loss:[20.6898441]
+loss:[11.6808558]
+loss:[14.7668657]
+loss:[13.8190889]
+loss:[11.7467413]
+loss:[9.5550766]
+loss:[13.7398529]
+loss:[12.4540606]
+loss:[12.4801407]
+loss:[11.6654205]
+loss:[11.3005438]
+loss:[12.7898455]
+loss:[11.7915812]
+loss:[11.7445679]
+loss:[13.002079]
+loss:[13.1291685]
+loss:[10.3661337]
+loss:[12.337532]
+loss:[10.370595]
+loss:[12.3480825]
+loss:[9.49708462]
+loss:[11.945447]
+loss:[12.4903669]
+loss:[10.3562994]
+loss:[9.47705364]
+loss:[10.0438757]
+loss:[11.2166853]
+loss:[9.19516468]
+loss:[12.3311186]
+loss:[11.6622267]
+loss:[10.7899218]
+loss:[9.43184376]
+loss:[10.6803541]
+loss:[10.578002]
+loss:[9.51508808]
+loss:[11.6117983]
+loss:[9.78749943]
+loss:[9.85885]
+loss:[14.0703735]
+loss:[11.0604944]
+loss:[9.59891796]
+loss:[12.1247454]
+loss:[10.2414541]
+loss:[9.77526569]
+loss:[13.4093676]
+loss:[9.72674]
+loss:[11.5049238]
+loss:[12.2747774]
+loss:[10.5357208]
+loss:[12.5398283]
+loss:[8.98712063]
+loss:[13.6105776]
+loss:[10.253026]
+loss:[9.62792683]
+loss:[10.9600229]
+loss:[12.6274385]
+loss:[10.9417343]
+loss:[12.500926]
+loss:[12.7783403]
+loss:[11.1219568]
+loss:[10.8776588]
+loss:[12.2482643]
+loss:[9.11884785]
+loss:[9.99187946]
+loss:[13.9669504]
+loss:[11.9919891]
+loss:[10.9130526]
+loss:[12.2380705]
+loss:[9.65988159]
+loss:[13.5020523]
+loss:[9.52095]
+loss:[12.218627]
+loss:[12.2040987]
+loss:[10.502615]
+loss:[11.083518]
+loss:[11.9523697]
+loss:[13.2527237]
+loss:[10.0030928]
+loss:[11.808404]
+loss:[10.1989937]
+loss:[10.0768471]
+loss:[11.4078398]
+loss:[11.4868822]
+loss:[13.2991724]
+loss:[9.89727402]
+loss:[14.7967978]
+loss:[14.0935669]
+loss:[10.497776]
+loss:[11.9579163]
+loss:[10.6231365]
+loss:[12.2405663]
+loss:[13.028388]
+loss:[9.80065823]
+loss:[11.4808683]
+loss:[7.45040751]
+loss:[12.777195]
+loss:[10.5171318]
+loss:[13.1592569]
+loss:[10.5910368]
+loss:[11.1542463]
+loss:[11.8681078]
+loss:[10.2584753]
+loss:[11.2502012]
+loss:[12.6301994]
+loss:[10.4898901]
+loss:[10.9280806]
+loss:[10.3587866]
+loss:[9.14478111]
+loss:[16.6831837]
+loss:[8.47494888]
+loss:[9.20840931]
+loss:[13.3701105]
+loss:[9.65930462]
+loss:[9.75456905]
+loss:[11.1624107]
+loss:[11.8136215]
+loss:[12.2267714]
+loss:[9.0127039]
+loss:[11.3713913]
+loss:[10.2090797]
+loss:[10.2900591]
+loss:[10.3890715]
+loss:[9.25972271]
+loss:[12.8446321]
+loss:[12.1354017]
+loss:[13.3696375]
+loss:[9.57814]
+loss:[12.3169775]
+loss:[10.1066341]
+loss:[9.85134697]
+loss:[11.2753487]
+loss:[11.8996744]
+loss:[10.6513224]
+loss:[9.60391235]
+loss:[9.89236927]
+loss:[13.2591753]
+loss:[12.186017]
+loss:[10.5566568]
+loss:[10.7030783]
+loss:[12.9522715]
+loss:[10.6746244]
+loss:[10.8694201]
+loss:[12.7479258]
+loss:[9.19968414]
+loss:[10.029644]
+loss:[11.8766737]
+loss:[9.19902706]
+loss:[8.34563828]
+loss:[11.3793039]
+loss:[19.2585068]
+loss:[10.3245163]
+loss:[14.5143137]
+loss:[11.4381256]
+loss:[13.0707254]
+loss:[11.1263742]
+loss:[11.1150618]
+loss:[13.3939886]
+loss:[16.8740082]
+loss:[14.114028]
+loss:[12.2999544]
+loss:[10.5847874]
+loss:[11.942523]
+loss:[11.5536814]
+loss:[11.310029]
+loss:[14.4230232]
+loss:[8.91574287]
+loss:[13.9906425]
+loss:[12.5072355]
+loss:[13.9267988]
+loss:[9.60129166]
+loss:[10.5818787]
+loss:[11.2929354]
+loss:[11.2745056]
+loss:[12.1551514]
+loss:[11.9695091]
+loss:[8.2983284]
+loss:[14.803833]
+loss:[11.0926933]
+loss:[10.1183701]
+loss:[11.519618]
+loss:[9.60099602]
+loss:[10.2085238]
+loss:[11.5077019]
+loss:[11.2703476]
+loss:[11.1956434]
+loss:[11.0493174]
+loss:[11.3979197]
+loss:[11.6763182]
+loss:[9.49429]
+loss:[8.50764465]
+loss:[11.8262138]
+loss:[14.4764433]
+loss:[13.10783]
+loss:[9.92734623]
+loss:[11.0206566]
+loss:[8.64320087]
+loss:[10.4812336]
+loss:[9.58388424]
+loss:[11.1604185]
+loss:[10.8380213]
+loss:[12.8057861]
+loss:[10.3907175]
+loss:[9.94115]
+loss:[12.3457]
+loss:[11.4967804]
+loss:[13.9614372]
+loss:[11.6127548]
+loss:[9.15150166]
+loss:[10.2431746]
+loss:[11.9625664]
+loss:[10.0828161]
+loss:[11.3812742]
+loss:[12.4740839]
+loss:[11.1763611]
+loss:[11.4523745]
+loss:[8.42705059]
+loss:[11.7380133]
+loss:[8.4601326]
+loss:[9.28462696]
+loss:[12.8027658]
+loss:[13.5552702]
+loss:[13.4446688]
+loss:[10.2895098]
+loss:[14.4997778]
+loss:[13.0047789]
+loss:[16.2971153]
+loss:[12.0105124]
+loss:[9.32022572]
+loss:[10.9590788]
+loss:[14.4216795]
+loss:[10.7377892]
+loss:[11.075779]
+loss:[12.2924128]
+loss:[12.6293726]
+loss:[12.6684189]
+loss:[15.4929686]
+loss:[10.3083067]
+loss:[12.5488787]
+loss:[9.3734026]
+loss:[13.2883835]
+loss:[12.1352644]
+loss:[9.96949]
+loss:[10.2543879]
+loss:[12.5001707]
+loss:[9.67079544]
+loss:[10.7501602]
+loss:[8.91444302]
+loss:[11.7303209]
+loss:[8.32529163]
+loss:[7.67379761]
+loss:[12.4531832]
+loss:[10.6107988]
+loss:[11.6059799]
+loss:[11.4043131]
+loss:[9.68029499]
+loss:[8.54179859]
+loss:[10.3623667]
+loss:[11.8738585]
+loss:[9.98192215]
+loss:[14.9854212]
+loss:[12.8312178]
+loss:[11.0914803]
+loss:[12.2222834]
+loss:[9.58781242]
+loss:[10.9879837]
+loss:[9.33236408]
+loss:[13.0990267]
+loss:[8.88756]
+loss:[10.4441805]
+
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 52, train_loss:11.37, valid_loss:12.80, ler:0.08 in 234.67 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 53, train_loss:11.38, valid_loss:12.57, ler:0.08 in 234.73 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (17,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+Epoch: 54, train_loss:11.14, valid_loss:12.76, ler:0.08 in 234.65 sec.
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of y (48,)
+shape of yloss:[13.0089645]
+loss:[9.93661]
+loss:[13.6579523]
+loss:[9.2775526]
+loss:[9.00739193]
+loss:[12.7618895]
+loss:[11.0510111]
+loss:[12.4081373]
+loss:[11.5830946]
+loss:[11.1261101]
+loss:[10.6840467]
+loss:[9.99580574]
+loss:[11.1158524]
+loss:[9.34219551]
+loss:[8.49545193]
+loss:[9.6140337]
+loss:[8.23541927]
+loss:[10.9237986]
+loss:[12.9592104]
+loss:[12.2450876]
+loss:[9.83761215]
+loss:[7.20956182]
+loss:[10.229454]
+loss:[12.8110075]
+loss:[10.9750185]
+loss:[12.1368437]
+loss:[11.6820221]
+loss:[10.8594694]
+loss:[8.30227757]
+loss:[7.16597033]
+loss:[11.5590668]
+loss:[12.3104677]
+loss:[15.028079]
+loss:[11.5481873]
+loss:[13.0192137]
+loss:[13.581955]
+loss:[11.6758566]
+loss:[9.62806]
+loss:[11.3259993]
+loss:[10.4233637]
+loss:[16.6082706]
+loss:[12.9635468]
+loss:[8.70068073]
+loss:[12.534]
+loss:[12.0968704]
+loss:[9.06684494]
+loss:[15.1431465]
+loss:[13.8554506]
