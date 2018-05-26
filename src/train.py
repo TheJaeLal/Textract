@@ -46,9 +46,11 @@ with tf.Session(graph = graph) as sess:
     timer  = 0
                 
     #Tensorboard Summary
-    merged_summary = tf.summary.merge_all()
-    file_writer = tf.summary.FileWriter('../visualize', sess.graph)
-    file_writer.add_graph(sess.graph)
+    
+    if summary_epoch:
+        merged_summary = tf.summary.merge_all()
+        file_writer = tf.summary.FileWriter('../visualize', sess.graph)
+        file_writer.add_graph(sess.graph)
     
     #Resume training from resume_epoch
     if resume_epoch != 0:
@@ -137,10 +139,9 @@ with tf.Session(graph = graph) as sess:
                     }
 
                 v_loss_val, v_ler= sess.run([loss,label_error_rate],feed_dict = feed_valid)
-        
                 
                 #Write Tensorboard summaries to file
-                if (e%summary_epoch == 0):
+                if (summary_epoch and e%summary_epoch == 0):
                     s = sess.run(merged_summary,feed_dict=feed_valid)
                     file_writer.add_summary(s,e)
                 

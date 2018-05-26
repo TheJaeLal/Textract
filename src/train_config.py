@@ -37,19 +37,22 @@ valid_set = 'valid'
 decay = 0.0
 
 #Optimizer Params
-alpha = 0.0001
+alpha = 0.0005
 
 #Not in use yet..
 momentum = 0.0
 
-batch_size = 48
-valid_batch_size = 48
+batch_size = 64
+valid_batch_size = 64
 
 #Training parameters
 n_epochs = 1000
 resume_epoch = 0
 save_epoch = 1
-summary_epoch = 150
+
+#Tensorboard Summary
+summary_epoch = None
+
 
 #Not using as of now!
 #CLR parameters
