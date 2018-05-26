@@ -5,8 +5,8 @@ from math import ceil
 import time
 
 from model import ANN_Model
-from datagen import train_generator, valid_generator, num_train, num_valid
 from train_config import mount_point,vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,summary_epoch,dropout
+import datagen
 from Arch import CNN
 import layers
 import helper
@@ -30,19 +30,22 @@ conv_dropout = model[12]
 gradients = model[13]
 interim_dropout = model[14]
 
-# graph,dropout_lstm,dropout_fc,inputs,time_steps,targets,loss,train,decoded,label_error_rate,seq_len,is_training,conv_dropout,gradients,interim_dropout = ANN_Model()
 
-num_batches = int(ceil(num_train/batch_size))
-num_vbatches = int(ceil(num_valid/valid_batch_size))
+train_generator, valid_generator = datagen.get_generators()
+
+num_batches = int(ceil(datagen.num_train/batch_size))
+num_vbatches = int(ceil(datagen.num_valid/valid_batch_size))
 
 with tf.Session(graph = graph) as sess:
         
+    #Get the saver object (to save and restore model params)
     saver = tf.train.Saver(max_to_keep=None)
     
     sess.run(tf.global_variables_initializer())
     checkpoint = False
     timer  = 0
                 
+    #Tensorboard Summary
     merged_summary = tf.summary.merge_all()
     file_writer = tf.summary.FileWriter('../visualize', sess.graph)
     file_writer.add_graph(sess.graph)
@@ -65,11 +68,12 @@ with tf.Session(graph = graph) as sess:
 #             print(y[0])
 #             print(y.shape)
             
-            y,widths = np.hsplit(y,2)
+            #y,widths = np.hsplit(y,2)
 #             print(y.shape)
 #             print(y[0])
             
             print("shape of y",y.shape)
+        
             #widths = np.squeeze(widths,axis=1)
             #y = np.squeeze(y,axis=-1)
             
@@ -77,11 +81,11 @@ with tf.Session(graph = graph) as sess:
             #widths = np.array(widths)
             
             actual_batch_size = x.shape[0]
-        
             
             if count == num_batches:
                 break
-
+            
+            #Convert targets to sparse tensor (required for CTCLoss function)
             sparse_y = helper._batch_y(y,vocabulary)
 
             feed_train = {
@@ -97,6 +101,7 @@ with tf.Session(graph = graph) as sess:
             
             count+=1
             
+        #Average training loss..
         train_loss /= num_batches         
               
         #Save and validate
@@ -111,10 +116,11 @@ with tf.Session(graph = graph) as sess:
                 if count == num_vbatches:
                     break
                 
-                yv,widths = np.hsplit(yv,2)
+                
+                #yv,widths = np.hsplit(yv,2)
 
                 #widths = np.squeeze(widths,axis=1)
-                yv = np.squeeze(yv,axis=1)
+                #yv = np.squeeze(yv,axis=1)
 
                 #widths = [layers.calc_out_dims(CNN,0,int(width))[1] for width in widths]
                 #widths = np.array(widths)
@@ -133,6 +139,7 @@ with tf.Session(graph = graph) as sess:
                 v_loss_val, v_ler= sess.run([loss,label_error_rate],feed_dict = feed_valid)
         
                 
+                #Write Tensorboard summaries to file
                 if (e%summary_epoch == 0):
                     s = sess.run(merged_summary,feed_dict=feed_valid)
                     file_writer.add_summary(s,e)
@@ -141,14 +148,15 @@ with tf.Session(graph = graph) as sess:
                 ler += v_ler
                 
                 count+=1
-                
+            
+            #Average loss and ler..
             valid_loss /= num_vbatches
             ler /= num_vbatches
             
             end_time = time.time()
             time_taken = end_time - start_time
             
-#             print("Epoch: {}, train_loss:{:.2f}, valid_loss:{:.2f}, ler:{:.2f} in {:.2f} sec.".format(e,train_loss,valid_loss,ler,time_taken)) 
+            print("Epoch: {}, train_loss:{:.2f}, valid_loss:{:.2f}, ler:{:.2f} in {:.2f} sec.".format(e,train_loss,valid_loss,ler,time_taken)) 
             
             #Save the model
             saver.save(sess,mount_point+'saved_models/cnn_lstm_fc_'+str(e))

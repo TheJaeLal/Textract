@@ -24,9 +24,11 @@ dropout = { 'conv':[1,1,1,0.5,0.5,0.5,0.5],
 
 #Toggle Data Augmentation
 augment_data = True
+store_augmented = True
 
-#Use addition train_data (3000+ other zombie_images)
-use_more_data = False
+
+#Use addition train_data ('zombie', test', or 'valid' images)
+more_train_data = None
 
 #Which set to use for Validation 'valid' or 'test'
 valid_set = 'valid'
