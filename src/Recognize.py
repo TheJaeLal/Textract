@@ -9,6 +9,7 @@ import layers
 from model import ANN_Model
 from Augment import valid_datagen
 import helper
+import Image_Fetcher
 from test_config import vocabulary,infer_batch_size,mount_point,input_dir,resume_epoch,img_height,img_width,model_dir,model_prefix
 from Arch import CNN
 import matplotlib.pyplot as plt
@@ -33,14 +34,14 @@ gradients = model_params[13]
 interim_dropout = model_params[14]
 
 #Generating images
-valid_generator = valid_datagen.flow_from_directory( os.path.join(mount_point,input_dir),
-                                            target_size=(img_height,img_width), color_mode='grayscale',
-                                            batch_size = infer_batch_size, shuffle=False )
+# valid_generator = valid_datagen.flow_from_directory( os.path.join(mount_point,input_dir),
+#                                             target_size=(img_height,img_width), color_mode='grayscale',
+#                                             batch_size = infer_batch_size, shuffle=False )
 
-num_vbatches = 4
+images = Image_Fetcher.fetch(os.path.join(mount_point,input_dir))
 
 #Inputs for images, outputs for predictions, targets for labels
-infer_inputs = []
+infer_inputs = images
 infer_outputs = []
 infer_targets = []
 
@@ -58,20 +59,9 @@ with tf.Session(graph = graph) as sess:
 
     count = 0
 
-    for x,y in valid_generator:
-       
-        infer_inputs.append(x)
-        
-        print(y)
-        
-        print(x.shape)
-        
-        actual_batch_size = x.shape[0]
-        
-        #widths = [189]
-        
-        if count == num_vbatches:
-            break
+    for x in images:
+
+        actual_batch_size = len(x)
 
         feed = {
                      inputs:x,time_steps:[seq_len]*actual_batch_size,
@@ -92,7 +82,6 @@ content = "\n".join(
         [ #List of sentences...
            "".join([vocabulary[char] for char in output[0][0][1]]) for output in infer_outputs]
 )
-
 
 print(content)
 
