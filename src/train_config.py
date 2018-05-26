@@ -23,7 +23,7 @@ dropout = { 'conv':[1,1,1,0.5,0.5,0.5,0.5],
           }
 
 #Toggle Data Augmentation
-augment_data = False
+augment_data = True
 
 #Use addition train_data (3000+ other zombie_images)
 use_more_data = False
@@ -45,7 +45,7 @@ valid_batch_size = 48
 
 #Training parameters
 n_epochs = 1000
-resume_epoch = 93
+resume_epoch = 0
 save_epoch = 1
 summary_epoch = 150
 

@@ -4,25 +4,27 @@ import numpy as np
 from aug_config import *
 from train_config import augment_data
 import random
+from scipy import ndimage as ndi
+
+def erosion_dilation(image):
+    image = np.squeeze(image,axis=-1)
+    if random.randint(1,2) == 1:
+        #Erosion (thicken black foreground)
+        if random.randint(1,2) == 1:
+            image = ndi.grey_erosion(image,size=filter_size)
+            
+        #Dilation (thin the black foreground)
+        else:
+            image = ndi.grey_erosion(image,size=filter_size)
+
+    image = np.expand_dims(image,axis=-1)
+    print(image.shape)
+    
+    return image
 
 def augment(image):
     
     out = image
-#    #Dilation
-#     elif n==2:
-#         image = image.reshape(1,image.shape[0],image.shape[1],image.shape[2])
-#         dilout = tf.nn.dilation2d(image,filter=myfilter,strides=[1,1,1,1],rates=[1,1,1,1],padding='SAME')
-#         with tf.Session() as sess:
-#             out = dilout.eval(session=sess)
-#         out = out.reshape(out.shape[1],out.shape[2],out.shape[3])
-#       
-#     #Erosion 
-#     elif n==4:
-#         image = image.reshape(1,image.shape[0],image.shape[1],image.shape[2])
-#         eroded = tf.nn.erosion2d(image,kernel=myfilter,strides=[1,1,1,1],rates=[1,1,1,1],padding='SAME')
-#         with tf.Session() as sess:
-#             out = eroded.eval(session=sess)
-#         out = out.reshape(out.shape[1],out.shape[2],out.shape[3])
     
     #Rotation
     if random.randint(1,2) == 1:
@@ -44,8 +46,12 @@ def augment(image):
     return out
 
 if augment_data == True:
-    train_datagen = keras.preprocessing.image.ImageDataGenerator(rescale=1./255,preprocessing_function=augment)
+    train_datagen = keras.preprocessing.image.ImageDataGenerator(
+                       rotation_range=3, width_shift_range=0.00, shear_range=0.01,
+                       height_shift_range=0.0, zoom_range=0.05,rescale=1./255,
+                       preprocessing_function=None,data_format="channels_last",fill_mode='constant',cval=255)
+
 else:
-    train_datagen = keras.preprocessing.image.ImageDataGenerator(rescale=1./255)
+    train_datagen = keras.preprocessing.image.ImageDataGenerator(rescale=1./255,data_format="channels_last")
     
-valid_datagen = keras.preprocessing.image.ImageDataGenerator(rescale=1./255)
+valid_datagen = keras.preprocessing.image.ImageDataGenerator(rescale=1./255,data_format="channels_last")

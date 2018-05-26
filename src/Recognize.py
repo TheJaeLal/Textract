@@ -1,4 +1,3 @@
-
 import tensorflow as tf
 import numpy as np
 import shelve
@@ -7,7 +6,7 @@ import os
 from math import ceil
 import time
 import layers
-import model
+from model import ANN_Model
 from Augment import valid_datagen
 import helper
 from test_config import vocabulary,infer_batch_size,mount_point,input_dir,resume_epoch,img_height,img_width,model_dir,model_prefix
@@ -15,7 +14,7 @@ from Arch import CNN
 import matplotlib.pyplot as plt
 
 #Importing model parameters
-model_params = model.model()
+model_params = ANN_Model()
 
 graph = model_params[0]
 dropout_lstm = model_params[1]
@@ -34,16 +33,14 @@ gradients = model_params[13]
 interim_dropout = model_params[14]
 
 #Generating images
-valid_generator = valid_datagen.flow_from_directory(mount_point+input_dir,target_size=(img_height,img_width),color_mode='grayscale',batch_size = infer_batch_size)
+valid_generator = valid_datagen.flow_from_directory(os.path.join(mount_point,input_dir),target_size=(img_height,img_width),color_mode='grayscale',batch_size = infer_batch_size,shuffle=False)
 
-num_vbatches = 1
-
+num_vbatches = 5
 
 #Inputs for images, outputs for predictions, targets for labels
 infer_inputs = []
 infer_outputs = []
 infer_targets = []
-
 
 with tf.Session(graph = graph) as sess:
         
@@ -69,14 +66,14 @@ with tf.Session(graph = graph) as sess:
         
         actual_batch_size = x.shape[0]
         
-        widths = [189]
+        #widths = [189]
         
         if count == num_vbatches:
             break
 
         feed = {
-                     inputs:x,
-                     time_steps:widths,conv_dropout:[1]*len(CNN),
+                     inputs:x,time_steps:[seq_len]*actual_batch_size,
+                     conv_dropout:[1]*len(CNN),
                      dropout_fc:1,dropout_lstm:1,interim_dropout:1,
                      is_training:False
                 }
@@ -88,10 +85,14 @@ with tf.Session(graph = graph) as sess:
 #infer_outputs[0][0][0][1]
 
 #Prediction string (PROBABLY GOES TO FLASK SERVER)
-content = "".join([vocabulary[char] for char in infer_outputs[0][0][0][1]])
+content = "\n".join(
+      #All Sentences
+        [ #List of sentences...
+           "".join([vocabulary[char] for char in output[0][0][1]]) for output in infer_outputs]
+)
+
+
 print(content)
-
-
 
 
 # ****CODE TO REVIEW*****
@@ -107,8 +108,6 @@ print(content)
 #     transcription = transcription+"\n".join([vocabulary[char] for char in infer_outputs[0][img_number][0][1]])
 
 # print(transcription)
-
-
 
 
 # #Validating input image with prediction

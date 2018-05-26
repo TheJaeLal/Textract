@@ -5,7 +5,7 @@ from math import ceil
 import time
 
 from model import ANN_Model
-from datagen import train_generator, valid_generator
+from datagen import train_generator, valid_generator, num_train, num_valid
 from train_config import mount_point,vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,summary_epoch,dropout
 from Arch import CNN
 import layers
@@ -32,11 +32,8 @@ interim_dropout = model[14]
 
 # graph,dropout_lstm,dropout_fc,inputs,time_steps,targets,loss,train,decoded,label_error_rate,seq_len,is_training,conv_dropout,gradients,interim_dropout = ANN_Model()
 
-num_training_samples = train_array.shape[0]
-num_valid_samples = valid_array.shape[0]
-
-num_batches = int(ceil(num_training_samples/batch_size))
-num_vbatches = int(ceil(num_valid_samples/valid_batch_size))
+num_batches = int(ceil(num_train/batch_size))
+num_vbatches = int(ceil(num_valid/valid_batch_size))
 
 with tf.Session(graph = graph) as sess:
         
@@ -67,12 +64,14 @@ with tf.Session(graph = graph) as sess:
 #             plt.imshow(x[0].reshape(x[0].shape[:2]),cmap='gray')
 #             print(y[0])
 #             print(y.shape)
+            
             y,widths = np.hsplit(y,2)
 #             print(y.shape)
 #             print(y[0])
             
+            print("shape of y",y.shape)
             #widths = np.squeeze(widths,axis=1)
-            y = np.squeeze(y,axis=1)
+            #y = np.squeeze(y,axis=-1)
             
             #widths = [layers.calc_out_dims(CNN,0,int(width))[1] for width in widths]
             #widths = np.array(widths)

@@ -28,6 +28,12 @@ if use_more_data:
     train_label = np.concatenate((train_label,zombie_label))
 
 ##If you want to see augmented Images...
-# train_generator = train_datagen.flow(train_array,train_label,batch_size,save_to_dir=mount_point+'Augmented', save_prefix='train')
-train_generator = train_datagen.flow(train_array,train_label,batch_size)
+train_generator = train_datagen.flow(train_array,train_label,
+                    batch_size,save_to_dir=os.path.join(mount_point,'Augmented'), 
+                    save_prefix='train')
+
+#train_generator = train_datagen.flow(train_array,train_label,batch_size)
 valid_generator = valid_datagen.flow(valid_array,valid_label,valid_batch_size)
+
+num_train = train_array.shape[0]
+num_valid = valid_array.shape[0]

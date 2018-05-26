@@ -1,6 +1,7 @@
 import numpy as np
 
-myfilter = np.ones((3,3,1),dtype=np.float32)
+#Size of the morphological filter (for erosion and dilation)
+filter_size = (2,2)
 
 img_folder_path = '../data/train'
 out_folder_path = '../Augmented'

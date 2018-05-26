@@ -1,5 +1,5 @@
 import numpy as np
-from config import vocab_size
+from train_config import vocab_size
 
 def load_data(filename):
     with open(filename,'r') as f:
