@@ -61,10 +61,14 @@ with tf.Session(graph = graph) as sess:
 
     for x in images:
 
-        actual_batch_size = len(x)
+
+	#Placeholder requires no_of_channels at the end, and at 0th Index..
+        x = np.expand_dims(x,axis=-1)
+        x = np.expand_dims(x,axis=0)
+
 
         feed = {
-                     inputs:x,time_steps:[seq_len]*actual_batch_size,
+                     inputs:x,time_steps:[seq_len],
                      conv_dropout:[1]*len(CNN),
                      dropout_fc:1,dropout_lstm:1,interim_dropout:1,
                      is_training:False

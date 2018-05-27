@@ -20,7 +20,7 @@ input_dir = 'Test_Images/ImgenhOutput_Center'
 test_batch_size = 64
 infer_batch_size = 1
 
-resume_epoch = 34
+resume_epoch = 46
 model_dir = 'saved_models'
 model_prefix = 'cnn_lstm_fc_'
 
