@@ -27,10 +27,13 @@ for image_name in images:
     padding_vertical = max_height - image_height
     padding_top = int(padding_vertical/2)
 
+    padding_horizontal = max_width - image_width
+    padding_left = int(padding_horizontal/2)
+
     new_image = np.zeros((max_height,max_width))
     new_image.fill(255)
     
-    new_image[padding_top:padding_top+image_height,0:image_width] = binary
+    new_image[padding_top:padding_top+image_height,padding_left:padding_left+image_width] = binary
 
     resize_image = cv2.resize(new_image,(scaled_width,scaled_height,),interpolation = cv2.INTER_AREA)
 
