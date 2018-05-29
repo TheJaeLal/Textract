@@ -66,7 +66,11 @@ with tf.Session(graph = graph) as sess:
         
         #Mini Batch loop
         for x,y in train_generator:
-        
+            
+            #Keep only the 1st channel...
+            x = x[:,:,:,0]
+            x = np.expand_dims(x,axis=-1)
+            
 #             plt.imshow(x[0].reshape(x[0].shape[:2]),cmap='gray')
 #             print(y[0])
 #             print(y.shape)

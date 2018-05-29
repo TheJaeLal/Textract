@@ -15,7 +15,7 @@ vocab_size = len(vocabulary)+1
 img_height = 114
 img_width = 758
             
-input_dir = 'Test_Images/ImgenhOutput_Center'
+input_dir = 'Test_Images/Processed'
 
 test_batch_size = 64
 infer_batch_size = 1
