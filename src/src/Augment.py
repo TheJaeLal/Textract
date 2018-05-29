@@ -53,12 +53,15 @@ def random_zoom(image,width):
     #print("Scaled:",image.shape)
 
     new_height,new_width = image.shape
+    #print("new_height,new_width = ",new_height,new_width)
     
     #Zoom In -> crop
-    if new_height > 114:
+    if new_height > 114 or new_width > 758:
         crop_top  = int(math.floor((new_height - 114)/2.0))
         crop_left = int(math.floor((new_width - 758)/2.0))
-        
+ 
+        #print("padd_top,padd_left = ",crop_top,crop_left)
+ 
         image = image[crop_top:crop_top+114,crop_left:crop_left+758]
         
     #Zoom Out --> padd
@@ -69,6 +72,7 @@ def random_zoom(image,width):
         padd_top = int(math.floor((114 - new_height)/2.0))
         padd_left = int(math.floor((758 - new_width)/2.0))
         
+        #print("padd_top,padd_left = ",padd_top,padd_left)
         new_image[padd_top:padd_top+new_height,padd_left:padd_left+new_width] = image
           
         image = new_image
@@ -81,23 +85,29 @@ def augment(image):
     
     #Extract width and height
     height = image[0][0][1]
-    
+        
     width = math.floor(image[0][0][2]/255.0 * 754.0)
     
-    print("******height,width = ",height,width)
+    #print("******height,width = ",height,width)
     
     ##Sanity check...
-    if height!=image[0][1][1] or width!=math.floor(image[0][1][2]/255.0 * 754.0):
-        print("Gadbad hai....")
-        print(height,"!=",image[0][1][1])
-        print("or")
-        print(width,"!=",math.floor(image[0][1][2]/255.0 * 754.0))
-        
+    #if height!=image[0][1][1] or width!=math.floor(image[0][1][2]/255.0 * 754.0):
+        #print("Gadbad hai....")
+        #print(height,"!=",image[0][1][1])
+        #print("or")
+        #print(width,"!=",math.floor(image[0][1][2]/255.0 * 754.0))
+    
+    #print("Input image shape",image.shape)
     #Remove last 2 channels
     image = image[:,:,0]
     
+    #print("After removing last 2 channels",image.shape)
+    
     if random.randint(1,2):
+        #print("Performing Random Zoom")
         image = random_zoom(image,width)
+    
+    #print("Expanding image dims of shape",image.shape)
     
     image = np.expand_dims(image,axis=-1)
     
@@ -115,7 +125,10 @@ def augment(image):
     
     #height_shift  & width_shift
     if random.randint(1,2):   
-        image = keras.preprocessing.image.random_shift(image,0.10,0.2,
+#         width_shift_range = 379.0/width - 0.5
+#         height_shift_range = 57.0/height - 0.5
+        
+        image = keras.preprocessing.image.random_shift(image,0.10,0.10,
                                         row_axis=0,col_axis=1,channel_axis=2,
                                         fill_mode='constant',cval=255.0)
     
@@ -137,16 +150,18 @@ def augment(image):
     #     out[m:m+baseline_width,:,:] = 255
     
     #Convert back to 3 channel..
+    #print("squeezing image with shape",image.shape)
     image = np.squeeze(image,axis=-1)
+    
     
     channel_image = np.zeros((114,758,3))
     channel_image[:,:,0] = image
     
-    print("Final_Channel_image.shape = ",channel_image[:,:,0].shape)
+    #print("Final_Channel_image.shape = ",channel_image[:,:,0].shape)
     
     #Scale img_values b/w 0 to 1
-    #image = channel_image / 255.0
-    image = channel_image
+    image = channel_image / 255.0
+#     image = channel_image
     
     return image
 
@@ -156,4 +171,4 @@ if augment_data == True:
 else:
     train_datagen = keras.preprocessing.image.ImageDataGenerator(data_format="channels_last")
     
-valid_datagen = keras.preprocessing.image.ImageDataGenerator(data_format="channels_last")
+valid_datagen = keras.preprocessing.image.ImageDataGenerator(data_format="channels_last",rescale=1/255.0)

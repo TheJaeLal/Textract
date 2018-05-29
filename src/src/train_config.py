@@ -36,7 +36,7 @@ valid_set = 'valid'
 decay = 0.0
 
 #Optimizer Params
-alpha = 0.00008
+alpha = 0.0005
 
 #Not in use yet..
 momentum = 0.0
