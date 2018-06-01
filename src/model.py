@@ -31,12 +31,18 @@ def ANN_Model():
 
         #Input 'Image'
         inputs = tf.placeholder(tf.float32,shape=[None,img_height,img_width,1])
-
-
+        
+        #Normalize the input Images...
+        inputs = inputs - 128
+        inputs = inputs / 128.0
+        
+        
         #tf.summary.image('images',inputs)
 
+        #Necessary for it to converge, it requires input between 0 to 1.....
         X = inputs
-
+    
+        
         #-------------------Convolution-----------------------#
 
 #         conv = [None] * len(CNN)

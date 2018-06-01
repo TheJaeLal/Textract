@@ -79,7 +79,7 @@ with tf.Session(graph = graph) as sess:
 #             print(y.shape)
 #             print(y[0])
             
-            print("shape of y",y.shape)
+            #print("shape of y",y.shape)
         
             #widths = np.squeeze(widths,axis=1)
             #y = np.squeeze(y,axis=-1)
@@ -162,7 +162,7 @@ with tf.Session(graph = graph) as sess:
             end_time = time.time()
             time_taken = end_time - start_time
             
-            print("Epoch: {}, train_loss:{:.2f}, valid_loss:{:.2f}, ler:{:.2f} in {:.2f} sec.".format(e,train_loss,valid_loss,ler,time_taken)) 
+            #print("Epoch: {}, train_loss:{:.2f}, valid_loss:{:.2f}, ler:{:.2f} in {:.2f} sec.".format(e,train_loss,valid_loss,ler,time_taken)) 
             
             #Save the model
             saver.save(sess,mount_point+'saved_models/cnn_lstm_fc_'+str(e))

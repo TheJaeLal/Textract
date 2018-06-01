@@ -139,9 +139,9 @@ def augment(image):
     #Remove last 2 channels
     image = image[:,:,0]
     
-    ##Convert image to int b/w 0 to 255
+    ##Convert image to int b/w 0 to 255 
     image = image.astype(np.uint8)
-    print("image.type =",image.dtype)
+    #print("image.type =",image.dtype)
     
     #print("After removing last 2 channels",image.shape)
     

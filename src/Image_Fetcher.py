@@ -14,7 +14,7 @@ def fetch(input_dir):
 
 	image_list.sort()
 
-	images = [ cv2.imread(os.path.join(input_dir,image_name),cv2.IMREAD_GRAYSCALE).astype(np.float32)/255.0  for image_name in image_list]
+	images = [ cv2.imread(os.path.join(input_dir,image_name),cv2.IMREAD_GRAYSCALE) for image_name in image_list]
 	# for i,image_name in enumerate(image_list):
 	# 	cv2.imwrite(image_name,images[i])
 

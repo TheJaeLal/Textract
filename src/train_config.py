@@ -23,8 +23,10 @@ dropout = { 'conv':[1,1,1,0.5,0.5,0.5,0.5],
           }
 
 #Toggle Data Augmentation
+
 augment_data = True
-store_augmented = True
+#***** Do not remove augmentation, the code will break!!
+store_augmented = False
 
 #Use addition train_data ('zombie', test', or 'valid' images)
 more_train_data = None
@@ -36,7 +38,7 @@ valid_set = 'valid'
 decay = 0.0
 
 #Optimizer Params
-alpha = 0.0005
+alpha = 0.0003
 
 #Not in use yet..
 momentum = 0.0
@@ -46,11 +48,11 @@ valid_batch_size = 48
 
 #Training parameters
 n_epochs = 1000
-resume_epoch = 0
+resume_epoch = 45
 save_epoch = 1
 
 #Tensorboard Summary
-summary_epoch = 5
+summary_epoch = None
 
 #Not using as of now!
 #CLR parameters
