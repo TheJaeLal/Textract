@@ -7,11 +7,6 @@ from Arch import CNN, BRNN, FC, Interim_FC
 #Global Debugging flag..
 debug = False
 
-# with tf.device('/gpu:0'):
-
-#Model
-#----------------------------------------------------------------------------#
-
 def ANN_Model():
     graph = tf.Graph()
     with graph.as_default():
@@ -227,5 +222,12 @@ def ANN_Model():
         label_error_rate = tf.reduce_mean(tf.edit_distance(tf.cast(decoded[0], tf.int32),targets))
 
         #tf.summary.scalar('label_error_rate',label_error_rate)
-
-        return graph,dropout_lstm,dropout_fc,inputs,time_steps,targets,loss,train,decoded,label_error_rate,seq_len,is_training,conv_dropout,gradients,interim_dropout
+        
+        params = [
+                  graph,dropout_lstm,dropout_fc,
+                  inputs,time_steps,targets,
+                  loss,train,decoded,label_error_rate,seq_len,
+                  is_training,conv_dropout,gradients,interim_dropout
+            ]
+        
+        return params 

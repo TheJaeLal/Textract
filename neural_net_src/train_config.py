@@ -1,22 +1,22 @@
 import shelve
+import os
 #import sys
-#import os
 
-#Cuz the file is inside 'code' directory
+#Cuz the file is inside 'neural_net_src' directory
 mount_point = "/home/ubuntu/hcr-ann/"
 
 #print(os.getcwd())
 
 #print(sys.path)
 
-data_path = mount_point + 'IAM_Data.dat'
+#data_path = mount_point + 'IAM_Metadata.dat'
 
 # if os.path.exists(data_path):
 #     print("file exists in path..")
 # else:
 #     print("file doesn't exist in path")
 
-with shelve.open(mount_point+'IAM_Data') as shelf:
+with shelve.open(os.path.join(mount_point,'IAM_Metadata')) as shelf:
     #print("Following are the contents of IAM-DATA")
     #print(list(shelf.keys()))
     vocabulary = list(shelf['chars'])
@@ -38,7 +38,6 @@ dropout = { 'conv':[1,1,1,0.5,0.5,0.5,0.5],
           }
 
 #Toggle Data Augmentation
-
 augment_data = True
 #***** Do not remove augmentation, the code will break!!
 store_augmented = False
@@ -66,7 +65,8 @@ n_epochs = 1000
 resume_epoch = 45
 save_epoch = 1
 
-#Tensorboard Summary
+#Tensorboard Summary (summary_epoch either None for no summary or an integer number say 'n'
+#indicating summary is taken every 'n' epochs..
 summary_epoch = None
 
 #Not using as of now!

@@ -1,6 +1,6 @@
 from train_config import vocab_size
 
-#Format: 'conv':[filter_size,strides,num_filters], 'pool':[strides]
+#Format: 'conv':[filter_size,strides,num_filters], 'pool':[pool_height,pool_width]
 
 #Model Params
 CNN = [
@@ -13,10 +13,6 @@ CNN = [
         {'conv':[3,1,512], 'activate':'leaky_relu', 'pool':(3,1),'padding':'SAME','batch_norm':True},
         {'conv':[2,1,512], 'activate':'leaky_relu', 'pool':None,'padding':'VALID','batch_norm':False},
 
-    
-#         {'conv':[3,2,64], 'activate':'leaky_relu', 'pool':None},
-#         {'conv':[3,2,128], 'activate':'leaky_relu', 'pool':None},
-#         {'conv':[3,1,200], 'activate':'leaky_relu' ,'pool':3}
 ]
 
 BRNN = {

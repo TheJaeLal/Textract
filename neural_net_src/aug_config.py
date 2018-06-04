@@ -1,5 +1,3 @@
-import numpy as np
-
 #Size of the morphological filter (for erosion and dilation)
 filter_size = (2,2)
 

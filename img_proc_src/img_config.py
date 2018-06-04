@@ -9,5 +9,5 @@ scaled_height = 114
 #Sauvola Binarization Filter size
 thresh_kernel_size = 75
 
-input_path = '../Test_Images/Raw_Input/'
-output_path = '../Test_Images/Processed/'
+input_path = '../Segmented_Images/Raw_Input/'
+output_path = '../Segmented_Images/Padded_N_Scaled/'

@@ -1,10 +1,8 @@
-#import tensorflow as tf
 import keras
 import numpy as np
 from aug_config import *
 from train_config import augment_data
 import random
-#from scipy import ndimage as ndi
 import math
 #import joblib
 import cv2

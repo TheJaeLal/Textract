@@ -1,13 +1,13 @@
 import os
 import shutil
-from Process_Images import segment, process, binarize
-from src import Recognize
+from img_proc_src import segment, padd_n_scale, binarize
+from neural_net_src import Recognize
 
 def reset_raw_input():  
     
     os.chdir("/home/ubuntu/hcr-ann/")
     
-    raw_input_path = 'Test_Images/Raw_Input/'
+    raw_input_path = 'Segmented_Images/Raw_Input/'
     
     if os.path.exists(raw_input_path):
         shutil.rmtree(raw_input_path)
@@ -19,7 +19,7 @@ def reset_processed():
     
     os.chdir("/home/ubuntu/hcr-ann/")
     
-    raw_input_path = 'Test_Images/Processed/'
+    raw_input_path = 'Segmented_Images/Padded_N_Scaled/'
     
     if os.path.exists(raw_input_path):
         shutil.rmtree(raw_input_path)
@@ -28,7 +28,8 @@ def reset_processed():
     return
 
 def extract(image_path):   
-    #Delete files inside Test_Images/Raw_Input folder
+    #Delete files inside Segmented_Images/Raw_Input and Padded_N_Scaled folder
+    
     reset_raw_input()
     reset_processed()
     
@@ -36,13 +37,10 @@ def extract(image_path):
     
     segment.run(image_path)
     
-    process.run()
+    padd_n_scale.run()
     
-    model_input_path = 'Test_Images/Processed'
+    model_input_path = 'Segmented_Images/Padded_N_Scaled/'
+    
     output_text = Recognize.get_text(model_input_path)
     
     return output_text
-    
-    
-# if __name__ == '__main__':
-#     extract()

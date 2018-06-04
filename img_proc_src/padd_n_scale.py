@@ -3,15 +3,14 @@ import cv2
 import os
 import math
 
-from Process_Images.img_config import input_path,output_path,max_width,max_height,scaled_width,scaled_height,thresh_kernel_size 
+from img_proc_src.img_config import input_path,output_path,max_width,max_height,scaled_width,scaled_height,thresh_kernel_size 
 
-# import matplotlib.pyplot as plt
 from skimage.filters import (median,threshold_sauvola)
-from skimage.io import imread,imsave
+from skimage.io import imread
 
 def run():
 
-    os.chdir("/home/ubuntu/hcr-ann/Process_Images")
+    os.chdir("/home/ubuntu/hcr-ann/img_proc_src")
 
     list_images = os.listdir(input_path)
     #list_images.sort()

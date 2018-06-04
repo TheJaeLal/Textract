@@ -38,7 +38,7 @@ def index():
     #print('File saved with name:',file.filename,file=sys.stderr)
     
     #output_text = "Server side work in progress"
-    output_text = driver.extract(file_path)
+    output_text = transcribe.extract(file_path)
     #output_text = ""
     # if output_text == None:
     #     output_text = "Server Side Failure"

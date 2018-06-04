@@ -1,12 +1,12 @@
 import shelve
 import os
 
-#Cuz the file is inside 'code' directory
+#Cuz the file is inside 'neural_net_src' directory
 mount_point = "../"
 
 os.chdir("/home/ubuntu/hcr-ann/src")
 
-with shelve.open(mount_point+'IAM_Data') as shelf:
+with shelve.open(ot.path.join(mount_point,'IAM_Metadata')) as shelf:
     vocabulary = list(shelf['chars'])
     
 vocabulary.sort()
@@ -24,9 +24,10 @@ img_width = 758
 test_batch_size = 64
 infer_batch_size = 1
 
-resume_epoch = 140
+#Which model to restore?
 model_dir = 'saved_models'
 model_prefix = 'cnn_lstm_fc_'
+resume_epoch = 140
 
 #Set on which prediction is to be done valid/test
 prediction_set = 'valid'

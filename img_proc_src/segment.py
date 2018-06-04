@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-#import os
 import peakutils
 import sys
 import os
@@ -27,14 +26,14 @@ def compare(img_above,img_below):
 
 def run(image_path):
 
-    #Load the image.....    
-    binary_img_path = 'Binarized_'+image_path
+    #Load the image.....
+    img_name = image_path.basename(image_path)
+    
+    binary_img_path = os.path.join("Binarized_Input_Images/",img_name)
     
     color_img = cv2.imread(binary_img_path)
     
     gray_img = cv2.cvtColor(color_img,cv2.COLOR_RGB2GRAY)
-    
-    #ret2,bin_img = cv2.threshold(gray_img,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
     
     mfiltered = cv2.medianBlur(gray_img,5)
     
@@ -240,10 +239,9 @@ def run(image_path):
         if num_digits < 5:
             continue
         
-        
         #print(os.getcwd())
         
-        line_path = "Test_Images/Raw_Input/line_"+str(i).zfill(2)+".jpg"
+        line_path = os.path.join("Segmented_Images/Raw_Input/line_"+str(i).zfill(2)+".jpg")
         
         #print("Saving file at ",os.path.join(os.getcwd(),line_path),file=sys.stderr)
         

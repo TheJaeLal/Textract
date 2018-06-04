@@ -8,7 +8,7 @@ import time
 
 import sys
 
-sys.path.insert(0, '/home/ubuntu/hcr-ann/src')
+sys.path.insert(0, '/home/ubuntu/hcr-ann/neural_net_src')
 
 import layers, helper, Image_Fetcher
 from model import ANN_Model
@@ -81,9 +81,7 @@ def get_text(input_dir):
             infer_outputs.append(d)
             count+=1
 
-    #infer_outputs[0][0][0][1]
-
-    #Prediction string (PROBABLY GOES TO FLASK SERVER)
+    #Prediction string (GOES TO FLASK SERVER)
     text = "\n".join(
           #All Sentences
             [ #List of sentences...
@@ -94,27 +92,3 @@ def get_text(input_dir):
     print(text,file=sys.stderr)
     
     return text
-
-
-# ****CODE TO REVIEW*****
-
-# #Number of line images. ***Considering [0][0] is [batch][img_number]. Might have to change***
-# number_of_images = infer_inputs.shape[1]
-
-# #Concatenate prediction of all lines
-# #Not sure of index number for image number. Check that after running the code.
-# #Check syntax also
-# transcription = ""
-# for img_number in range(0,number_of_images):
-#     transcription = transcription+"\n".join([vocabulary[char] for char in infer_outputs[0][img_number][0][1]])
-
-# print(transcription)
-
-
-# #Validating input image with prediction
-# original_img = infer_inputs[0][0]
-# original_img = original_img.reshape(original_img.shape[:2])
-
-# #original_img.shape
-
-# plt.imsave('test_input.jpg',original_img,cmap='gray',format='jpg')
