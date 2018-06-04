@@ -4,7 +4,7 @@ import cv2
 from skimage.filters import (median,threshold_sauvola)
 from skimage.io import imread
 
-from Process_Images.img_config import thresh_kernel_size 
+from img_proc_src.img_config import thresh_kernel_size 
 
 
 def run(image_path):
