@@ -24,12 +24,11 @@ def compare(img_above,img_below):
         return 0
 
 
-def run(image_path):
+def run(image_name):
 
     #Load the image.....
-    img_name = image_path.basename(image_path)
     
-    binary_img_path = os.path.join("Binarized_Input_Images/",img_name)
+    binary_img_path = os.path.join("Binarized_Input_Images/",image_name)
     
     color_img = cv2.imread(binary_img_path)
     
