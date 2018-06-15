@@ -1,51 +1,47 @@
-from load import loadData
+import load
 import shelve
-import joblib
+#import cv2
+#import joblib
 
-images = '../HCR_Stuff/Padded_Lines/'
-xml = '../HCR_Stuff/XML_Data/'
-shelve_loc = './'
+# image_input_dir = '/home/james/Desktop/HCR_Stuff/cropped/'
+# xml = '/home/james/Desktop/HCR_Stuff/XML_Data/'
 
-data = loadData()
+# image_names,labels,chars= load.paragraph_labels(image_input_dir,xml)
 
-dict_data,chars,images,arrays,labels = data.load(images,xml)
+# #print(chars)(
+# print("  ")
+# for i,label in enumerate(labels):
+# 	print("*Label {0}* : {1}".format(i+1,label))
+# 	print("----------------------------")
 
-train_array,valid_array,test_array,zombie_array = arrays
-train_chars,valid_chars,test_chars,zombie_chars = chars
-train_data,valid_data,test_data,zombie_imgs = images
-train_label,valid_label,test_label,zombie_label = labels
+# with shelve.open("Metadata",'c',writeback=True) as shelf:
+# 	shelf['images'] = image_names
+# 	shelf['labels'] = labels
+# 	shelf['chars'] = chars
 
+#Verify stored Metadata...
+# with shelve.open("Metadata",'c') as shelf:
+# 	print(shelf['images'])
 
-# #to_remove = ["Words/r06/r06-022/r06-022-03-05.png","Words/a01/a01-117/a01-117-05-02.png","Words/r02/r02-060/r02-060-08-05.png"]
+# 	print(shelf['labels'])
 
-
-# # for image_path in to_remove:
-# # 	list_data.remove(image_path)
-# # 	dict_data.pop(image_path)
-# # 	thresh_dict.pop(image_path)
-
-# #Dictionary:
-
-# #pad_prefix = "Padded_"
-
-# print(len(list_data))
-
-# image_arrays = { image_path : cv2.imread(pad_prefix+image_path,cv2.IMREAD_GRAYSCALE) for image_path in list_data }
+# 	print(shelf['chars'])
 
 
-with shelve.open(shelve_loc+'IAM_Data','c',writeback=True) as shelf:
-    shelf['image_labels'] = dict_data
-    shelf['chars'] = train_chars
-    shelf['train_data'] = train_data
-    shelf['valid_data'] = valid_data
-    shelf['test_data'] = test_data
-    shelf['zombie_data'] = zombie_imgs
-    shelf['train_label'] = train_label
-    shelf['valid_label'] = valid_label
-    shelf['test_label'] = test_label
-    shelf['zombie_label'] = zombie_label
+# #image_arrays = { image_path : cv2.imread(pad_prefix+image_path,cv2.IMREAD_GRAYSCALE) for image_path in list_data }
 
-joblib.dump(train_array,'train_arrays',compress=True)
-joblib.dump(valid_array,'valid_arrays',compress=True)
-joblib.dump(test_array,'test_arrays',compress=True)
-joblib.dump(zombie_array,'zombie_arrays',compress=True)
+
+# with shelve.open(shelve_loc+'IAM_Data','c',writeback=True) as shelf:
+# 	shelf['image_labels'] = dict_data
+# 	shelf['chars'] = chars
+# 	shelf['list_of_images'] = list_data
+# 	shelf['image_thresholds'] = thresh_dict
+
+# #print("Done saving Image_labels,chars and list_of_images")
+
+# #joblib.dump(image_arrays,"shelved_data/image_arrays",compress=True)
+
+# #print(image_arrays)
+
+# #print(list_data)
+# # print(thresh_dict)
