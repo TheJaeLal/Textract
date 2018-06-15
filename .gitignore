@@ -5,3 +5,4 @@ User_Input_Images/*
 Binarized_Input_Images/*
 Segmented_Images/Raw_Input/*
 Segmented_Images/Padded_N_Scaled/*
+nohup.out
