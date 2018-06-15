@@ -1,6 +1,7 @@
 import numpy as np
 import os
 import xml.etree.ElementTree as ET
+from xml.sax.saxutils import unescape
 
 from collections import Counter
 
@@ -30,7 +31,7 @@ def paragraph_labels(image_location, xml_location):
         for tag in root.iter('line'):
 
             #thresh_line = tag.attrib['threshold']
-            line_text = tag.attrib['text']
+            line_text = unescape(tag.attrib['text'],{"&apos;": "'", "&quot;": '"'})
             
             total_text += line_text
                 

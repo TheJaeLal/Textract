@@ -1,0 +1,5 @@
+'train_images', (0, 28940)
+'test_images', (29184, 2541)
+'train_labels', (31744, 536653)
+'test_labels', (568832, 52328)
+'chars', (621568, 640)

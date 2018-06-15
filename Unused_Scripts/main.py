@@ -1,10 +1,10 @@
 import load
 import shelve
 #import cv2
-#import joblib
+import joblib
 
-# image_input_dir = '/home/james/Desktop/HCR_Stuff/cropped/'
-# xml = '/home/james/Desktop/HCR_Stuff/XML_Data/'
+image_input_dir = '/home/ubuntu/Textract/HCR_Stuff/cropped/'
+xml = '/home/james/Desktop/HCR_Stuff/XML_Data/'
 
 # image_names,labels,chars= load.paragraph_labels(image_input_dir,xml)
 
