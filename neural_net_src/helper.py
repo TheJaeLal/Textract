@@ -120,7 +120,7 @@ def _batch_x(batch_size,training_list,image_arrays):
 def _batch_y(train_label,vocabulary):
     
     #Get the current batch, list of sequences(lists)
-    list_of_labels = [encode_int(train_label[b],vocabulary) for b in range(train_label.shape[0])]
+    list_of_labels = [encode_int(train_label[b],vocabulary) for b in range(len(train_label))]
 
     #Convert the list of sequences(lists) to sparse_tuple_form and add them to batches_y
     return sparse_tuple_form(list_of_labels)

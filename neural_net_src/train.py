@@ -8,7 +8,7 @@ import os
 from model import ANN_Model
 from train_config import mount_point,vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,summary_epoch,dropout
 import datagen
-from Arch import CNN
+from Arch import CNN,iterations
 import layers
 import helper
 
@@ -92,16 +92,102 @@ with tf.Session(graph = graph) as sess:
             if count == num_batches:
                 break
             
+            #break down y -> paragraph into different sentences...
+            #Decision to take here...
+            
+            #y is a batch of text
+            #y is a list of strings...
+            #each string represent a single sample
+            #all of the strings combined together form a batch..
+            #so if you split each string/paragraph into lines, you'll have to ensure, that the 
+            #Batching order is maintained...
+            #So first line of para 1 with 1st line of para 2 and so on till 1st line of batch_size'th para
+            
+            #list of lists...
+            
+#             print("Shape of y = ",y.shape)
+#             print("y[0] = ",y[0])
+            
+            line_labels = [line.split("\n") for line in y]
+            
+            # print("Shape of line_labels = ",len(line_labels))
+            # print("line_labels[0] = ",line_labels[0])
+            
+                
+            """
+            batch_size = 2
+            iterations = 5
+            [
+                [
+                "Hello World, It's Siraj",
+                
+                "And today we're going to explore",
+                
+                "Convolutional Neural Networks",
+                
+                "",
+                
+                ""]
+                
+                [
+                "Now Convolutional Neural Networks,",
+            
+                "Are state of the Art in many",
+                
+                "Image Recognition Tasks",
+                
+                "that were solved using RNNs before!",
+                
+                ""]
+            
+            ] --> 
+            
+            to_be_fed into helper._batch_y()
+            [
+                    "Hello World, It's Siraj",
+                    "Now Convolutional Neural Networks"
+            
+            ] --> returns a sparse tensor (_,_,_)
+            
+            And we make 32 such sparse tensors 
+            
+            
+            """
             #Convert targets to sparse tensor (required for CTCLoss function)
-            sparse_y = helper._batch_y(y,vocabulary)
+            
+            #Repeat this process 32 times
+            
+            #1st batch contains line 1 for all 
+            
+            #Since no_of_sparse_tensors = 32
+            sparse_targets = []
+            
+            new_y = [""]*len(line_labels)
+            new_y = [new_y]*iterations
+            
+            for p in range(len(line_labels)):
+                for l in range(len(line_labels[p])):
+                    new_y[l][p] = line_labels[p][l]
+            
+            
+            for k in range(iterations):
+        
+                #the function helper._batch_y should get a list(batch) of strings/lines...
+                sparse_targets.append(helper._batch_y(new_y[k],vocabulary))
 
+                
             feed_train = {
-                             inputs:x,targets:sparse_y,
+                             inputs:x,
                              time_steps:[seq_len]*actual_batch_size,
                              conv_dropout:dropout['conv'],dropout_fc:dropout['fc'],dropout_lstm:dropout['lstm'],
                              interim_dropout:dropout['interim_fc'],is_training:True
                         }
             
+            #For accomodating the sparse tensors...
+            for it in range(iterations):
+                feed_train[targets[it]] = sparse_targets[it]
+                
+                
             _,loss_val = sess.run([train,loss],feed_dict=feed_train)
             
             train_loss += loss_val

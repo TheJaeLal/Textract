@@ -42,7 +42,7 @@ dropout = { 'conv':[1,1,1,0.5,0.5,0.5,0.5],
 #Toggle Data Augmentation
 augment_data = False
 #***** Do not remove augmentation, the code will break!!
-store_augmented = True
+store_augmented = False
 
 #Use addition train_data ('zombie', test', or 'valid' images)
 more_train_data = None
@@ -59,8 +59,8 @@ alpha = 0.0003
 #Not in use yet..
 momentum = 0.0
 
-batch_size = 48
-valid_batch_size = 48
+batch_size = 4
+valid_batch_size = 4
 
 #Training parameters
 n_epochs = 1000
