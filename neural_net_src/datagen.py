@@ -12,12 +12,12 @@ def _get_img_data(more_train_data):
     """Load Training and Validation Input Images (As Numpy Arrays)
     """
     
-    train_array = joblib.load(os.path.join(mount_point,'data','train_array'))
-    valid_array = joblib.load(os.path.join(mount_point,'data',valid_set+'_array'))
+    train_array = joblib.load(os.path.join(mount_point,'data','train_arrays'))
+    valid_array = joblib.load(os.path.join(mount_point,'data',valid_set+'_arrays'))
 
     #If additional data is needed...
     if more_train_data:
-        new_array = joblib.load(os.path.join(mount_point,'data',more_train_data+'_array'))
+        new_array = joblib.load(os.path.join(mount_point,'data',more_train_data+'_arrays'))
         train_array = np.concatenate((train_array,new_array))
     
     return train_array,valid_array
@@ -26,13 +26,13 @@ def _get_label_data(more_train_data):
     """Load Training and Validation Labels/Targets..
     """
 
-    with shelve.open(os.path.join(mount_point,'IAM_Data'),'c') as shelf:
-        train_label = shelf['train_label']
-        valid_label = shelf[valid_set+'_label']
+    with shelve.open(os.path.join(mount_point,'Metadata'),'c') as shelf:
+        train_label = shelf['train_labels']
+        valid_label = shelf[valid_set+'_labels']
 
     #   If more data needed...
         if more_train_data:
-            new_label = shelf[more_train_data+'_label']
+            new_label = shelf[more_train_data+'_labels']
             train_label = np.concatenate((train_label,new_label))
 
     return train_label,valid_label

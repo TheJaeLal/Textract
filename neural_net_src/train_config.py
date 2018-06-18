@@ -3,7 +3,7 @@ import os
 #import sys
 
 #Cuz the file is inside 'neural_net_src' directory
-mount_point = "/home/ubuntu/hcr-ann/"
+mount_point = "/home/ubuntu/Textract/"
 
 #print(os.getcwd())
 
@@ -16,19 +16,21 @@ mount_point = "/home/ubuntu/hcr-ann/"
 # else:
 #     print("file doesn't exist in path")
 
-with shelve.open(os.path.join(mount_point,'IAM_Metadata')) as shelf:
-    #print("Following are the contents of IAM-DATA")
+with shelve.open(os.path.join(mount_point,'Metadata')) as shelf:
+    #print("Following are the contents of Metadata")
     #print(list(shelf.keys()))
     vocabulary = list(shelf['chars'])
 
 vocabulary.sort()
 
+print("Vocabulary:",vocabulary)
+
 #Add Extra for the blank symbol
 vocab_size = len(vocabulary)+1
 
 #Model parameters
-img_height = 114
-img_width = 758
+img_height = 750
+img_width = 1000
 
 #Dropout config...
 dropout = { 'conv':[1,1,1,0.5,0.5,0.5,0.5],
@@ -38,15 +40,15 @@ dropout = { 'conv':[1,1,1,0.5,0.5,0.5,0.5],
           }
 
 #Toggle Data Augmentation
-augment_data = True
+augment_data = False
 #***** Do not remove augmentation, the code will break!!
-store_augmented = False
+store_augmented = True
 
 #Use addition train_data ('zombie', test', or 'valid' images)
 more_train_data = None
 
 #Which set to use for Validation 'valid' or 'test'
-valid_set = 'valid'
+valid_set = 'test'
 
 #Regularization (weight decay)
 decay = 0.0
@@ -62,7 +64,7 @@ valid_batch_size = 48
 
 #Training parameters
 n_epochs = 1000
-resume_epoch = 45
+resume_epoch = 0
 save_epoch = 1
 
 #Tensorboard Summary (summary_epoch either None for no summary or an integer number say 'n'
