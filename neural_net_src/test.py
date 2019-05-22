@@ -4,22 +4,22 @@ import shelve
 import joblib
 from math import ceil
 import time
-import model
-from Augment import valid_datagen
-import helper
-from test_config import vocabulary,test_batch_size,resume_epoch,model_dir
-from Arch import CNN
-import layers
+import os
+
+import neural_net_src.model as model
+from neural_net_src.Augment import valid_datagen
+import neural_net_src.helper as helper
+from neural_net_src.test_config import vocabulary, test_batch_size, resume_epoch, model_dir, model_prefix
+from neural_net_src.Arch import CNN
+import neural_net_src.layers as layers
 
 
 # ## Load Test Labels and Image-Array
 
-mount_point = '../'
-
-with shelve.open(mount_point+'IAM_Data','c') as shelf:
+with shelve.open('Metadata','c') as shelf:
     test_label = shelf['test_label']
     
-test_array = joblib.load(mount_point+'data/test_array')
+test_array = joblib.load(os.path.join('data','test_array'))
 
 graph,dropout_lstm,dropout_fc,inputs,time_steps,targets,loss,train,decoded,label_error_rate,seq_len,is_training,conv_dropout,gradients,interim_dropout = model.model()
 
@@ -43,7 +43,7 @@ with tf.Session(graph = graph) as sess:
     
     #Resume training from resume_epoch
     if resume_epoch != 0:
-        saver.restore(sess, mount_point+model_dir+'/cnn_lstm_fc_'+str(resume_epoch))
+        saver.restore(sess, os.path.join(model_dir, model_prefix + str(resume_epoch)))
 
     start_time = time.time()
     

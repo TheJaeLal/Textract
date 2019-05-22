@@ -4,19 +4,20 @@ import shelve
 import joblib
 from math import ceil
 import time
-import layers
-import model
-from Augment import valid_datagen
-import helper
-from test_config import vocabulary,test_batch_size,mount_point,prediction_set
-from Arch import CNN
+
+import neural_net_src.layers as layers
+import neural_net_src.model as model
+from neural_net_src.Augment import valid_datagen
+import neural_net_src.helper as helper
+from neural_net_src.test_config import vocabulary,test_batch_size,mount_point,prediction_set, model_dir, model_prefix
+from neural_net_src.Arch import CNN
 
 
 #Generating Labels and image names
-with shelve.open(mount_point+'IAM_Data','c') as shelf:
+with shelve.open('Metadata','c') as shelf:
     valid_label = shelf[prediction_set+'_label']
 
-valid_array = joblib.load(mount_point+'data/'+prediction_set+'_array')
+valid_array = joblib.load(os.path.join('data',prediction_set+'_array'))
 
 #Importing model parameters
 model_params = model.model()
@@ -57,7 +58,7 @@ with tf.Session(graph = graph) as sess:
     sess.run(tf.global_variables_initializer())
     timer  = 0
 
-    saver.restore(sess, mount_point+'saved_models_ler0.07_leakyrelu/cnn_lstm_fc_'+str(resume_epoch))
+    saver.restore(sess, os.path.join(model_dir, model_prefix+str(resume_epoch)))
 
     start_time = time.time()
 

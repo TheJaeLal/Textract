@@ -1,13 +1,14 @@
 from flask import Flask,request
-import sys
-import os
-import transcribe
-
+from flask import jsonify
+import json
 #Crucial for saving and handling post form data and files
 from werkzeug.datastructures import ImmutableMultiDict
 
-from flask import jsonify
-import json
+import sys
+import os
+
+import transcribe
+
 
 app = Flask(__name__)
 
@@ -32,7 +33,6 @@ def index():
     
     #print("Current_Directory:",os.getcwd())
     
-    os.chdir("/home/ubuntu/hcr-ann/")
     file.save(file_path)
     
     #print('File saved with name:',file.filename,file=sys.stderr)

@@ -2,7 +2,7 @@ import os
 import cv2
 import numpy as np
 
-def fetch(input_dir):
+def fetch(input_dir_path):
     #print("Fetching test_images for prediction from = ",input_dir)
 
     """Returns valid images (jpg or png),
@@ -11,7 +11,7 @@ def fetch(input_dir):
     """
 
     #Vaidate Images
-    list_images = os.listdir(input_dir)
+    list_images = os.listdir(input_dir_path)
     list_images.sort()
     
     #print(list_images,file=sys.stderr)

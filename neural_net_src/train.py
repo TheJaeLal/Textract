@@ -5,12 +5,13 @@ from math import ceil
 import time
 import os
 
-from model import ANN_Model
-from train_config import mount_point,vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,summary_epoch,dropout
-import datagen
-from Arch import CNN,iterations
-import layers
-import helper
+from neural_net_src.model import ANN_Model
+from neural_net_src.test_config import model_prefix
+from neural_net_src.train_config import vocabulary,batch_size,valid_batch_size,n_epochs,resume_epoch,save_epoch,summary_epoch,dropout
+import neural_net_src.datagen as datagen
+from neural_net_src.Arch import CNN, iterations
+import lneural_net_src.layers as layers
+import neural_net_src.helper as helper
 
 #Initializer the model/graph
 model = ANN_Model()
@@ -50,12 +51,12 @@ with tf.Session(graph = graph) as sess:
     
     if summary_epoch:
         merged_summary = tf.summary.merge_all()
-        file_writer = tf.summary.FileWriter('../visualize', sess.graph)
+        file_writer = tf.summary.FileWriter('visualize', sess.graph)
         file_writer.add_graph(sess.graph)
     
     #Resume training from resume_epoch
     if resume_epoch != 0:
-        saver.restore(sess, os.path.join(mount_point,'saved_models','cnn_lstm_fc_'+str(resume_epoch)))
+        saver.restore(sess, os.path.join('saved_models',model_prefix+str(resume_epoch)))
     
     #Epoch Loop
     for e in range(resume_epoch,n_epochs):
@@ -251,7 +252,7 @@ with tf.Session(graph = graph) as sess:
             #print("Epoch: {}, train_loss:{:.2f}, valid_loss:{:.2f}, ler:{:.2f} in {:.2f} sec.".format(e,train_loss,valid_loss,ler,time_taken)) 
             
             #Save the model
-            saver.save(sess,mount_point+'saved_models/cnn_lstm_fc_'+str(e))
+            saver.save(sess,os.path.join('saved_models',model_prefix+str(e)))
 
             with open('progress.csv','a') as f:
                 f.write("Epoch: {}, train_loss:{:.2f}, valid_loss:{:.2f}, ler:{:.2f}, {:.2f} sec.\n".format(e,train_loss,valid_loss,ler,time_taken))

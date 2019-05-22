@@ -8,15 +8,18 @@ import time
 
 import sys
 
-sys.path.insert(0, '/home/ubuntu/hcr-ann/neural_net_src')
+#So that the below modules can be recognized by python interpreter
+sys.path.insert(0,os.getcwd())
 
-import layers, helper, Image_Fetcher
-from model import ANN_Model
-from Augment import valid_datagen
-from test_config import vocabulary,infer_batch_size,mount_point,resume_epoch,img_height,img_width,model_dir,model_prefix
-from Arch import CNN
+import neural_net_src.layers as layers
+import neural_net_src.helper as helper
+import neural_net_src.Image_Fetcher as Image_Fetcher
+from neural_net_src.model import ANN_Model
+from neural_net_src.Augment import valid_datagen
+from neural_net_src.test_config import vocabulary,infer_batch_size,resume_epoch,img_height,img_width,model_dir,model_prefix
+from neural_net_src.Arch import CNN
 
-def get_text(input_dir):
+def get_text(input_dir_path):
     
     #Importing model parameters
     model_params = ANN_Model()
@@ -37,12 +40,8 @@ def get_text(input_dir):
     gradients = model_params[13]
     interim_dropout = model_params[14]
 
-    #Generating images
-    # valid_generator = valid_datagen.flow_from_directory( os.path.join(mount_point,input_dir),
-    #                                             target_size=(img_height,img_width), color_mode='grayscale',
-    #                                             batch_size = infer_batch_size, shuffle=False )
 
-    images = Image_Fetcher.fetch(os.path.join(mount_point,input_dir))
+    images = Image_Fetcher.fetch(input_dir_path)
 
     #Inputs for images, outputs for predictions, targets for labels
     infer_inputs = images
@@ -57,7 +56,7 @@ def get_text(input_dir):
 
         timer  = 0
 
-        saver.restore(sess, os.path.join(mount_point,model_dir,model_prefix)+str(resume_epoch))
+        saver.restore(sess, os.path.join(model_dir,model_prefix)+str(resume_epoch))
 
         start_time = time.time()
 

@@ -1,5 +1,6 @@
 import numpy as np
-from train_config import vocab_size
+
+from neural_net_src.train_config import vocab_size
 
 def load_data(filename):
     with open(filename,'r') as f:

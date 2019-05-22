@@ -1,8 +1,9 @@
 import shelve
 import joblib
-from train_config import mount_point,more_train_data,valid_set,batch_size,valid_batch_size,store_augmented
-from Augment import train_datagen,valid_datagen
 import os
+
+from neural_net_src.train_config import more_train_data,valid_set,batch_size,valid_batch_size,store_augmented
+from neural_net_src.Augment import train_datagen,valid_datagen
 
 #Global Variables..
 num_train = None
@@ -12,12 +13,12 @@ def _get_img_data(more_train_data):
     """Load Training and Validation Input Images (As Numpy Arrays)
     """
     
-    train_array = joblib.load(os.path.join(mount_point,'data','train_arrays'))
-    valid_array = joblib.load(os.path.join(mount_point,'data',valid_set+'_arrays'))
+    train_array = joblib.load(os.path.join('data','train_arrays'))
+    valid_array = joblib.load(os.path.join('data',valid_set+'_arrays'))
 
     #If additional data is needed...
     if more_train_data:
-        new_array = joblib.load(os.path.join(mount_point,'data',more_train_data+'_arrays'))
+        new_array = joblib.load(os.path.join('data',more_train_data+'_arrays'))
         train_array = np.concatenate((train_array,new_array))
     
     return train_array,valid_array
@@ -26,7 +27,7 @@ def _get_label_data(more_train_data):
     """Load Training and Validation Labels/Targets..
     """
 
-    with shelve.open(os.path.join(mount_point,'Metadata'),'c') as shelf:
+    with shelve.open('Metadata','c') as shelf:
         train_label = shelf['train_labels']
         valid_label = shelf[valid_set+'_labels']
 
@@ -51,7 +52,7 @@ def get_generators():
     
     if store_augmented:
         train_generator = train_datagen.flow(train_array,train_label,
-                        batch_size,save_to_dir=os.path.join(mount_point,'Augmented'), 
+                        batch_size,save_to_dir='Augmented', 
                         save_prefix='train')
 
     else:

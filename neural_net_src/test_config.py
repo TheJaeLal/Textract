@@ -2,11 +2,8 @@ import shelve
 import os
 
 #Cuz the file is inside 'neural_net_src' directory
-mount_point = "../"
 
-os.chdir("/home/ubuntu/hcr-ann/neural_net_src")
-
-with shelve.open(os.path.join(mount_point,'IAM_Metadata')) as shelf:
+with shelve.open('Metadata') as shelf:
     vocabulary = list(shelf['chars'])
     
 vocabulary.sort()

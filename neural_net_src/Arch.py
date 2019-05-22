@@ -1,4 +1,4 @@
-from train_config import vocab_size
+from neural_net_src.train_config import vocab_size
 
 #Format: 'conv':[filter_size,strides,num_filters], 'pool':[pool_height,pool_width]
 

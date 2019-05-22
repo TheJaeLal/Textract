@@ -1,9 +1,11 @@
+import os
+
 #Size of the morphological filter (for erosion and dilation)
 filter_size = (2,2)
 
 #Relative Paths...
-img_folder_path = '../data/train'
-out_folder_path = '../Augmented'
+img_folder_path = os.path.join('data','train')
+out_folder_path = 'Augmented'
 
 #Zoom Range
 zr = 0.05

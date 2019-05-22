@@ -1,8 +1,9 @@
 import tensorflow as tf
 import numpy as np
-import layers
-from train_config import vocab_size, img_width,img_height, alpha,cell_clip,first_decay_steps,t_mul,m_mul,momentum,decay
-from Arch import CNN, BRNN, FC, Interim_FC,iterations
+
+import neural_net_src.layers as layers
+from neural_net_src.train_config import vocab_size, img_width, img_height, alpha, cell_clip, first_decay_steps, t_mul, m_mul, momentum, decay
+from neural_net_src.Arch import CNN, BRNN, FC, Interim_FC, iterations
 
 #Global Debugging flag..
 debug = False

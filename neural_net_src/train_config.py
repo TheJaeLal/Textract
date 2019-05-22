@@ -2,21 +2,7 @@ import shelve
 import os
 #import sys
 
-#Cuz the file is inside 'neural_net_src' directory
-mount_point = "/home/ubuntu/Textract/"
-
-#print(os.getcwd())
-
-#print(sys.path)
-
-#data_path = mount_point + 'IAM_Metadata.dat'
-
-# if os.path.exists(data_path):
-#     print("file exists in path..")
-# else:
-#     print("file doesn't exist in path")
-
-with shelve.open(os.path.join(mount_point,'Metadata')) as shelf:
+with shelve.open('Metadata') as shelf:
     #print("Following are the contents of Metadata")
     #print(list(shelf.keys()))
     vocabulary = list(shelf['chars'])
